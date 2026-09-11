@@ -1,0 +1,2878 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>QFA | National Team</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link rel="stylesheet" href="assets/css/app.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="assets/css/national-team.css" media="print" onload="this.media='all'">
+
+  <style>
+    .year-slider-wrapper { position: relative; padding: 0 80px; }
+    .slider-navigation { position: absolute; width: 100%; top: 0; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; pointer-events: none; z-index: 10; }
+    .nav-arrow { background: #8C0321; border: none; color: white; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; pointer-events: all; flex-shrink: 0; }
+    .nav-arrow:hover:not(:disabled) { background: #6b0219; transform: scale(1.1); }
+    .nav-arrow:disabled { background: #fff; cursor:not-allowed; opacity: 0.5; border: 1px solid #8C0321; }
+    .nav-arrow svg { width: 20px; height: 20px; fill: white; }
+    .nav-arrow:disabled.nav-arrow svg { fill: #8C0321;}
+  </style>
+</head>
+
+<body>
+  <div class="header-wrapper">
+    <header class="header ">
+      <div class="main-header">
+        <div class="container-lg">
+          <div class="fw-450">
+            <div class="row align-items-center">
+              <div class="col">
+                <a class="navbar-brand" href="#">
+                  <img src="assets/images/logo/header-logo.svg" alt="Logo" class="header-img img-fluid">
+                </a>
+              </div>
+              <div class="col-auto ">
+                <div class="d-flex justify-content-end align-items-center">
+                  <ul class="d-flex align-items-center gx-32">
+                    <li class="d-none d-lg-block">
+                      <div id="search-wrapper">
+                        <i class="header-search"></i>
+                        <input type="text" id="search" placeholder="Search">
+                      </div>
+                    </li>
+                    <li>
+                      <button class="btn dropdown-toggle ctm-btn header-content font-size-8 lang-btn" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/images/icon/header/lang-header-icon.svg" class="img-fluid" alt="lang-icon"
+                          width="36" height="36"><span>AR</span>
+                      </button>
+                    </li>
+                    <li>
+                      <div class="ticket d-none d-lg-flex">
+                        <a href="#">
+                          <svg width="133" height="45" viewBox="0 0 133 45" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6 0.5C2.68629 0.5 0 3.18629 0 6.5V14.0123C3.57602 15.2479 6.13804 18.5815 6.13804 22.5C6.13804 26.4185 3.57602 29.7521 0 30.9877V38.5C0 41.8137 2.68629 44.5 6 44.5H127C130.314 44.5 133 41.8137 133 38.5V30.988C129.424 29.7525 126.861 26.4187 126.861 22.5C126.861 18.5813 129.424 15.2475 133 14.012V6.5C133 3.18629 130.314 0.5 127 0.5H6Z"
+                              fill="#ffffff" />
+                            <path
+                              d="M38.5 23C38.5 21.62 39.62 20.5 41 20.5V19.5C41 15.5 40 14.5 36 14.5H26C22 14.5 21 15.5 21 19.5V20C22.38 20 23.5 21.12 23.5 22.5C23.5 23.88 22.38 25 21 25V25.5C21 29.5 22 30.5 26 30.5H36C40 30.5 41 29.5 41 25.5C39.62 25.5 38.5 24.38 38.5 23Z"
+                              stroke="#8C0321" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M29 14.5L29 30.5" stroke="#8C0321" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-dasharray="5 5" />
+                            <line x1="54" y1="1.5" x2="54" y2="43.5" stroke="#8C0321" stroke-width="2"
+                              stroke-linecap="round" stroke-dasharray="4 4" />
+                            <path
+                              d="M70.128 17.858H67.806V29H65.466V17.858H63.144L63.198 15.5H70.092L70.128 17.858ZM71.2493 29V15.5H73.5893V29H71.2493ZM81.2984 15.77L81.0824 18.002C80.7044 17.786 80.0924 17.642 79.5524 17.642C78.0584 17.642 77.5004 18.524 77.5004 22.142C77.5004 25.994 78.0764 26.93 79.6244 26.93C80.2004 26.93 80.7044 26.786 81.1364 26.534L81.3344 28.73C80.8484 29.018 79.9664 29.216 79.2464 29.216C76.3844 29.216 75.1064 27.308 75.1064 22.124C75.1064 17.246 76.4204 15.284 79.2824 15.284C79.9304 15.284 80.8484 15.5 81.2984 15.77ZM90.1104 29H87.5364L85.4664 23.078H84.7644V29H82.4784V15.5H84.7464V21.044H85.5204L87.5364 15.5H90.0204L87.6264 21.98L90.1104 29ZM93.4128 26.696H97.1748L97.1208 29H91.1268V15.5H96.9408L96.9768 17.84H93.4128V20.9H96.4008V23.114H93.4128V26.696ZM104.651 17.858H102.329V29H99.9894V17.858H97.6674L97.7214 15.5H104.615L104.651 17.858ZM111.426 25.166C111.426 27.758 110.202 29.216 107.916 29.216C106.908 29.216 105.9 28.91 105.18 28.388L105.522 26.192C106.206 26.642 106.926 26.912 107.754 26.912C108.762 26.912 109.212 26.372 109.212 25.274C109.212 22.862 105.198 23.222 105.198 19.154C105.198 16.868 106.386 15.302 108.654 15.302C109.59 15.302 110.418 15.5 111.084 15.878L110.814 18.074C110.202 17.804 109.536 17.66 108.906 17.66C107.79 17.66 107.412 18.218 107.412 19.082C107.412 21.404 111.426 21.098 111.426 25.166Z"
+                              fill="#8C0321" />
+                          </svg>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex align-items-center">
+                        
+                        <label class="menu-btn d-block d-sm-flex d-md-flex d-lg-none d-xl-none"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                        aria-controls="offcanvasExample">
+                          <div class="">
+                            <div class="menu"></div>
+                            <div class="menu"></div>
+                          </div>
+                      </label>
+                      </div>
+                     
+                    </li>
+                  </ul>
+
+                  <!-- <button class="navbar-toggler d-block d-sm-flex d-md-flex d-lg-none d-xl-none ctm-burger-menu"
+                    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">              
+                  </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="ctm-nav navbar navbar-expand-lg bg-primary">
+        <div class="container-lg">
+          
+          <div class="offcanvas offcanvas-end menutoggle" tabindex="-1" id="offcanvasExample" 
+            aria-labelledby="offcanvasExampleLabel" >
+            <div class="offcanvas-header">
+              <!-- <a class="navbar-brand" href="#">
+                <img src="assets/images/logo/logo-icon2.svg" alt="Logo" class=" img-fluid">
+              </a> -->
+              <div class="d-block d-lg-none mt-3" >
+                <div id="search-wrapper">
+
+                  <i class="header-search"></i>
+  
+                  <input type="text" id="search" placeholder="Search">
+                </div>
+              </div>
+              
+              <button type="button" class="btn-close img-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="row">
+                <div class="col px-0">
+                  <ul class="navbar-nav ">
+                    <!-- <li class="d-block d-lg-none mb-2 ">
+                      <div id="search-wrapper">
+
+                        <i class="header-search"></i>
+
+                        <input type="text" id="search" placeholder="Search">
+                      </div>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="">National Teams</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-wrap">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">
+                              <span>FIRST NATIONAL TEAM</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>U-23 NATIONAL TEAM</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">
+                              <span>U-20 NATIONAL TEAM</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">
+                              <span>U-17 NATIONAL TEAM</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                      <a class="nav-link dropdown-toggle " href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="">Competitions</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-wrap competitions-menu-bg">
+                        <div class="submenu-columns">
+                          <div class="submenu-column">
+                            <h3 class="submenu-heading">Leagues</h3>
+                            <ul>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>star league ooredoo</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>second division league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>olympic league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                            </ul>
+                          </div>
+                          <div class="submenu-column">
+                            <h3 class="submenu-heading">Cups</h3>
+                            <ul>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>qfa cup</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>ooredoo cup</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>second division cup</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>qatar cup</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>amir cup</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                            </ul>
+                          </div>
+                          <div class="submenu-column">
+                            <h3 class="submenu-heading">Age Group</h3>
+                            <ul>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>u-19 league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>u-17 league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>u-15 league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>u-14 league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>u-13 league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                            </ul>
+                          </div>
+                          <div class="submenu-column">
+                            <h3 class="submenu-heading">Subsidiaries</h3>
+                            <ul>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>qatar amateur league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Football in Qatar</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="">Regulations</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-wrap">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">
+                              <span>Rules and Regulations</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>Law of the Games</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="">About Us</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-wrap">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">
+                              <span>Board of Directors</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>SOCAIL RESPONSIBILITY</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>VISION MISSION & VALUES</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>QFA AWARDS</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Football Development</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="">Media Center</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-wrap">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">
+                              <span>Media gallery</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">
+                              <span>News</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>Media Accreditation</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>Download Center</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Tenders</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Referees</a>
+                    </li>
+                    <li class="nav-item d-flex d-sm-flex d-md-flex d-lg-none d-xl-none">
+                      <a href="#" class="header-content nav-link contact-link"><img
+                          src="assets/images/icon/header/contact-us-icon.svg" class="img-fluid"
+                          alt="contact-icon">Contact Us</a>
+                    </li>
+                    <li class="nav-item d-block d-sm-flex d-md-flex d-lg-none d-xl-none">
+                      <div class="nav-link d-flex flex-cloumn">
+                        <div class="ticket">
+                          <a href="#">
+                            <svg width="100" height="45" viewBox="0 0 133 45" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6 0.5C2.68629 0.5 0 3.18629 0 6.5V14.0123C3.57602 15.2479 6.13804 18.5815 6.13804 22.5C6.13804 26.4185 3.57602 29.7521 0 30.9877V38.5C0 41.8137 2.68629 44.5 6 44.5H127C130.314 44.5 133 41.8137 133 38.5V30.988C129.424 29.7525 126.861 26.4187 126.861 22.5C126.861 18.5813 129.424 15.2475 133 14.012V6.5C133 3.18629 130.314 0.5 127 0.5H6Z"
+                                fill="#ffffff" />
+                              <path
+                                d="M38.5 23C38.5 21.62 39.62 20.5 41 20.5V19.5C41 15.5 40 14.5 36 14.5H26C22 14.5 21 15.5 21 19.5V20C22.38 20 23.5 21.12 23.5 22.5C23.5 23.88 22.38 25 21 25V25.5C21 29.5 22 30.5 26 30.5H36C40 30.5 41 29.5 41 25.5C39.62 25.5 38.5 24.38 38.5 23Z"
+                                stroke="#8C0321" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M29 14.5L29 30.5" stroke="#8C0321" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-dasharray="5 5" />
+                              <line x1="54" y1="1.5" x2="54" y2="43.5" stroke="#8C0321" stroke-width="2"
+                                stroke-linecap="round" stroke-dasharray="4 4" />
+                              <path
+                                d="M70.128 17.858H67.806V29H65.466V17.858H63.144L63.198 15.5H70.092L70.128 17.858ZM71.2493 29V15.5H73.5893V29H71.2493ZM81.2984 15.77L81.0824 18.002C80.7044 17.786 80.0924 17.642 79.5524 17.642C78.0584 17.642 77.5004 18.524 77.5004 22.142C77.5004 25.994 78.0764 26.93 79.6244 26.93C80.2004 26.93 80.7044 26.786 81.1364 26.534L81.3344 28.73C80.8484 29.018 79.9664 29.216 79.2464 29.216C76.3844 29.216 75.1064 27.308 75.1064 22.124C75.1064 17.246 76.4204 15.284 79.2824 15.284C79.9304 15.284 80.8484 15.5 81.2984 15.77ZM90.1104 29H87.5364L85.4664 23.078H84.7644V29H82.4784V15.5H84.7464V21.044H85.5204L87.5364 15.5H90.0204L87.6264 21.98L90.1104 29ZM93.4128 26.696H97.1748L97.1208 29H91.1268V15.5H96.9408L96.9768 17.84H93.4128V20.9H96.4008V23.114H93.4128V26.696ZM104.651 17.858H102.329V29H99.9894V17.858H97.6674L97.7214 15.5H104.615L104.651 17.858ZM111.426 25.166C111.426 27.758 110.202 29.216 107.916 29.216C106.908 29.216 105.9 28.91 105.18 28.388L105.522 26.192C106.206 26.642 106.926 26.912 107.754 26.912C108.762 26.912 109.212 26.372 109.212 25.274C109.212 22.862 105.198 23.222 105.198 19.154C105.198 16.868 106.386 15.302 108.654 15.302C109.59 15.302 110.418 15.5 111.084 15.878L110.814 18.074C110.202 17.804 109.536 17.66 108.906 17.66C107.79 17.66 107.412 18.218 107.412 19.082C107.412 21.404 111.426 21.098 111.426 25.166Z"
+                                fill="#8C0321" />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-auto">
+                  <ul class="navbar-nav ">
+                    <li class="nav-item d-none  d-lg-flex d-xl-flex">
+                      <a href="#" class="header-content nav-link contact-link px-0"><img
+                          src="assets/images/icon/header/contact-us-icon.svg" class="img-fluid"
+                          alt="contact-icon">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <section class="inner-nationalteam-banner">
+    <figure class="banner-img mb-0">
+      <img src="assets/images/img/nationalteam-bg2.png" class="img-fluid" alt="banner">
+    </figure>
+  </section>
+  <section class="breadcrumb-section">
+    <div class="container-lg">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html">homepage</a></li>
+          <li class="breadcrumb-item active current-page" aria-current="page">FIRST NATIONAL TEAM</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <section class="section-padding">
+    <div class="container-lg">
+      <section class="title-section mb-120">
+
+        <h2 class="text-primary "><span class="outlined-text1">NATIONAL</span> TEAM</h2>
+        <div class="national-team-desc">
+          <p>Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+            unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        </div>
+
+      </section>
+
+      <div class="row mb-32">
+        <div class="col-12">
+          <div class=" fw-450 fs-25 text-secondary mb-0 text-uppercase lh-base">/ FIRST APPEARANCE</div>
+        </div>
+      </div>
+
+      <section class="year-slider-section mb-120">
+        <div class="description-slider">
+          <div>
+            <h2>1970</h2>
+            <div class="year-desc">
+              <p>The Qatar national team played its first official match on March 27, 1970 against hosts Bahrain, losing 1–2
+                as Mubarak Faraj scored the sole goal for Qatar. Soon after, Qatar were amongst four founding nations to play
+                in the biennial Gulf Cup tournament.</p>
+            </div>
+          </div>
+          <div>
+            <h2>1977 - 1980</h2>
+            <div class="year-desc">
+              <p>The Qatar national team played its first official match on March 27, 1970 against hosts Bahrain, losing 1–2
+                as Mubarak Faraj scored the sole goal for Qatar. Soon after, Qatar were amongst four founding nations to play
+                in the biennial Gulf Cup tournament.</p>
+            </div>
+          </div>
+          <div>
+            <h2>1990 - 1993</h2>
+            <div class="year-desc">
+              <p>The Qatar national team played its first official match on March 27, 1970 against hosts Bahrain, losing 1–2
+                as Mubarak Faraj scored the sole goal for Qatar. Soon after, Qatar were amongst four founding nations to play
+                in the biennial Gulf Cup tournament.</p>
+            </div>
+          </div>
+          <div>
+            <h2>2000 - 2004</h2>
+            <div class="year-desc">
+              <p>The Qatar national team played its first official match on March 27, 1970 against hosts Bahrain, losing 1–2
+                as Mubarak Faraj scored the sole goal for Qatar. Soon after, Qatar were amongst four founding nations to play
+                in the biennial Gulf Cup tournament.</p>
+            </div>
+          </div>
+          <div>
+            <h2>2014</h2>
+            <div class="year-desc">
+              <p>The Qatar national team played its first official match on March 27, 1970 against hosts Bahrain, losing 1–2
+                as Mubarak Faraj scored the sole goal for Qatar. Soon after, Qatar were amongst four founding nations to play
+                in the biennial Gulf Cup tournament.</p>
+            </div>
+          </div>
+          <div>
+            <h2>2019</h2>
+            <div class="year-desc">
+              <p>The Qatar national team played its first official match on March 27, 1970 against hosts Bahrain, losing 1–2
+                as Mubarak Faraj scored the sole goal for Qatar. Soon after, Qatar were amongst four founding nations to play
+                in the biennial Gulf Cup tournament.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="year-slider-wrapper">
+          <div class="progress-bar-slider">
+            <div class="item">
+              <h2>1970</h2>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            <div class="item">
+              <h2>1977 - 1980</h2>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            <div class="item">
+              <h2>1990 - 1993</h2>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            <div class="item">
+              <h2>2000 - 2004</h2>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            <div class="item">
+              <h2>2014</h2>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            <div class="item">
+              <h2>2019</h2>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="slider-navigation">
+            <button class="nav-arrow btn-year-prev" type="button">
+              <svg viewBox="0 0 24 24">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+              </svg>
+            </button>
+            <button class="nav-arrow btn-year-next" type="button">
+              <svg viewBox="0 0 24 24">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <section class="our-coach-section" style="background: url(assets/images/img/our-coach-bg.jpg) center no-repeat;">
+      <div class="container-fluid">
+        <div class="py-32 coach-block">
+          <div class="content">
+            <h1 class="fw-450 font-size-8 text-secondary mb-32 text-uppercase lh-base">/ OUR COACH</h1>
+            <h2 class="fw-700 mb-30">
+              <span class="outlined-text">MARQUEZ</span>
+              <span class="text-transparent">LOPEZ</span>
+            </h2>
+            <div class="coach-description">
+              <p>
+                Born on January 7, 1962, in the vibrant city of Barcelona, Bartolomé Márquez Lopez emerged as a
+                multifaceted force in football. Lopez showcased his versatility throughout his playing career by
+                seamlessly transitioning between roles as an attacking midfielder, an outright striker, and both right
+                and left winger. His prowess graced several esteemed Spanish clubs, with Espanyol standing out as the
+                pinnacle of his football journey.
+              </p>
+
+
+              <p>
+                On December 6, 2023, Marquez Lopez assumed the role of coach for the Qatar national team, succeeding
+                Carlos Queiroz. His appointment came at a crucial time as the team prepared to defend the Asian Cup
+                title that the Maroons won for the first time in 2019. Despite scepticism, Lopez adeptly guided the
+                hosts, ultimately surpassing expectations and securing a distinctive triumph. His strategic prowess
+                and
+                leadership culminated in the crowning achievement of winning the AFC Asian Cup Qatar 2023. This
+                victory
+                not only upheld Qatar’s Asian title earned in 2019 but also established new records, solidifying
+                Lopez’s
+                imprint on the team’s storied legacy.
+              </p>
+            </div>
+
+          </div>
+          <div class="coach-image">
+            <img src="assets/images/img/coach-image.jpg" class="img-fluid" width="771" height="845">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="our-squards-section section-padding">
+      <div class="container-lg">
+        <div class="d-flex flex-column gy-30 mb-56">
+          <div class="row align-items-end g-0">
+            <div class="col-12  col-xxl-3 col-xl-4 col-lg-8 col-md-8">
+              <div class="sec-title">
+                <h2 class="text-primary fw-700"><span class="outlined-text1">OUR<br></span> SQUARDS</h2>
+              </div>
+            </div>
+            <div
+              class="col-12 col-xxl-9 col-xl-8 col-lg-12 col-md-12  order-2 order-xl-1 order-xxl-1 order-lg-2 order-md-2 mb-3 mt-3 mb-xl-0 mt-xl-0">
+              <div class="year-desc">
+                <p>Lorem ipsum dolor sit amet consectetur. Vestibulum metus
+                  non tortor pulvinar orci elementum nulla nunc. A diam quam et at viverra et.</p>
+              </div>
+
+            </div>
+            <!-- <div
+              class="col-12 order-2 col-xxl-2 col-xl-2 col-lg-4 col-md-4  order-xl-2 order-xxl-2 order-lg-1 order-md-1 justify-content-end d-flex">
+              <div class="d-flex flex-row gap-4 align-items-center">
+                <a href="#" class="text-primary fw-bold font-size-6 view-link">View all</a>
+                <div class="slider-btn-wrapper gap-1">
+                  <button class="custom-prev btn-squrd-pre btn" type="button">
+                    <img src="assets/images/icon/arrow-left.svg" alt="" width="9" height="14" class="img-fluid">
+                  </button>
+                  <button class="btn custom-next btn-squrd-next" type="button">
+                    <img src="assets/images/icon/arrow-right.svg" alt="" width="9" height="14" class="img-fluid">
+
+                  </button>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+       <div class="row justify-content-between g-0">
+            <div class="col-6">
+              <div class="sec-title">
+                <h3 class="text-primary fw-700 font-size-2 mb-20">Goal Keepers</h3>
+              </div>
+            </div>
+        
+            <div
+              class="col-6  justify-content-end d-flex">
+              <div class="d-flex flex-row gap-4 align-items-center">
+                <a href="#" class="text-primary fw-bold font-size-6 view-link">View all</a>
+                <div class="slider-btn-wrapper gap-1">
+                  <button class="custom-prev btn-squrd-gk-pre btn" type="button">
+                    <img src="assets/images/icon/arrow-left.svg" alt="" width="9" height="14" class="img-fluid">
+                  </button>
+                  <button class="btn custom-next btn-squrd-gk-next" type="button">
+                    <img src="assets/images/icon/arrow-right.svg" alt="" width="9" height="14" class="img-fluid">
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="our-squards-box-list mb-56">
+          <div class="slider-wrapper">
+            <div class="slider squard-box-slider-goalkeeper">
+              <div class="item">
+          
+                <div class="row gy-30 ">
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button type="button"
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details ">
+                            <!-- <h4 class="text-uppercase text-primary1 mb-8 ">
+                                <a href="#" class="stretched-link">Paula
+                                  mora</a></h4> -->
+                            <h4 class="text-uppercase text-primary1 mb-6  player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              01
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details">
+                       
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age  ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              02
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+
+              </div>
+              <div class="item">
+            
+                <div class="row gy-30 ">
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button type="button"
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details">
+                           
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              03
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details">
+                       
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age  ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              04
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+                
+              </div>
+              <div class="item">
+       
+                <div class="row gy-30 ">
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button type="button"
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details ">
+                        
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              05
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+          
+              </div>
+              <div class="item">
+               
+                <div class="row gy-30 ">
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button type="button"
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details">
+                          
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              07
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+             
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+          <div class="row justify-content-between g-0">
+            <div class="col-6">
+              <div class="sec-title">
+                <h3 class="text-primary fw-700 font-size-2 mb-20">Defender</h3>
+              </div>
+            </div>
+        
+            <div
+              class="col-6 justify-content-end d-flex">
+              <div class="d-flex flex-row gap-4 align-items-center">
+                <a href="#" class="text-primary fw-bold font-size-6 view-link">View all</a>
+                <div class="slider-btn-wrapper gap-1">
+                  <button class="custom-prev btn-squrd-def-pre btn" type="button">
+                    <img src="assets/images/icon/arrow-left.svg" alt="" width="9" height="14" class="img-fluid">
+                  </button>
+                  <button class="btn custom-next btn-squrd-def-next" type="button">
+                    <img src="assets/images/icon/arrow-right.svg" alt="" width="9" height="14" class="img-fluid">
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="our-squards-box-list mb-56 ">
+          <div class="slider-wrapper">
+            <div class="slider squard-box-slider-defender">
+              <div class="item">
+          
+                <div class="row gy-30 ">
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button type="button"
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details ">
+                            <!-- <h4 class="text-uppercase text-primary1 mb-8 ">
+                                <a href="#" class="stretched-link">Paula
+                                  mora</a></h4> -->
+                            <h4 class="text-uppercase text-primary1 mb-6  player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              01
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details">
+                       
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age  ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              02
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="item">
+            
+                <div class="row gy-30 ">
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button type="button"
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details">
+                           
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              03
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details">
+                       
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age  ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              04
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="item">
+       
+                <div class="row gy-30 ">
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button type="button"
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details ">
+                        
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              05
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details ">
+                        
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85 ">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age  ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              06
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+              <div class="item">
+               
+                <div class="row gy-30 ">
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button type="button"
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details">
+                          
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              07
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details">
+                       
+                            <h3 class="text-uppercase text-primary1 mb-8 player-name width-85">Paula
+                              mora</h3>
+                            <h4 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h4>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age  ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              08
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+             <div class="row justify-content-between g-0">
+            <div class="col-6">
+              <div class="sec-title">
+                <h3 class="text-primary fw-700 font-size-2 mb-20">Forwards</h3>
+              </div>
+            </div>
+        
+            <div
+              class="col-6 justify-content-end d-flex">
+              <div class="d-flex flex-row gap-4 align-items-center">
+                <a href="#" class="text-primary fw-bold font-size-6 view-link">View all</a>
+                <div class="slider-btn-wrapper gap-1">
+                  <button class="custom-prev btn-squrd-frw-pre btn" type="button">
+                    <img src="assets/images/icon/arrow-left.svg" alt="" width="9" height="14" class="img-fluid">
+                  </button>
+                  <button class="btn custom-next btn-squrd-frw-next" type="button">
+                    <img src="assets/images/icon/arrow-right.svg" alt="" width="9" height="14" class="img-fluid">
+
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="our-squards-box-list ">
+          <div class="slider-wrapper">
+            <div class="slider squard-box-slider-forwards">
+              <div class="item">
+          
+                <div class="row gy-30 ">
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button type="button"
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details ">
+                       
+                            <h4 class="text-uppercase text-primary1 mb-6  player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              01
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details">
+                       
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age  ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              02
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="item">
+            
+                <div class="row gy-30 ">
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button type="button"
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details">
+                           
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              03
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details">
+                       
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age  ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              04
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="item">
+       
+                <div class="row gy-30 ">
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button type="button"
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details ">
+                        
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              05
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details ">
+                        
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85 ">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age  ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              06
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+              <div class="item">
+               
+                <div class="row gy-30 ">
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button type="button"
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details">
+                          
+                            <h4 class="text-uppercase text-primary1 mb-6 player-name width-85">Paula
+                              mora</h4>
+                            <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              07
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="our-squards-box position-relative">
+                      <div class="row g-0">
+                        <div class="col-12 col-lg-5">
+
+                          <div class="player-image h-100">
+                            <figure><img src="assets/images/our-squard-player-image.jpg" alt="" class="img-fluid h-100">
+                              <figcaption class="player-caption"><button
+                                  class="btn custom-btn text-capitalize text-primary" data-bs-toggle="modal"
+                                  data-bs-target="#squard-modal">
+                                  view player profile
+                                </button></figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+
+                          <div class="player-details">
+                       
+                            <h3 class="text-uppercase text-primary1 mb-8 player-name width-85">Paula
+                              mora</h3>
+                            <h4 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h4>
+                            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc ">Hi, I am Cornia Maccoy
+                              being the
+                              goalkeeper
+                              for
+                              the
+                              Qatar Soccer
+                              Club must</div>
+                            <div class="game-details">
+                              <div class="match-played">
+                                <h4 class="text-maroon mb-0">26</h4>
+                                <p>match played</p>
+
+                              </div>
+                              <div class="goals  ">
+                                <h4 class="text-maroon mb-0">87</h4>
+                                <p>goals</p>
+                              </div>
+                              <div class="age  ">
+                                <h4 class="text-maroon mb-0">24</h4>
+                                <p>age</p>
+                              </div>
+                            </div>
+                            <div class="close-ribbon font-size-2 fw-700">
+                              08
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="our-achievements-section mb-120 overflow-hidden">
+      <div class="container-lg">
+        <div class="our-achievements-box text-primary">
+          <div class="achivement-wrapper">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+
+
+                <h2 class="fw-700 mb-24 text-center">
+                  <span class="text-transparent">OUR</span>
+                  <span>ACHIEVEMENTS</span>
+                </h2>
+                <div class="achievement-heading">
+                  <p>Lorem ipsum dolor sit amet consectetur.
+                    Vestibulum
+                    metus non tortor pulvinar
+                    orci elementum nulla nunc. A
+                    diam quam et at viverra et.
+                  </p>
+                </div>
+
+                <!-- Slider -->
+                <div class="wrapper">
+                  <button class="custom-prev btn-center-pre btn" type="button">
+                    <img src="assets/images/icon/arrow-left.svg" alt="" width="9" height="14" class="img-fluid">
+                  </button>
+                  <button class="btn custom-next btn-center-next" type="button">
+                    <img src="assets/images/icon/arrow-right.svg" alt="" width="9" height="14" class="img-fluid">
+
+                  </button>
+                  <div class="center-slider">
+                    <div data-slide="1">
+                      <img src="assets/images/img/achievement-cup2.png" class="img-fluid" alt="Trophy 1">
+                    </div>
+                    <div data-slide="2">
+                      <img src="assets/images/img/achievement-cup2.png" class="img-fluid" alt="Trophy 2">
+                    </div>
+                    <div data-slide="3">
+                      <img src="assets/images/img/achievement-cup2.png" class="img-fluid" alt="Trophy 3">
+                    </div>
+                    <div data-slide="4">
+                      <img src="assets/images/img/achievement-cup2.png" class="img-fluid" alt="Trophy 4">
+                    </div>
+                    <div data-slide="5">
+                      <img src="assets/images/img/achievement-cup2.png" class="img-fluid" alt="Trophy 5">
+                    </div>
+                  </div>
+                </div>
+                <!-- Description Container -->
+                <div id="achievement-description" class="font-size-7 fw-light text-grey-dark lh-base mb-24">
+                  <div data-slide="1" class="description-item d-none">
+                    <h4>Asia Cup1</h4>
+                    <div class="achievement-description-item">
+                     
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                          Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                          Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                        </p>
+                      
+                        <button class="btn p-0 text-primary font-size-7 fw-600 mt-2" data-bs-toggle="modal" data-bs-target="#AwardDescModal">
+                          Read more
+                        </button>
+                      
+                    </div>
+
+                  </div>
+                  <div data-slide="2" class="description-item d-none">
+                    <h4>Asia Cup2</h4>
+                    <div class="achievement-description-item">
+                     
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                          Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                          Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                        </p>
+                      
+                        <button class="btn p-0 text-primary font-size-7 fw-600 mt-2" data-bs-toggle="modal" data-bs-target="#AwardDescModal">
+                          Read more
+                        </button>
+                      
+                    </div>
+
+                  </div>
+                  <div data-slide="3" class="description-item d-none">
+                    <h4>Asia Cup3</h4>
+                  <div class="achievement-description-item">
+                     
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                          Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                          Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                        </p>
+                      
+                        <button class="btn p-0 text-primary font-size-7 fw-600 mt-2" data-bs-toggle="modal" data-bs-target="#AwardDescModal">
+                          Read more
+                        </button>
+                      
+                    </div>
+
+
+                  </div>
+                  <div data-slide="4" class="description-item d-none">
+                    <h4>Asia Cup4</h4>
+                 <div class="achievement-description-item">
+                     
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                          Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                          Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                        </p>
+                      
+                        <button class="btn p-0 text-primary font-size-7 fw-600 mt-2" data-bs-toggle="modal" data-bs-target="#AwardDescModal">
+                          Read more
+                        </button>
+                      
+                    </div>
+
+                  </div>
+                  <div data-slide="5" class="description-item d-none">
+                    <h4>Asia Cup5</h4>
+                  <div class="achievement-description-item">
+                     
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                          Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                          Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor
+                        </p>
+                      
+                        <button class="btn p-0 text-primary font-size-7 fw-600 mt-2" data-bs-toggle="modal" data-bs-target="#AwardDescModal">
+                          Read more
+                        </button>
+                      
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="news-updates-section overflow-hidden  pt-3 pt-lg-5">
+      <div class="container-lg">
+        <div class="d-flex flex-column mb-3 mb-lg-5">
+          <div class="row ">
+            <div class="col-12">
+
+              <h1 class="fw-450 font-size-8 text-secondary mb-3 mb-lg-2 lh-base">/ NEWS & UPDATES</h1>
+            </div>
+
+          </div>
+          <div class="row align-items-end g-0">
+            <div class="col-12  col-xxl-4 col-xl-4 col-lg-8 col-md-8">
+              <div class="sec-title">
+                <h2 class="text-primary fw-700"><span class="outlined-text1">LATEST<br></span> NEWS &amp; UPDATES</h2>
+              </div>
+            </div>
+            <div
+              class="col-12 col-xxl-6 col-xl-6 col-lg-12 col-md-8  order-2 order-xl-1 order-xxl-1 order-lg-2 order-md-2 mb-3 mt-3 mb-xl-0 mt-xl-0">
+              <div class="news-and-updates-desc">
+                <p>Lorem ipsum dolor sit amet consectetur. Vestibulum metus
+                  non
+                  nunc. A
+                  diam quam et at viverra et.</p>
+              </div>
+
+            </div>
+            <div
+              class="col-12 order-2 col-xxl-2 col-xl-2 col-lg-4 col-md-4  order-xl-2 order-xxl-2 order-lg-1 order-md-1 justify-content-end d-flex">
+              <div class="d-flex flex-row gap-4 align-items-center">
+                <a href="#" class="text-primary fw-bold font-size-6 view-link">View all</a>
+                <div class="slider-btn-wrapper gap-1">
+                  <button class="custom-prev btn-news-pre btn" type="button">
+                    <img src="assets/images/icon/arrow-left.svg" alt="" width="9" height="14" class="img-fluid">
+                  </button>
+                  <button class="btn custom-next btn-news-next" type="button">
+                    <img src="assets/images/icon/arrow-right.svg" alt="" width="9" height="14" class="img-fluid">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-wrapper">
+          <div class="slider news-updates-slider">
+            <div class="item">
+              <a href="">
+                <div class="card text-black1">
+                  <figure class="mb-0">
+                    <img src="assets/images/img/news-updates-1.jpg" class="card-img-top" alt="news img 1">
+                  </figure>
+                  <div class="card-body">
+                    <div class="d-flex flex-row align-items-center gap-2 mb-4">
+
+                      <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="" width="14"
+                        height="14">
+
+                      <div class="font-size-9 fw-450 date fw-light">Saturday ,May 12th</div>
+                    </div>
+
+                    <h4 class="card-title mb-24 text-black text-clamp-3">Japan Books Ticket to AFC U17 Asian Cup™ 2025
+                      Finals, Seals
+                      Group F Top
+                      Spot </h4>
+
+                    <div class="d-flex  gap-1">
+                      <div class="btn-capsule rounded-pill">
+                        <h5 class="mb-0 text-center">REFEREES</h5>
+                      </div>
+                      <div class="rounded-pill btn-capsule">
+                        <h5 class="mb-0">FOOTBALL DEVELOPMENT</h5>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <div class="card text-black1">
+                  <figure class="mb-0">
+                    <img src="assets/images/img/news-updates-1.jpg" class="card-img-top" alt="news img 1">
+                  </figure>
+                  <div class="card-body">
+                    <div class="d-flex flex-row align-items-center gap-2 mb-4">
+
+                      <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="" width="14"
+                        height="14">
+
+                      <div class="font-size-9 fw-450 date fw-light">Saturday ,May 12th</div>
+                    </div>
+
+                    <h4 class="card-title mb-24 text-black text-clamp-3">Japan Books Ticket to AFC U17 Asian Cup™ 2025
+                      Finals, Seals
+                      Group F Top
+                      Spot </h4>
+
+                    <div class="d-flex  gap-1">
+                      <div class="btn-capsule rounded-pill">
+                        <h5 class="mb-0 text-center">REFEREES</h5>
+                      </div>
+                      <div class="rounded-pill btn-capsule">
+                        <h5 class="mb-0">FOOTBALL DEVELOPMENT</h5>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <div class="card text-black1">
+                  <figure class="mb-0">
+                    <img src="assets/images/img/news-updates-1.jpg" class="card-img-top" alt="news img 1">
+                  </figure>
+                  <div class="card-body">
+                    <div class="d-flex flex-row align-items-center gap-2 mb-4">
+
+                      <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="" width="14"
+                        height="14">
+
+                      <div class="font-size-9 fw-450 date fw-light">Saturday ,May 12th</div>
+                    </div>
+
+                    <h4 class="card-title mb-24 text-black text-clamp-3">Japan Books Ticket to AFC U17 Asian Cup™ 2025
+                      Finals, Seals
+                      Group F Top
+                      Spot </h4>
+
+                    <div class="d-flex  gap-1">
+                      <div class="btn-capsule rounded-pill">
+                        <h5 class="mb-0 text-center">REFEREES</h5>
+                      </div>
+                      <div class="rounded-pill btn-capsule">
+                        <h5 class="mb-0">FOOTBALL DEVELOPMENT</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <div class="card text-black1">
+                  <figure class="mb-0">
+                    <img src="assets/images/img/news-updates-1.jpg" class="card-img-top" alt="news img 1">
+                  </figure>
+                  <div class="card-body">
+                    <div class="d-flex flex-row align-items-center gap-2 mb-4">
+
+                      <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="" width="14"
+                        height="14">
+
+                      <div class="font-size-9 fw-450 date fw-light">Saturday ,May 12th</div>
+                    </div>
+
+                    <h4 class="card-title mb-24 text-black">Japan Books Ticket to AFC U17 Asian Cup™ 2025 Finals, Seals
+                      Group F Top
+                      Spot </h4>
+
+                    <div class="d-flex  gap-1">
+                      <div class="btn-capsule rounded-pill">
+                        <h5 class="mb-0 text-center">REFEREES</h5>
+                      </div>
+                      <div class="rounded-pill btn-capsule">
+                        <h5 class="mb-0">FOOTBALL DEVELOPMENT</h5>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <div class="card text-black1">
+                  <figure class="mb-0">
+                    <img src="assets/images/img/news-updates-1.jpg" class="card-img-top" alt="news img 1">
+                  </figure>
+                  <div class="card-body">
+                    <div class="d-flex flex-row align-items-center gap-2 mb-4">
+
+                      <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="" width="14"
+                        height="14">
+
+                      <div class="font-size-9 fw-450 date fw-light">Saturday ,May 12th</div>
+                    </div>
+
+                    <h4 class="card-title mb-24 text-black text-clamp-3">Japan Books Ticket to AFC U17 Asian Cup™ 2025
+                      Finals, Seals
+                      Group F Top
+                      Spot </h4>
+                    <div class="d-flex  gap-1">
+                      <div class="btn-capsule rounded-pill">
+                        <h5 class="mb-0 text-center">REFEREES</h5>
+                      </div>
+                      <div class="rounded-pill btn-capsule">
+                        <h5 class="mb-0">FOOTBALL DEVELOPMENT</h5>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <div class="modal fade squard-modal" id="squard-modal" tabindex="-1" aria-labelledby="squard-modal-label"
+    aria-hidden="true">
+
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="row g-0">
+          <div class="col-12 col-lg-4">
+            <figure class="modal-img h-100"><img src="assets/images/img/modal-footballer-img.png" alt=""
+                class="img-fluid h-100"></figure>
+
+          </div>
+          <div class="col-12 col-lg-8 position-relative p-32">
+            <div class="header">
+              <div class="heading width-95  ">
+                <h4 class="text-uppercase text-primary1 mb-8">Paula mora</h4>
+                <h5 class="text-maroon font-size-7 mb-20 text-uppercase">Goal player</h5>
+              </div>
+              <div>
+                <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+            </div>
+
+
+            <div class=" font-size-7 text-truncate-2 mb-23 lh-28 player-details-desc fw-300">Hi, I am Cornia Maccoy being the
+              goalkeeper for the
+              Qatar
+              Soccer Club must be incredibly exciting and demanding. You're at the heart of the action, making
+              split-second decisions to</div>
+            <div class="row mb-32">
+              <div class="col-12 col-lg-7">
+                <div class="game-details">
+                  <div class="match-played">
+                    <h4 class="text-maroon mb-0">26</h4>
+                    <p>match played</p>
+
+                  </div>
+                  <div class="goals  ">
+                    <h4 class="text-maroon mb-0">87</h4>
+                    <p>goals</p>
+                  </div>
+                  <div class="age ">
+                    <h4 class="text-maroon mb-0">24</h4>
+                    <p>age</p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="education mb-30 d-flex align-items-center gx-24">
+                  <div class="box-border">
+                    <div class="box bg-maroon">
+                      <img src="assets/images/icon/natiional-team-modal-icon.svg" alt="icon">
+                    </div>
+                  </div>
+                  <div>
+                    <p>
+                      Bachelor of Accounting and Executive Master of Business Administration
+                    </p>
+                  </div>
+                </div>
+                <div class="education mb-30 d-flex align-items-center gx-24">
+                  <div class="box-border">
+                    <div class="box bg-maroon">
+                      <img src="assets/images/icon/natiional-team-modal-icon1.png" alt="icon">
+                    </div>
+                  </div>
+
+                  <div>
+                    <p>
+                      Bachelor of Accounting and Executive Master of Business Administration
+                    </p>
+                  </div>
+                </div>
+                <div class="education d-flex align-items-center gx-24">
+                  <div class="box-border">
+                    <div class="box bg-maroon">
+                      <img src="assets/images/icon/natiional-team-modal-icon2.png" alt="icon">
+                    </div>
+                  </div>
+                  <div>
+                    <p>
+                      Bachelor of Accounting and Executive Master of Business Administration
+                    </p>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade AwardDescModal" id="AwardDescModal" tabindex="-1" aria-labelledby="AwardDescModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex ">
+          <h1 class="modal-title font-size-5 " id="exampleModalLabel">Asia Cup 1</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body font-size-9 text-primary fw-300 lh-28">
+          
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <footer class="footer-section">
+    <div class="container-lg">
+      <div class="row g-0">
+        <div class="col-xl-6 col-md-12 position-relative footer-bg">
+          <div class="footer-main">
+            <div class="mb-34">
+              <img src="assets/images/logo/footer-logo.svg" class="img-fluid footer-img-en" alt="">
+              <img src="assets/images/logo/footer-logo-ar.svg" class="img-fluid footer-img-ar" alt="">
+            </div>
+            <div class="footer-desc">
+              <p>Lorem ipsum dolor sit amet consectetur.<br>
+                Vestibulum
+                metus non </p>
+            </div>
+            <div class="footer-social-icons">
+              <ul class="d-flex gap-3">
+                <li>
+                  <a href="" class="banner-icon3 d-flex align-items-center justify-content-center">
+                    <i class="instagram-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="banner-icon3 d-flex align-items-center justify-content-center">
+                    <i class="youtube-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="banner-icon3 d-flex align-items-center justify-content-center">
+                    <i class="facebook-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="banner-icon3 d-flex align-items-center justify-content-center">
+                    <i class="twitter-icon"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-md-12 bdr-start">
+          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 ms-0 g-0">
+            <div class="col order-1 order-sm-2 order-md-1 bdr-end bdr-bottom">
+              <div class="footer-link-box1">
+                <h5 class="mb-32">QUICK LINKS</h5>
+                <div class="footer-links">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Competitions</a></li>
+                    <li><a href="#">Football in Qatar</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col order-2 order-sm-4 order-md-2 position-relative location-bdr">
+              <div class="footer-link-box2">
+                <h5 class="mb-32">LOCATION</h5>
+                <div class="footer-links-location">
+                  <p>Al-Bidda Tower, Corniche<br>
+                    Fax: 44754300<br>
+                    P.O.Box: 5333<br>
+                    Doha - Qatar
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col order-3 order-sm-2 order-md-3 bdr-end">
+              <div class="footer-link-box3">
+                <h5 class="mb-32">PRIVACY & POLICY</h5>
+                <div class="footer-links">
+                  <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <!-- <li><a href="#">Sitemap</a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col order-4 order-sm-3 order-md-4">
+              <div class="footer-link-box3">
+                <h5 class="mb-32">Contact Us</h5>
+                <div class="footer-links">
+                  <ul>
+                    <li><a href="#">Phone:44754444</a></li>
+                    <li><a href="#">Email:Info@Qfa.qa</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-brands-box bdr-top">
+      <div class="container-lg">
+        <div class="brand-box d-flex flex-wrap">
+          <div class="d-flex flex-column align-items-center gap-4 ">
+            <img src="assets/images/brands/qiib.svg" class="img-fluid" alt="">
+            <p class="text-white fw-light">Official Bank</p>
+          </div>
+          <div class=" d-flex flex-column align-items-center gap-4 ">
+            <img src="assets/images/brands/shell.svg" class="img-fluid" alt="">
+            <p class="text-white fw-light">Official Energy Partner</p>
+          </div>
+          <div class="d-flex flex-column align-items-center gap-4 ">
+            <img src="assets/images/brands/qatar-airways4.svg" class="img-fluid" alt="">
+            <p class="text-white fw-light">Official Carrier</p>
+          </div>
+          <div class=" d-flex flex-column align-items-center gap-4 ">
+            <img src="assets/images/brands/alkass.svg" class="img-fluid" alt="">
+            <p class="text-white fw-light">Official Broadcaster Partner</p>
+          </div>
+          <div class="d-flex flex-column align-items-center gap-4 ">
+            <img src="assets/images/brands/ooreedo.svg" class="img-fluid" alt="">
+            <p class="text-white fw-light">Official Telecommunication Partner</p>
+          </div>
+          <div class=" d-flex flex-column align-items-center gap-4 ">
+            <img src="assets/images/brands/aaa.svg" class="img-fluid" alt="">
+            <p class="text-white fw-light">Official Mobility Partner</p>
+          </div>
+          <div class=" d-flex flex-column align-items-center gap-4 ">
+            <img src="assets/images/brands/talabat.svg" class="img-fluid" alt="">
+            <p class="text-white fw-light">Official Delivery Partner</p>
+          </div>
+          <div class=" d-flex flex-column align-items-center gap-4 ">
+            <img src="assets/images/brands/look-company.svg" class="img-fluid" alt="">
+            <p class="text-white fw-light">Official Branding Partner</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-lg">
+        <p class=""> Powered by Qatar Football Association</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
+    crossorigin="anonymous"></script>
+  <!-- <script src="assets/js/header/header.js"></script> -->
+  <script type="importmap">
+    {
+        "imports": {
+            "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+            "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
+        }
+    }
+  </script>
+  <script type="module">
+    import { Popover } from 'bootstrap';
+    //- new Popover(document.getElementById('popoverButton'))
+
+  </script>
+  <script type="module">
+    import { Tooltip } from 'bootstrap';
+
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => {
+      new Tooltip(el);
+    });
+  </script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script>
+
+    $(document).ready(function () {
+      $('.news-updates-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+
+            }
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 650,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+      $('.btn-news-next').click(function (e) {
+        $('.news-updates-slider').slick('slickNext');
+      });
+
+      $('.btn-news-pre').click(function (e) {
+        $('.news-updates-slider').slick('slickPrev');
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      var $slider = $('.squard-box-slider-goalkeeper');
+      $slider.slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+
+          {
+            breakpoint: 556,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+
+        ]
+      });
+      $('.btn-squrd-gk-next').click(function (e) {
+        $('.squard-box-slider-goalkeeper').slick('slickNext');
+      });
+
+      $('.btn-squrd-gk-pre').click(function (e) {
+        $('.squard-box-slider-goalkeeper').slick('slickPrev');
+      });
+    });
+
+  </script>
+   <script>
+    $(document).ready(function () {
+      var $slider = $('.squard-box-slider-defender');
+      $slider.slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+
+          {
+            breakpoint: 556,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+
+        ]
+      });
+      $('.btn-squrd-def-next').click(function (e) {
+        $('.squard-box-slider-defender').slick('slickNext');
+      });
+
+      $('.btn-squrd-def-pre').click(function (e) {
+        $('.squard-box-slider-defender').slick('slickPrev');
+      });
+    });
+
+  </script>
+
+   <script>
+    $(document).ready(function () {
+      var $slider = $('.squard-box-slider-forwards');
+      $slider.slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+
+          {
+            breakpoint: 556,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+
+        ]
+      });
+      $('.btn-squrd-frw-next').click(function (e) {
+        $('.squard-box-slider-forwards').slick('slickNext');
+      });
+
+      $('.btn-squrd-frw-pre').click(function (e) {
+        $('.squard-box-slider-forwards').slick('slickPrev');
+      });
+    });
+
+  </script>
+  <script>
+   $(document).ready(function () {
+  var $descriptionSlider = $('.description-slider').slick({
+    slidesToShow: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.progress-bar-slider',
+    infinite: false  // This stops the looping
+  });
+
+  var $progressBarSlider = $('.progress-bar-slider').slick({
+    slidesToShow: 4,
+    asNavFor: '.description-slider',
+    dots: false,
+    arrows: false,
+    focusOnSelect: true,
+    infinite: false,  // This stops the looping
+    responsive: [
+      {
+        breakpoint: 1500,
+        settings: { slidesToShow: 4, infinite: false }
+      },
+      {
+        breakpoint: 992,
+        settings: { slidesToShow: 3, infinite: false }
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 2, infinite: false }
+      },
+      {
+        breakpoint: 576,
+        settings: { slidesToShow: 1, infinite: false }
+      }
+    ]
+  });
+
+  function updateArrows() {
+    var current = $descriptionSlider.slick('slickCurrentSlide');
+    var total = $descriptionSlider.slick('getSlick').slideCount;
+    
+    $('.btn-year-prev').prop('disabled', current === 0);
+    $('.btn-year-next').prop('disabled', current === total - 1);
+  }
+
+  $('.btn-year-next').click(function () {
+    $descriptionSlider.slick('slickNext');
+  });
+
+  $('.btn-year-prev').click(function () {
+    $descriptionSlider.slick('slickPrev');
+  });
+  $descriptionSlider.on('afterChange', updateArrows);
+  updateArrows();
+});
+  </script>
+  <!-- <script>
+    $(document).ready(function () {
+      $('.center-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        arrows: false,
+        dots: false,
+        centerPadding: '20px',
+        infinite: true,
+        autoplaySpeed: 2000,
+        autoplay: false,
+        prevArrow: '.custom-prev',
+        nextArrow: '.custom-next',
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+      $('.btn-center-next').click(function (e) {
+        $('.center-slider').slick('slickNext');
+      });
+
+      $('.btn-center-pre').click(function (e) {
+        $('.center-slider').slick('slickPrev');
+      });
+      // Update description on slide change
+      $('.center-slider').on('afterChange', function (event, slick, currentSlide) {
+        const currentSlideIndex = currentSlide + 1; // Slick slides are 0-indexed
+        $('.description-item').addClass('d-none'); // Hide all descriptions
+        $(`#achievement-description [data-slide="${currentSlideIndex}"]`).removeClass('d-none'); // Show the current description
+      });
+
+      // Trigger initial description display for the first slide
+      $('#achievement-description [data-slide="1"]').removeClass('d-none');
+    });
+
+  </script> -->
+  <script>
+    $(document).ready(function () {
+      $('.center-slider').slick({
+        // slidesToShow: 3,
+         variableWidth: true, 
+        slidesToScroll: 1,
+        centerMode: true,
+        arrows: false,
+        dots: false,
+        centerPadding: '20px',
+        infinite: true,
+        autoplaySpeed: 2000,
+        autoplay: false,
+        prevArrow: '.custom-prev',
+        nextArrow: '.custom-next',
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+      $('.btn-center-next').click(function (e) {
+        $('.center-slider').slick('slickNext');
+      });
+
+      $('.btn-center-pre').click(function (e) {
+        $('.center-slider').slick('slickPrev');
+      });
+      // Update description on slide change
+      $('.center-slider').on('afterChange', function (event, slick, currentSlide) {
+        const currentSlideIndex = currentSlide + 1; // Slick slides are 0-indexed
+        $('.description-item').addClass('d-none'); // Hide all descriptions
+        $(`#achievement-description [data-slide="${currentSlideIndex}"]`).removeClass('d-none'); // Show the current description
+      });
+
+      // Trigger initial description display for the first slide
+      $('#achievement-description [data-slide="1"]').removeClass('d-none');
+    });
+
+  </script>
+
+</body>
+
+
+</html>

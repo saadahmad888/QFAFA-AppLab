@@ -1,0 +1,94 @@
+.our-coach-section {
+    // background: url('../images/img/our-coach-bg.jpg') center no-repeat;
+    width:100%;
+    height:100%;
+    position: relative;
+    background-size: cover;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        inset-inline-start: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(#1D1D1B, 0.8), rgba(#1D1D1B, 0.8));
+        pointer-events: none;
+        z-index:1
+    }
+
+    .content {
+        position:relative;
+        z-index: 2;
+        color:$white;
+         @include rfs(100px,padding-inline-end);
+    }
+    .coach-image {
+        position:relative;
+        z-index: 2;
+        @include media-breakpoint-up(lg) {
+          padding-inline-end: 25px;
+        }
+        img {
+            border-radius: 16px;
+        }
+     
+    }
+    .text-transparent {
+    
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+      }
+      
+}
+.content-wrapper {
+    max-height: 100px; 
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.3s ease;
+  }
+  
+  .content-wrapper.expanded {
+    max-height: 1000px; 
+  }
+  
+  .read-more-btn {
+    display: none; 
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .read-more-btn {
+      display: inline-block; 
+    }
+  }
+  .coach-block {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      margin: 0 20px;
+    }
+
+    .content {
+      width: calc(60% + 150px);
+      padding-inline-start: 6%;
+
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
+      }
+    }
+  }

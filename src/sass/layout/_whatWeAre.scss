@@ -1,0 +1,112 @@
+.what-we-are-section {
+    background-color: $white;
+
+    .section-one {
+        padding: 55px 100px;
+    }
+
+    .section-two {
+        padding: 65px 100px;
+    }
+
+    .section-one,
+    .section-two {
+        background-size: cover;
+
+        @include media-breakpoint-down(lg) {
+            padding: 20px 40px;
+        }
+    }
+}
+
+.what-we-are {
+    overflow: hidden;
+    max-width: 100%;
+    height: 100%;
+
+
+    .section-start {
+        display: block;
+        width: 50%;
+        // height: 100%;
+        position: relative;
+        z-index: 1;
+        padding-block:82px;
+
+        @include media-breakpoint-down(lg){
+            width: 100%;
+            padding: 30px 20px;
+        }
+
+        .background-span-start {
+            position:absolute;
+            height: 100%;
+            top: 0;
+            display: block;
+            width: 50vw;
+            inset-inline-end: 0;
+            z-index: 2;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include media-breakpoint-down(lg){
+                width: 100%;
+            }
+            [dir="rtl"] &  {
+                transform: scaleX(-1);
+            }
+        }
+    }
+
+    .section-end {
+        display: block;
+        width: 50%;
+        // height: 100%;
+        position: relative;
+        z-index: 1;
+        padding-block:115px 127px;
+        padding-inline:80px;
+        @include media-breakpoint-down(lg){
+            width: 100%;
+            padding: 30px 20px;
+        }
+
+        &::before{
+            content: "";
+            position: absolute; 
+            inset-inline-start: 0;
+            top: 0;
+            background: rgb(53,107,122);
+            // background: linear-gradient(90deg, rgba(53,107,122,1) 0%, rgba(255,255,255,0) 100%);
+             background: linear-gradient(90deg, rgba(156,132,91,1) 0%,rgba(66, 57, 37, 0) 100%);
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            [dir=rtl] & {
+                transform: scale(-1);
+            }
+        }
+        .background-span-end {
+            position:absolute;
+            height: 100%;
+            top: 0;
+            display: block;
+            width: 50vw;
+            inset-inline-start: 0;
+            z-index: 2;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include media-breakpoint-down(lg){
+                width: 100%;
+            }
+        }
+    }
+    .content {
+        position:relative;
+        z-index:5;
+    }
+    .text-transparent {
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+    }
+
+}

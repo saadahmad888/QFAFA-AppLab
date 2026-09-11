@@ -1,0 +1,264 @@
+.contact-box {
+    border: 1px solid #E5DFE4;
+    background-color: #FBFBFB;
+    padding: 20px;
+
+    @include media-breakpoint-up(md) {
+        padding: 32px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 64px;
+    }
+
+    border-radius: 12px;
+    .contact-us-wrapper {
+        margin-inline-start: -28px;
+        margin-inline-end: -28px;
+    }
+    .padding-inline-28 {
+        padding-inline: 28px;
+    }
+
+    
+    h3 {
+        word-spacing: 2px;
+        color: $primary;
+        margin-bottom: 32px;
+        // text-align: center;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 28px;
+        color: $grey-dark;
+
+        @include media-breakpoint-down(md) {
+            font-size: 16px;
+        }
+    }
+
+    .form-control {
+        background-color: $white;
+        color:$grey-dark;
+        border-color: #E5DFE4;
+        resize:none;
+
+        @include media-breakpoint-up (xl) {
+            padding-block: 18px 15px;
+            padding-inline: 24px;
+        }
+
+        border-radius: 12px;
+
+
+    }
+
+    /* For Chrome/Opera/Safari */
+    ::-webkit-input-placeholder {
+        @include rfs(20px, font-size);
+        font-weight: 300;
+        color: #1D1D1B;
+        opacity: 0.5;
+
+        @include media-breakpoint-down(xl) {
+            font-size: 16px;
+        }
+
+    }
+
+    /* For Firefox 19+ */
+    ::-moz-placeholder {
+        @include rfs(20px, font-size);
+        font-weight: 300;
+        color: #1D1D1B;
+        opacity: 0.5;
+
+        @include media-breakpoint-down(xl) {
+            font-size: 16px;
+        }
+    }
+
+    /* For Firefox 18- */
+    :-ms-input-placeholder {
+        @include rfs(20px, font-size);
+        font-weight: 300;
+        color: #1D1D1B;
+        opacity: 0.5;
+
+        @include media-breakpoint-down(xl) {
+            font-size: 16px;
+        }
+    }
+
+    /* For Internet Explorer 10+ */
+    ::-ms-input-placeholder {
+        @include rfs(20px, font-size);
+        font-weight: 300;
+        color: #1D1D1B;
+        opacity: 0.5;
+
+        @include media-breakpoint-down(xl) {
+            font-size: 16px;
+        }
+    }
+
+    .form-label {
+        font-size: 16px;
+        color: $black;
+        font-weight: 300;
+        margin-bottom: 16px;
+    }
+
+    .btn-custom {
+        background-color: $primary;
+        color: $white;
+        font-weight: 700;
+        font-size: 18px;
+
+        @include media-breakpoint-up (xl) {
+            padding-inline: 51px;
+            padding-block: 14px;
+        }
+
+        border-radius: 12px;
+    }
+
+    .contact-end {
+        padding-inline: 30px;
+        padding-block: 30px 42px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 41px;
+        border: 1px solid #E5DFE4;
+        border-radius: 12px;
+    }
+
+
+    .map-container {
+        position: relative;
+        padding-bottom: 100%;
+        .button-wrapper {
+            padding:8px ;
+            background-color: #FBFBFB;
+            border-radius: 12px;
+            position:absolute;
+            top:14px;
+            inset-inline-start: 14px;
+        }
+    }
+
+    .map-container #map{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        border-radius: 7px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    .font-size-5 {
+        @media (max-width:1700px){
+            font-size: 18px;
+        }
+    }
+
+}
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 56px;
+    row-gap: 20px;
+    @media (min-width:1200px) and (max-width:1400px) {
+        flex-direction: column;
+    }
+    @media (max-width:700px){
+        flex-direction: column;
+    }
+    @media (min-width:1200px) and (max-width:1700px) {
+        column-gap: 30px;
+    }
+
+    .phone-box,
+    .pobox-box,
+    .fax-box,
+    .email-box {
+        display: flex;
+        column-gap: 16px;
+        align-items: center;
+
+        p {
+            font-size: 16px;
+        }
+        h5 {
+            color:$primary;
+        }
+
+    }
+
+    .phone {
+        -webkit-mask: url('../images/icon/contact-us-phone.svg') no-repeat center;  
+        [dir=rtl] & {
+            transform: scaleX(-1);
+        }   
+    }
+
+    .fax {
+        -webkit-mask: url('../images/icon/contact-us-fax.svg') no-repeat center;
+    }
+
+    .pobox {
+        -webkit-mask: url('../images/icon/contact-us-location.svg') no-repeat center;
+    }
+    .email {
+        -webkit-mask: url('../images/icon/contact-us-email.svg') no-repeat center;
+    }
+    
+    .phone,
+    .fax,
+    .pobox,
+    .email {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        background-color: #978CA2;
+        @media (min-width:1200px) and (max-width:1700px) {
+            -webkit-mask-size: 18px;
+        }
+        @include media-breakpoint-down(xl) {
+            -webkit-mask-size: 16px;
+        }
+        
+        
+    }
+
+}
+
+.circle {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #978CA2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (min-width:1200px) and (max-width:1700px) {
+        width: 35px;
+        height: 35px;
+    }
+    @include media-breakpoint-down(xl) {
+        width: 36px;
+        height: 36px;
+    }
+}

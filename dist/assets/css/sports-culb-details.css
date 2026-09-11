@@ -1,0 +1,155 @@
+.btn-primary {
+  background: #2F1A45;
+  border-color: #2F1A45;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background: rgba(47, 26, 69, 0.8);
+  border-color: #2F1A45;
+}
+
+.text-primary {
+  color: #2F1A45 !important;
+}
+
+.text-primary1 {
+  color: #16012C !important;
+}
+
+.text-purple {
+  color: #8E2BAF !important;
+}
+
+.btn-secondary {
+  background: #F26522;
+  border-color: #F26522;
+}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background: rgba(242, 101, 34, 0.8);
+  border-color: #F26522;
+}
+
+.text-secondary {
+  color: #F26522 !important;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.bg-black1 {
+  background: #001D29 !important;
+}
+
+.text-black1 {
+  color: #001D29 !important;
+}
+
+.bg-black2 {
+  background: #143642 !important;
+}
+
+.text-black2 {
+  color: #143642 !important;
+}
+
+.btn-white {
+  background: #fff;
+  border-color: #fff;
+}
+.btn-white:hover, .btn-white:focus, .btn-white:active {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: #fff;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.bg-maroon {
+  background: #8C0321 !important;
+}
+
+.text-maroon {
+  color: #8C0321 !important;
+}
+
+.text-pink {
+  color: #F4EAF7 !important;
+}
+
+.text-pink-dark {
+  color: #F1E5F1 !important;
+}
+
+.text-grey {
+  color: #899AA0 !important;
+}
+
+.text-grey1 {
+  color: #B8C3C6 !important;
+}
+
+.text-grey-dark {
+  color: #6D5F7D !important;
+}
+
+.bg-lightgrey1 {
+  background: #F4F1F3 !important;
+}
+
+.text-green {
+  color: #15AA9C !important;
+}
+
+.text-red {
+  color: #C6002F !important;
+}
+
+.inner-banner {
+  background-color: #730008;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  min-height: 161px;
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  .inner-banner {
+    min-height: 140px;
+  }
+}
+.inner-banner h2 {
+  bottom: 40px;
+  margin-bottom: 0;
+  z-index: 2;
+}
+
+.ball-img {
+  position: absolute;
+  inset-inline-end: 5%;
+  top: -100px;
+  opacity: 0;
+  visibility: hidden;
+  transform: rotate(0deg) scale(0.5);
+  transition: opacity 1s ease, transform 2s ease, top 3s ease;
+}
+
+.ball-img.loaded {
+  opacity: 1;
+  visibility: visible;
+  top: 70px;
+  transform: rotate(500deg) scale(0.5);
+}
+
+.ball-img.reverse {
+  transform: rotate(-25deg) scale(-3);
+}
+[dir=rtl] .ball-img.reverse {
+  transform: rotate(25deg) scale(3);
+}
+
+.sports-detail-section {
+  padding: 64px;
+  border: 1px solid #EDE9EB;
+  border-radius: 12px;
+}

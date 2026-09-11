@@ -1,0 +1,293 @@
+.banner-holder-section {
+    max-width: 100%;
+    overflow: hidden;
+    @media (min-width: 1650px) {
+    height: calc(100vh - 194px);
+}
+    .banner-item {
+        position: relative;
+
+
+    }
+
+    .banner-image img {
+        width: 100%;
+
+        // @include media-breakpoint-up (lg) {
+        //     height:(calc(100vh - 190px));
+        //     object-fit:cover;
+        // }
+        @media (min-width: 1600px) {
+            // height:(calc(100vh - 190px));
+            height: 100vh;
+            object-fit: cover;
+        }
+
+    }
+
+
+    .banner-content {
+        width: 100%;
+        @media (min-width: 1650px) {
+             margin-bottom:100px;
+        }
+       
+        bottom:16%;
+        @media (min-width: 1200px) and (max-width:1650px) {
+
+            h1 {
+                font-size:50px;
+                line-height: 50px;
+            }
+              margin-bottom:0px;
+              bottom:33%;
+            }
+
+        // @include media-breakpoint-down(xxl) {
+        //     width: 100%;
+        //     margin-bottom:0px;
+        //     bottom:0;
+        // }
+        @include media-breakpoint-down(lg) {
+            width: 90%;
+            margin-bottom:5px;
+        }
+
+        position: absolute;
+
+        p {
+            @media (min-width: 567px) and (max-width:1024px) {
+              font-size: 14px!important;
+            }
+           
+
+        }
+    }
+
+    .slides-numbers {
+        margin-bottom: 10px;
+        color: $white;
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 0px;
+        }
+        @media (min-width: 567px) and (max-width:1024px) {
+            margin-bottom: 5px;
+          }
+    }
+
+    h4 {
+        span {
+            color: rgba(#fff, 0.3)
+        }
+    }
+
+    h1 {
+        color: $white;
+
+        span {
+            color: $yellow;
+        }
+    }
+
+    p {
+        color: $white;
+    }
+
+    ul li {
+        color: $white;
+    }
+
+    .banner-icon1 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $white;
+        border: white 1px solid;
+        padding: 5px;
+          @include media-breakpoint-down(lg) {
+            max-width: 20px;
+            max-height: 20px;
+            img {
+                width:12px;
+            }
+        }
+
+        span {
+            display: inline-block;
+            width: 100%;
+        }
+
+        // img {
+        //     [dir=rtl] & {
+        //         transform: scaleX(-1);
+        //     }
+        // }
+    }
+
+    .banner-icon2 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $maroon;
+        border: white 1px solid;
+        padding: 5px;
+          @include media-breakpoint-down(lg) {
+            max-width: 20px;
+            max-height: 20px; 
+            img {
+                width:12px;
+            }
+        }
+    }
+
+
+    .lines {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+
+        .line {
+            position: absolute;
+            z-index: 1;
+            width: 1px;
+            height: 100%;
+            top: 0;
+            inset-inline-start: 5%;
+            background: rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+        }
+
+        .line:nth-child(2) {
+            margin-inline-start: 20%;
+        }
+
+        .line:nth-child(3) {
+            margin-inline-start: 44%;
+        }
+
+        .line:nth-child(4) {
+            margin-inline-start: 68.5%;
+        }
+
+        .line:nth-child(5) {
+            margin-inline-start: 90%;
+        }
+
+    }
+}
+
+.banner-social-icons {
+    position: absolute;
+    inset-inline-end: 5%;
+    top: 40px;
+    z-index: 10;
+
+@media (min-width:1400px) and (max-width:1650px){
+    top: 40%;
+    }
+    @include media-breakpoint-down (lg) {
+        top:auto;
+        bottom:10%;
+    }
+
+    .banner-icon3 {
+        max-width: 36px;
+        max-height: 36px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: white 1px solid;
+        padding: 8px;
+        align-items: center;
+        margin: 10px;
+           @include media-breakpoint-down(lg) {
+            max-width: 30px;
+            max-height: 30px;
+            margin: 5px;
+            padding: 0px;
+        }
+
+
+        &:hover {
+            background-color: $white;
+
+            .instagram-icon,
+            .youtube-icon,
+            .facebook-icon,
+            .twitter-icon {
+                background: $maroon;
+            }
+        }
+    }
+
+    .instagram-icon,
+    .youtube-icon,
+    .facebook-icon,
+    .twitter-icon {
+        display: inline-block;
+        background: $white;
+        width: 16px;
+        height: 16px;
+
+        // [dir=rtl] & {
+        //     transform: scaleX(-1);
+        // }
+       
+    }
+
+    .instagram-icon {
+        -webkit-mask: url('../images/icon/home-banner/instagram-icon.png') no-repeat center;
+         @include media-breakpoint-down(lg) {
+            mask-size: 8px;
+        }
+    }
+
+    .youtube-icon {
+        -webkit-mask: url('../images/icon/home-banner/youtube-icon.png') no-repeat center;
+         @include media-breakpoint-down(lg) {
+            mask-size: 8px;
+        }
+    }
+
+    .facebook-icon {
+        -webkit-mask: url('../images/icon/home-banner/facebook-icon.png') no-repeat center;
+         @include media-breakpoint-down(lg) {
+            mask-size: 5px;
+        }
+    }
+
+    .twitter-icon {
+        -webkit-mask: url('../images/icon/home-banner/twitter-icon.png') no-repeat center;
+         @include media-breakpoint-down(lg) {
+            mask-size: 8px;
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .banner-content{
+        .mb-32 {
+            margin-bottom: 10px!important;
+        }
+    }
+   
+ }
+
+@include media-breakpoint-down(sm) {
+    .heading-banner {
+
+        h1 {
+            font-size: 20px !important;
+        }
+    }
+}
+// @include media-breakpoint-down(xxl) {
+//     .banner-content{
+//         h1 {
+//             font-size: 50px;
+//             line-height: 50px;
+//         }
+      
+//     }
+   
+//  }

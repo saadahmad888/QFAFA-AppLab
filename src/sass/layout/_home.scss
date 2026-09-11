@@ -1,0 +1,46 @@
+.marque-section {
+    padding: 15px 0;
+    border-bottom: 1px $primary solid;
+
+    @include media-breakpoint-down(sm) {
+        padding: 5px 0;
+        font-size: 13px;
+    }
+
+    .item {
+        img {
+            padding-inline-end: 10px;
+            [dir="rtl"] & {
+                padding-inline-start: 10px;
+                // transform: scaleX(-1);
+            }
+
+            @include media-breakpoint-down(lg) {
+                width: 30px;
+                [dir="rtl"] & {
+                    width: 40px;
+                }
+            }
+            @media (min-width: 1200px) and (max-width: 1650px) {
+                width: 30px;
+            }
+        }
+
+        span {
+            display: block;
+        }
+    }
+}
+.view-all-link {
+    background-color: transparent;
+    color: $white;
+}
+// .points-align{
+//     padding: 12px 16px;
+//       [dir=rtl] & {
+
+//            padding: 7px 16px;
+//             }
+// }
+
+

@@ -1,0 +1,75 @@
+.obligations-programs-section {
+    .obligations,.programs {
+      color:  $grey-dark;
+            background-color:white;
+            border-start-end-radius: 0px;
+            border-end-end-radius: 0px;
+            border-inline-start: 4px solid transparent;
+            margin-bottom: 32px;
+        &:hover {
+            background-color: #EAE8EC;
+            padding: 24px 48px;
+            border-start-end-radius: 12px;
+            border-end-end-radius: 12px;
+            border-inline-start: 4px solid #443158;
+            margin-bottom: 32px;
+        }
+    }
+ a {
+    text-decoration: none;
+ }
+    // .programs {
+    //     padding: 24px 48px;
+    //     &:hover {
+    //         background-color: #EAE8EC;
+    //         padding: 24px 48px;
+    //         border-start-end-radius: 12px;
+    //         border-end-end-radius: 12px;
+    //         border-inline-start: 4px solid #443158;
+    //     }
+    // }
+
+    p {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 300;
+        color: $grey-dark;
+        @include media-breakpoint-down(sm) {
+            font-size: 16px;
+          }
+    }
+
+    h4 {
+        margin-bottom: 12px;
+    }
+
+    li {
+        display: inline-flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 28.5px;
+        line-height: 28px;
+        color:$grey-dark;
+        @include media-breakpoint-down(sm) {
+            font-size: 16px;
+          }
+
+        &:last-child {
+            margin-bottom: 0;
+            
+        }
+
+        &:before {
+            content: url('../images/icon/vision-page-smallfootball-icon.svg');
+            border-radius: 50%;
+            margin-inline-end: 24px;
+            background-color: #143642;
+            line-height: 0;
+        }
+    }
+
+    .custom-gap {
+        --bs-gutter-x: 48px;
+    }
+}

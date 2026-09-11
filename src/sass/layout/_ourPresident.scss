@@ -1,0 +1,100 @@
+.meet-president-box {
+   
+    border: 1px solid #EAE8EC;
+    border-radius: 12px;
+    overflow: hidden;
+
+    figure {
+        height:100%;
+        
+        img {
+            // background-color: #EDE9EB;
+            object-fit: cover;
+            width:100%;
+            height:100%;
+        }
+    }
+
+    .description {
+        padding: 56px;
+        @include media-breakpoint-down(xxl) {
+            padding: 20px; 
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 5px; 
+        }
+      p {
+    margin-bottom: 56px;
+    font-size: 20px;
+
+    @media (max-width: 1700px) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 1199.98px) {
+      margin-bottom: 20px;
+    }
+
+    line-height: 1.5 !important;
+    font-weight: 300;
+    color: $grey-dark;
+    font-size: 16px;
+
+    @media (max-width: 767.98px) {
+      font-size: 16px;
+    }
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+    }
+
+    h4 {
+        color: #978CA2;
+    }
+
+    .details-box {
+        box-shadow: -24px 0px 48px 0px #0000000F;
+        padding-inline: 32px;
+        padding-block: 30px 20px;
+        border-start-start-radius:12px;
+        border-end-start-radius:12px;
+        @include media-breakpoint-down(xl) {
+            padding-inline: 10px;
+            padding-block: 10px 10px;
+        }
+        [dir=rtl] & {
+            box-shadow: 24px 0px 48px 0px #0000000F;
+        }
+
+    }
+
+    .bdr-box {
+        border: 4px solid rgba(20, 54, 66, 0.16);
+        width: 69px;
+        border-radius: 10px;
+    }
+
+    .box1 {
+        width: 61px;
+        height: 61px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+
+    }
+
+    @include media-breakpoint-down (lg) {
+        .box1 {
+            width: 40px;
+            height: 40px;
+            padding:5px;
+        }
+        .bdr-box {
+            width: 48px;
+        }
+
+    }
+}

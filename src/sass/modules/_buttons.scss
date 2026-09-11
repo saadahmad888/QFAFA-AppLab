@@ -1,0 +1,93 @@
+.btn-more {
+    display: inline-flex;
+    padding-block: 0;
+    padding-inline-end: 0;
+    padding-inline-start: 20px;
+    align-items: center;
+    font-size: 18px;
+    @include media-breakpoint-down(lg) {
+        font-size: 15px; 
+        
+    }
+    line-height: 20px;
+
+    font-weight: bold;
+    span {
+        display: inline-block;
+        padding-inline-end: 20px;
+    }
+    i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-inline-start: 1px solid;
+        @include size(46px);
+        &:before {
+            content: '';
+            display: block;
+            @include size(100%);
+            -webkit-mask: url('../images/icon/kwn-btn-arrow-end.svg') no-repeat center;
+            -webkit-mask-size: 10px;
+            // background-color: $primary;
+            background-color: $black;
+            [dir=rtl] & {
+                transform: scale(-1);
+            }
+        }
+    }
+    &:hover{
+        background: $yellow !important;
+    }
+}
+
+.primary-link{
+    letter-spacing: 0.2px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.view-link{
+    text-decoration: underline !important;
+    text-decoration-color: $primary;
+    @include hoverAnim;
+    &:hover{
+        color: $red !important;
+    }
+}
+.view-link-table{  text-decoration: underline !important;
+    text-decoration-color: $primary;
+    margin-inline-start: auto;
+    display: block;
+    max-width: 62px;
+    margin-inline-end: 32px;
+    margin-bottom: 20px;
+    @include hoverAnim;
+     @include media-breakpoint-down(md) {
+        margin-bottom: 8px;
+   
+    }
+    [dir=rtl] & {
+        max-width: 80px;
+    }
+    }
+.view-link-ranking{
+    text-decoration: underline !important;
+    text-decoration-color: $primary;
+    margin-inline-start: auto;
+    display: block;
+    max-width: 62px;
+    margin-inline-end: 32px;
+    margin-bottom: 30px;
+  color: transparent;
+}
+.btn-more {
+    &:hover{
+        background: $yellow;
+    }
+}
+.learn-more-link{
+    letter-spacing: 1px;
+    @include hoverAnim;
+    &:hover{
+        color: $yellow !important;
+    }
+}

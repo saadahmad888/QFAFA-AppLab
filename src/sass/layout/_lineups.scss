@@ -1,0 +1,44 @@
+.lineup-section {
+    .main-table {
+        margin-bottom: 0;
+
+        td,
+        th {
+            padding-inline: 64px;
+            @include media-breakpoint-down(lg) {
+                padding-inline: 20px;
+            }
+        }
+
+        tbody {
+            // border: 1px solid #DED7DC;
+
+            tr:not(:last-child) {
+                border-bottom: transparent;
+
+            }
+
+
+            .player-border {
+                border-bottom: 1px solid #E5DFE4;
+            }
+        }
+    }
+
+    .players,
+    .headcoach,
+    .substitutions {
+        margin-top: 64px;
+        margin-bottom: 32px;
+
+        @include media-breakpoint-down (xl) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    tbody tr:last-child td {
+        padding-bottom: 64px; 
+    }
+}
+
+    

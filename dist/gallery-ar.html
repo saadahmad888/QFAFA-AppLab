@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="ar"  dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>QFA | Gallery</title>
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/fancybox.css">
+
+  <link rel="stylesheet" href="assets/css/app.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="assets/css/gallery.css" media="print" onload="this.media='all'">
+</head>
+<body>
+  <div class="header-wrapper">
+    <header class="header ">
+      <div class="main-header">
+        <div class="container-lg">
+          <div class="fw-450">
+            <div class="row align-items-center">
+              <div class="col">
+                <a class="navbar-brand" href="#">
+                  <img src="assets/images/logo/header-logo.svg" alt="Logo" class="header-img img-fluid">
+                </a>
+              </div>
+              <div class="col-auto ">
+                <div class="d-flex justify-content-end align-items-center">
+                  <ul class="d-flex align-items-center gx-32">
+                    <li class="d-none d-lg-block">
+                      <div id="search-wrapper">
+                        <i class="header-search"></i>
+                        <input type="text" id="search" placeholder="Search">
+                      </div>
+                    </li>
+                    <li>
+                      <button class="btn dropdown-toggle ctm-btn header-content font-size-8 lang-btn" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/images/icon/header/lang-header-icon.svg" class="img-fluid" alt="lang-icon"
+                          width="36" height="36"><span>AR</span>
+                      </button>
+                    </li>
+                    <li>
+                      <div class="ticket d-none d-lg-flex">
+                        <a href="#">
+                          <svg width="133" height="45" viewBox="0 0 133 45" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6 0.5C2.68629 0.5 0 3.18629 0 6.5V14.0123C3.57602 15.2479 6.13804 18.5815 6.13804 22.5C6.13804 26.4185 3.57602 29.7521 0 30.9877V38.5C0 41.8137 2.68629 44.5 6 44.5H127C130.314 44.5 133 41.8137 133 38.5V30.988C129.424 29.7525 126.861 26.4187 126.861 22.5C126.861 18.5813 129.424 15.2475 133 14.012V6.5C133 3.18629 130.314 0.5 127 0.5H6Z"
+                              fill="#ffffff" />
+                            <path
+                              d="M38.5 23C38.5 21.62 39.62 20.5 41 20.5V19.5C41 15.5 40 14.5 36 14.5H26C22 14.5 21 15.5 21 19.5V20C22.38 20 23.5 21.12 23.5 22.5C23.5 23.88 22.38 25 21 25V25.5C21 29.5 22 30.5 26 30.5H36C40 30.5 41 29.5 41 25.5C39.62 25.5 38.5 24.38 38.5 23Z"
+                              stroke="#8C0321" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M29 14.5L29 30.5" stroke="#8C0321" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-dasharray="5 5" />
+                            <line x1="54" y1="1.5" x2="54" y2="43.5" stroke="#8C0321" stroke-width="2"
+                              stroke-linecap="round" stroke-dasharray="4 4" />
+                            <path
+                              d="M70.128 17.858H67.806V29H65.466V17.858H63.144L63.198 15.5H70.092L70.128 17.858ZM71.2493 29V15.5H73.5893V29H71.2493ZM81.2984 15.77L81.0824 18.002C80.7044 17.786 80.0924 17.642 79.5524 17.642C78.0584 17.642 77.5004 18.524 77.5004 22.142C77.5004 25.994 78.0764 26.93 79.6244 26.93C80.2004 26.93 80.7044 26.786 81.1364 26.534L81.3344 28.73C80.8484 29.018 79.9664 29.216 79.2464 29.216C76.3844 29.216 75.1064 27.308 75.1064 22.124C75.1064 17.246 76.4204 15.284 79.2824 15.284C79.9304 15.284 80.8484 15.5 81.2984 15.77ZM90.1104 29H87.5364L85.4664 23.078H84.7644V29H82.4784V15.5H84.7464V21.044H85.5204L87.5364 15.5H90.0204L87.6264 21.98L90.1104 29ZM93.4128 26.696H97.1748L97.1208 29H91.1268V15.5H96.9408L96.9768 17.84H93.4128V20.9H96.4008V23.114H93.4128V26.696ZM104.651 17.858H102.329V29H99.9894V17.858H97.6674L97.7214 15.5H104.615L104.651 17.858ZM111.426 25.166C111.426 27.758 110.202 29.216 107.916 29.216C106.908 29.216 105.9 28.91 105.18 28.388L105.522 26.192C106.206 26.642 106.926 26.912 107.754 26.912C108.762 26.912 109.212 26.372 109.212 25.274C109.212 22.862 105.198 23.222 105.198 19.154C105.198 16.868 106.386 15.302 108.654 15.302C109.59 15.302 110.418 15.5 111.084 15.878L110.814 18.074C110.202 17.804 109.536 17.66 108.906 17.66C107.79 17.66 107.412 18.218 107.412 19.082C107.412 21.404 111.426 21.098 111.426 25.166Z"
+                              fill="#8C0321" />
+                          </svg>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex align-items-center">
+                        
+                        <label class="menu-btn d-block d-sm-flex d-md-flex d-lg-none d-xl-none"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                        aria-controls="offcanvasExample">
+                          <div class="">
+                            <div class="menu"></div>
+                            <div class="menu"></div>
+                          </div>
+                      </label>
+                      </div>
+                     
+                    </li>
+                  </ul>
+
+                  <!-- <button class="navbar-toggler d-block d-sm-flex d-md-flex d-lg-none d-xl-none ctm-burger-menu"
+                    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">              
+                  </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="ctm-nav navbar navbar-expand-lg bg-primary">
+        <div class="container-lg">
+          
+          <div class="offcanvas offcanvas-end menutoggle" tabindex="-1" id="offcanvasExample" 
+            aria-labelledby="offcanvasExampleLabel" >
+            <div class="offcanvas-header">
+              <!-- <a class="navbar-brand" href="#">
+                <img src="assets/images/logo/logo-icon2.svg" alt="Logo" class=" img-fluid">
+              </a> -->
+              <div class="d-block d-lg-none mt-3" >
+                <div id="search-wrapper">
+
+                  <i class="header-search"></i>
+  
+                  <input type="text" id="search" placeholder="Search">
+                </div>
+              </div>
+              
+              <button type="button" class="btn-close img-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="row">
+                <div class="col px-0">
+                  <ul class="navbar-nav ">
+                    <!-- <li class="d-block d-lg-none mb-2 ">
+                      <div id="search-wrapper">
+
+                        <i class="header-search"></i>
+
+                        <input type="text" id="search" placeholder="Search">
+                      </div>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="">National Teams</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-wrap">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">
+                              <span>FIRST NATIONAL TEAM</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>U-23 NATIONAL TEAM</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">
+                              <span>U-20 NATIONAL TEAM</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">
+                              <span>U-17 NATIONAL TEAM</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                      <a class="nav-link dropdown-toggle " href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="">Competitions</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-wrap competitions-menu-bg">
+                        <div class="submenu-columns">
+                          <div class="submenu-column">
+                            <h3 class="submenu-heading">Leagues</h3>
+                            <ul>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>star league ooredoo</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>second division league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>olympic league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                            </ul>
+                          </div>
+                          <div class="submenu-column">
+                            <h3 class="submenu-heading">Cups</h3>
+                            <ul>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>qfa cup</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>ooredoo cup</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>second division cup</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>qatar cup</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>amir cup</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                            </ul>
+                          </div>
+                          <div class="submenu-column">
+                            <h3 class="submenu-heading">Age Group</h3>
+                            <ul>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>u-19 league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>u-17 league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>u-15 league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>u-14 league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>u-13 league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                            </ul>
+                          </div>
+                          <div class="submenu-column">
+                            <h3 class="submenu-heading">Subsidiaries</h3>
+                            <ul>
+                              <li><a class="dropdown-item text-white" href="#">
+                                  <span>qatar amateur league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Football in Qatar</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="">Regulations</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-wrap">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">
+                              <span>Rules and Regulations</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>Law of the Games</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="">About Us</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-wrap">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">
+                              <span>Board of Directors</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>SOCAIL RESPONSIBILITY</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>VISION MISSION & VALUES</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>QFA AWARDS</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Football Development</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="">Media Center</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-wrap">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">
+                              <span>Media gallery</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item text-white" href="#">
+                              <span>News</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>Media Accreditation</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>Download Center</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Tenders</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Referees</a>
+                    </li>
+                    <li class="nav-item d-flex d-sm-flex d-md-flex d-lg-none d-xl-none">
+                      <a href="#" class="header-content nav-link contact-link"><img
+                          src="assets/images/icon/header/contact-us-icon.svg" class="img-fluid"
+                          alt="contact-icon">Contact Us</a>
+                    </li>
+                    <li class="nav-item d-block d-sm-flex d-md-flex d-lg-none d-xl-none">
+                      <div class="nav-link d-flex flex-cloumn">
+                        <div class="ticket">
+                          <a href="#">
+                            <svg width="100" height="45" viewBox="0 0 133 45" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6 0.5C2.68629 0.5 0 3.18629 0 6.5V14.0123C3.57602 15.2479 6.13804 18.5815 6.13804 22.5C6.13804 26.4185 3.57602 29.7521 0 30.9877V38.5C0 41.8137 2.68629 44.5 6 44.5H127C130.314 44.5 133 41.8137 133 38.5V30.988C129.424 29.7525 126.861 26.4187 126.861 22.5C126.861 18.5813 129.424 15.2475 133 14.012V6.5C133 3.18629 130.314 0.5 127 0.5H6Z"
+                                fill="#ffffff" />
+                              <path
+                                d="M38.5 23C38.5 21.62 39.62 20.5 41 20.5V19.5C41 15.5 40 14.5 36 14.5H26C22 14.5 21 15.5 21 19.5V20C22.38 20 23.5 21.12 23.5 22.5C23.5 23.88 22.38 25 21 25V25.5C21 29.5 22 30.5 26 30.5H36C40 30.5 41 29.5 41 25.5C39.62 25.5 38.5 24.38 38.5 23Z"
+                                stroke="#8C0321" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M29 14.5L29 30.5" stroke="#8C0321" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-dasharray="5 5" />
+                              <line x1="54" y1="1.5" x2="54" y2="43.5" stroke="#8C0321" stroke-width="2"
+                                stroke-linecap="round" stroke-dasharray="4 4" />
+                              <path
+                                d="M70.128 17.858H67.806V29H65.466V17.858H63.144L63.198 15.5H70.092L70.128 17.858ZM71.2493 29V15.5H73.5893V29H71.2493ZM81.2984 15.77L81.0824 18.002C80.7044 17.786 80.0924 17.642 79.5524 17.642C78.0584 17.642 77.5004 18.524 77.5004 22.142C77.5004 25.994 78.0764 26.93 79.6244 26.93C80.2004 26.93 80.7044 26.786 81.1364 26.534L81.3344 28.73C80.8484 29.018 79.9664 29.216 79.2464 29.216C76.3844 29.216 75.1064 27.308 75.1064 22.124C75.1064 17.246 76.4204 15.284 79.2824 15.284C79.9304 15.284 80.8484 15.5 81.2984 15.77ZM90.1104 29H87.5364L85.4664 23.078H84.7644V29H82.4784V15.5H84.7464V21.044H85.5204L87.5364 15.5H90.0204L87.6264 21.98L90.1104 29ZM93.4128 26.696H97.1748L97.1208 29H91.1268V15.5H96.9408L96.9768 17.84H93.4128V20.9H96.4008V23.114H93.4128V26.696ZM104.651 17.858H102.329V29H99.9894V17.858H97.6674L97.7214 15.5H104.615L104.651 17.858ZM111.426 25.166C111.426 27.758 110.202 29.216 107.916 29.216C106.908 29.216 105.9 28.91 105.18 28.388L105.522 26.192C106.206 26.642 106.926 26.912 107.754 26.912C108.762 26.912 109.212 26.372 109.212 25.274C109.212 22.862 105.198 23.222 105.198 19.154C105.198 16.868 106.386 15.302 108.654 15.302C109.59 15.302 110.418 15.5 111.084 15.878L110.814 18.074C110.202 17.804 109.536 17.66 108.906 17.66C107.79 17.66 107.412 18.218 107.412 19.082C107.412 21.404 111.426 21.098 111.426 25.166Z"
+                                fill="#8C0321" />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-auto">
+                  <ul class="navbar-nav ">
+                    <li class="nav-item d-none  d-lg-flex d-xl-flex">
+                      <a href="#" class="header-content nav-link contact-link px-0"><img
+                          src="assets/images/icon/header/contact-us-icon.svg" class="img-fluid"
+                          alt="contact-icon">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <section class="inner-banner">
+    <div class="container-lg">
+      <h2 class="position-absolute">MEDIA GALLERY</h2>
+      <img src="assets/images/icon/inner-banner-football.svg" class="img-fluid ball-img" alt="background image"
+      width="100" height="100">
+    </div>
+  </section>
+  <section class="breadcrumb-section">
+    <div class="container-lg">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="#">homepage</a></li>
+          <li class="breadcrumb-item active current-page" aria-current="page">MEDIA GALLERY</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <section class="sec-component media-section">
+
+    <section class="gallery-search">
+      <div class="container-lg">
+        <div class="row  align-items-center search-holder mb-16 mx-lg-0">
+          <div class="col-lg p-0 px-lg-3">
+            <div class="d-flex flex-row align-items-center search-bar">
+              <span class="input-group-text">
+                <img src="assets/images/icon/search.svg" alt="" width="18" height="18">
+              </span>
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+          </div>
+          <div class="col-12 col-lg-auto p-0">
+            <div class="d-flex flex-row align-items-center gap-3 justify-content-end " >
+              <div class="border-filter">
+                <select class="form-select rounded-pill " aria-label="Default select example" >
+                  <option selected class="text-primary"><b>FILTER BY YEAR</b></option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="border-category">
+                <select class="form-select rounded-pill" aria-label="Default select example">
+                  <option selected class="text-primary"><b>FILTER BY CATEGORY</b></option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <button class="search-circle d-inline-flex">
+                <i></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="mb-48 search-link-box">
+          <ul class="d-flex flex-row gap-2">
+            <a href="#" class="rounded-pill border-capsule d-inline-flex">
+              <span >2019</span>
+              <i></i>
+            </a>
+            <a href="#" class="rounded-pill border-capsule d-inline-flex">
+              <span >QATAR NATIONAL TEAM</span>
+              <i></i>
+            </a>
+          </ul>
+        </div> -->
+      </div>
+    </section>
+
+    <section>
+      <div class="container-lg">
+
+        <div class="row row-cols-1 row-cols-xl-3 row-cols-md-2 gx-4  gy-4 gy-lg-5">
+          <div class="col">
+            <div class="card">
+              <a href="assets/images/fancybox-img.png" data-fancybox="gallery1" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR VS MEXICO MATCH HIGHLIGHTS</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>">
+
+                <figure class="card-img">
+
+                  <img src="assets/images/img/gallery-image-1.jpg" class="card-img-top img-fluid" alt="gallery image">
+                </figure>
+                <figcaption class="fig-content">
+                  <h4 class="card-title mb-16 text-black1 font-size-4 text-uppercase">QATAR VS MEXICO MATCH HIGHLIGHTS</h4>
+                  <div class="date">
+                    <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="calendar-icon">
+                    <div class="font-size-10 fw-light ">Saturday ,May 12th 2024</div>
+                  </div>
+                </figcaption>
+              </a>
+              <a href="assets/images/fancybox-img2.jpeg" data-fancybox="gallery1" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR VS MEXICO MATCH HIGHLIGHTS</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+              <a href="assets/images/fancybox-img3.jpeg" data-fancybox="gallery1" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR VS MEXICO MATCH HIGHLIGHTS</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+            
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a href="assets/images/fancybox-img.png" data-fancybox="gallery2" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR ARE THE CHAMPIONS OF AFC 2023</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>">
+
+                <figure class="card-img">
+
+                  <img src="assets/images/img/gallery-image-1.jpg" class="card-img-top img-fluid" alt="gallery image">
+                </figure>
+                <figcaption class="fig-content">
+                  <h4 class="card-title mb-16 text-black1 font-size-4 text-uppercase">QATAR ARE THE CHAMPIONS OF AFC 2023</h4>
+                  <div class="date">
+                    <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="calendar-icon">
+                    <div class="font-size-10 fw-light ">Saturday ,May 12th 2024</div>
+                  </div>
+                </figcaption>
+              </a>
+              <a href="assets/images/fancybox-img2.jpeg" data-fancybox="gallery2" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR ARE THE CHAMPIONS OF AFC 2023</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+              <a href="assets/images/fancybox-img3.jpeg" data-fancybox="gallery2" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR ARE THE CHAMPIONS OF afc 2023</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a href="assets/images/fancybox-img.png" data-fancybox="gallery3" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR TO HOST 2030 olympics</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>">
+
+                <figure class="card-img">
+
+                  <img src="assets/images/img/gallery-image-1.jpg" class="card-img-top img-fluid" alt="gallery image">
+                </figure>
+                <figcaption class="fig-content">
+                  <h4 class="card-title mb-16 text-black1 font-size-4 text-uppercase">QATAR TO HOST 2030 olympics</h4>
+                  <div class="date">
+                    <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="calendar-icon">
+                    <div class="font-size-10 fw-light ">Saturday ,May 12th 2024</div>
+                  </div>
+                </figcaption>
+              </a>
+              <a href="assets/images/fancybox-img2.jpeg" data-fancybox="gallery3" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR TO HOST 2030 olympics</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+              <a href="assets/images/fancybox-img3.jpeg" data-fancybox="gallery3" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR TO HOST 2030 olympics</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a href="assets/images/fancybox-img.png" data-fancybox="gallery4" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>afif named best player in asia 2024</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>">
+
+                <figure class="card-img">
+
+                  <img src="assets/images/img/gallery-image-1.jpg" class="card-img-top img-fluid" alt="gallery image">
+                </figure>
+                <figcaption class="fig-content">
+                  <h4 class="card-title mb-16 text-black1 font-size-4 text-uppercase">afif named best player in asia 2024</h4>
+                  <div class="date">
+                    <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="calendar-icon">
+                    <div class="font-size-10 fw-light ">Saturday ,May 12th 2024</div>
+                  </div>
+                </figcaption>
+              </a>
+              <a href="assets/images/fancybox-img2.jpeg" data-fancybox="gallery4" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>afif named best player in asia 2024</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+              <a href="assets/images/fancybox-img3.jpeg" data-fancybox="gallery4" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>afif named best player in asia 2024</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a href="assets/images/fancybox-img.png" data-fancybox="gallery5" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>qatar press conference for world cup qualifers</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>">
+
+                <figure class="card-img">
+
+                  <img src="assets/images/img/gallery-image-1.jpg" class="card-img-top img-fluid" alt="gallery image">
+                </figure>
+                <figcaption class="fig-content">
+                  <h4 class="card-title mb-16 text-black1 font-size-4 text-uppercase">qatar press conference for world cup qualifers</h4>
+                  <div class="date">
+                    <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="calendar-icon">
+                    <div class="font-size-10 fw-light ">Saturday ,May 12th 2024</div>
+                  </div>
+                </figcaption>
+              </a>
+              <a href="assets/images/fancybox-img2.jpeg" data-fancybox="gallery5" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>qatar press conference for world cup qualifers</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+              <a href="assets/images/fancybox-img3.jpeg" data-fancybox="gallery5" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>qatar press conference for world cup qualifers</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a href="assets/images/fancybox-img.png" data-fancybox="gallery6" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR VS japan match highlights</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>">
+
+                <figure class="card-img">
+
+                  <img src="assets/images/img/gallery-image-1.jpg" class="card-img-top img-fluid" alt="gallery image">
+                </figure>
+                <figcaption class="fig-content">
+                  <h4 class="card-title mb-16 text-black1 font-size-4 text-uppercase">QATAR VS japan match highlights</h4>
+                  <div class="date">
+                    <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="calendar-icon">
+                    <div class="font-size-10 fw-light ">Saturday ,May 12th 2024</div>
+                  </div>
+                </figcaption>
+              </a>
+              <a href="assets/images/fancybox-img2.jpeg" data-fancybox="gallery6" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR VS japan match highlights</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+              <a href="assets/images/fancybox-img3.jpeg" data-fancybox="gallery6" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR VS japan match highlights</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a href="assets/images/fancybox-img.png" data-fancybox="gallery7" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR to host 2030 olympics</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>">
+
+                <figure class="card-img">
+
+                  <img src="assets/images/img/gallery-image-1.jpg" class="card-img-top img-fluid" alt="gallery image">
+                </figure>
+                <figcaption class="fig-content">
+                  <h4 class="card-title mb-16 text-black1 font-size-4">QATAR VS MEXICO MATCH HIGHLIGHTS</h4>
+                  <div class="date">
+                    <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="calendar-icon">
+                    <div class="font-size-10 fw-light ">Saturday ,May 12th 2024</div>
+                  </div>
+                </figcaption>
+              </a>
+              <a href="assets/images/fancybox-img2.jpeg" data-fancybox="gallery7" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR to host 2030 olympics</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+              <a href="assets/images/fancybox-img3.jpeg" data-fancybox="gallery7" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR to host 2030 olympics</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a href="assets/images/fancybox-img.png" data-fancybox="gallery8" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR press conference for world cup qualifers</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>">
+
+                <figure class="card-img">
+
+                  <img src="assets/images/img/gallery-image-1.jpg" class="card-img-top img-fluid" alt="gallery image">
+                </figure>
+                <figcaption class="fig-content">
+                  <h4 class="card-title mb-16 text-black1 font-size-4">QATAR VS MEXICO MATCH HIGHLIGHTS</h4>
+                  <div class="date">
+                    <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="calendar-icon">
+                    <div class="font-size-10 fw-light ">Saturday ,May 12th 2024</div>
+                  </div>
+                </figcaption>
+              </a>
+              <a href="assets/images/fancybox-img2.jpeg" data-fancybox="gallery8" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR press conference for world cup qualifers</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+              <a href="assets/images/fancybox-img3.jpeg" data-fancybox="gallery8" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR press conference for world cup qualifers</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <a href="assets/images/fancybox-img.png" data-fancybox="gallery9" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>Qatar vs japan match highlights</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>">
+
+                <figure class="card-img">
+
+                  <img src="assets/images/img/gallery-image-1.jpg" class="card-img-top img-fluid" alt="gallery image">
+                </figure>
+                <figcaption class="fig-content">
+                  <h4 class="card-title mb-16 text-black1 font-size-4">QATAR VS MEXICO MATCH HIGHLIGHTS</h4>
+                  <div class="date">
+                    <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="calendar-icon">
+                    <div class="font-size-10 fw-light ">Saturday ,May 12th 2024</div>
+                  </div>
+                </figcaption>
+              </a>
+              <a href="assets/images/fancybox-img2.jpeg" data-fancybox="gallery9" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>Qatar vs japan match highlights</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+              <a href="assets/images/fancybox-img3.jpeg" data-fancybox="gallery9" data-caption="<h4 class='card-title mb-2 text-white font-size-4 text-uppercase'>QATAR VS MEXICO MATCH HIGHLIGHTS9b</h4>
+                <p class='date'>
+                  Saturday ,May 12th 2024
+                </p>" class="d-none">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mt-5">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination flex-wrap gap-9">
+              <li class="page-item disabled">
+                <a class="page-link double-arrow-start " href="#" aria-label="Previous">
+                  <span aria-hidden="true" class="d-inline-block"></span>
+                </a>
+              </li>
+              <li class="page-item disabled">
+                <a class="page-link single-arrow-start" href="#" aria-label="Previous">
+                  <span aria-hidden="true" class="d-inline-block"></span>
+                </a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link single-arrow-end next-arw" href="#" aria-label="Previous">
+                  <span aria-hidden="true" class="d-inline-block"></span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link double-arrow-end " href="#" aria-label="Previous">
+                  <span aria-hidden="true" class="d-inline-block"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+  </section>
+  <footer class="footer-section">
+    <div class="container-lg">
+      <div class="row g-0">
+        <div class="col-xl-6 col-md-12 position-relative footer-bg">
+          <div class="footer-main">
+            <div class="mb-34">
+              <img src="assets/images/logo/footer-logo.svg" class="img-fluid footer-img-en" alt="">
+              <img src="assets/images/logo/footer-logo-ar.svg" class="img-fluid footer-img-ar" alt="">
+            </div>
+            <div class="footer-desc">
+              <p>Lorem ipsum dolor sit amet consectetur.<br>
+                  Vestibulum
+                  metus non </p>
+          </div>
+            <div class="footer-social-icons">
+              <ul class="d-flex gap-3">
+                <li>
+                  <a href="" class="banner-icon3 d-flex align-items-center justify-content-center">
+                    <i class="instagram-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="banner-icon3 d-flex align-items-center justify-content-center">
+                    <i class="youtube-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="banner-icon3 d-flex align-items-center justify-content-center">
+                    <i class="facebook-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="banner-icon3 d-flex align-items-center justify-content-center">
+                    <i class="twitter-icon"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-md-12 bdr-start">
+          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 ms-0 g-0">
+            <div class="col order-1 order-sm-2 order-md-1 bdr-end bdr-bottom">
+              <div class="footer-link-box1">
+                <h5 class="mb-32">QUICK LINKS</h5>
+                <div class="footer-links">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Competitions</a></li>
+                    <li><a href="#">Football in Qatar</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col order-2 order-sm-4 order-md-2 position-relative location-bdr">
+              <div class="footer-link-box2">
+                <h5 class="mb-32">LOCATION</h5>
+                <div class="footer-links-location">
+                  <p>Al-Bidda Tower, Corniche<br>
+                    Fax: 44754300<br>
+                    P.O.Box: 5333<br>
+                    Doha - Qatar
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col order-3 order-sm-2 order-md-3 bdr-end">
+              <div class="footer-link-box3">
+                <h5 class="mb-32">PRIVACY & POLICY</h5>
+                <div class="footer-links">
+                  <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <!-- <li><a href="#">Sitemap</a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col order-4 order-sm-3 order-md-4">
+              <div class="footer-link-box3">
+                <h5 class="mb-32">Contact Us</h5>
+                <div class="footer-links">
+                  <ul>
+                    <li><a href="#">Phone:44754444</a></li>
+                    <li><a href="#">Email:Info@Qfa.qa</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-brands-box bdr-top">
+      <div class="container-lg">
+          <div class="brand-box d-flex flex-wrap">
+              <div class="d-flex flex-column align-items-center gap-4 ">
+                  <img src="assets/images/brands/qiib.svg" class="img-fluid" alt="" >
+                  <p class="text-white fw-light">Official Bank</p>
+              </div>
+              <div class=" d-flex flex-column align-items-center gap-4 ">
+                  <img src="assets/images/brands/shell.svg" class="img-fluid" alt="" >
+                  <p class="text-white fw-light">Official Energy Partner</p>
+              </div>
+              <div class="d-flex flex-column align-items-center gap-4 ">
+                  <img src="assets/images/brands/qatar-airways4.svg" class="img-fluid" alt="" >
+                  <p class="text-white fw-light">Official Carrier</p>
+              </div>
+              <div class=" d-flex flex-column align-items-center gap-4 ">
+                  <img src="assets/images/brands/alkass.svg" class="img-fluid" alt="" >
+                  <p class="text-white fw-light">Official Broadcaster Partner</p>
+              </div>
+              <div class="d-flex flex-column align-items-center gap-4 ">
+                  <img src="assets/images/brands/ooreedo.svg" class="img-fluid" alt="" >
+                  <p class="text-white fw-light">Official Telecommunication Partner</p>
+              </div>
+              <div class=" d-flex flex-column align-items-center gap-4 ">
+                  <img src="assets/images/brands/aaa.svg" class="img-fluid" alt="">
+                  <p class="text-white fw-light">Official Mobility Partner</p>
+              </div>
+              <div class=" d-flex flex-column align-items-center gap-4 ">
+                  <img src="assets/images/brands/talabat.svg" class="img-fluid" alt="" >
+                  <p class="text-white fw-light">Official Delivery Partner</p>
+              </div>
+              <div class=" d-flex flex-column align-items-center gap-4 ">
+                  <img src="assets/images/brands/look-company.svg" class="img-fluid" alt="">
+                  <p class="text-white fw-light">Official Branding Partner</p>
+              </div>
+          </div>
+      </div>
+  </div>
+    <div class="footer-bottom">
+      <div class="container-lg">
+        <p class=""> Powered by Qatar Football Association</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/vendor/fancybox.umd.js"></script>
+  <!-- <script src="assets/js/header/header.js"></script> -->
+  <script type="importmap">
+        {
+            "imports": {
+                "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+                "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
+            }
+        }
+      </script>
+  <script>
+
+    $(document).ready(function () {
+
+      Fancybox.bind("[data-fancybox]", {
+        Thumbs: false,
+        Toolbar: false,
+        on: {
+          reveal: (fancybox, slide) => {
+            if (!$('.fancybox__slide.is-selected .fancybox__content .fancybox__caption').length) {
+              var caption = $('.fancybox__slide.is-selected .fancybox__caption').prop('outerHTML');
+              $('.fancybox__slide.is-selected .fancybox__caption').detach();
+              $('.fancybox__slide.is-selected .fancybox__content').append(caption);
+            }
+            if (!$('.fancybox__slide.is-selected .fancybox__content .fancybox__nav').length) {
+              $(".fancybox__nav").appendTo(".fancybox__content");
+            }
+          },
+        },
+      });
+    });
+
+
+  </script>
+  <script type="module">
+    import { Popover } from 'bootstrap';
+    //- new Popover(document.getElementById('popoverButton'))
+
+  </script>
+  <script>
+
+    window.addEventListener('load', function () {
+      var ballImage = document.querySelector('.ball-img');
+      setTimeout(function () {
+        ballImage.classList.add('loaded');
+        setTimeout(function () {
+          ballImage.classList.add('reverse');
+        }, 2000);
+      }, 1000);
+    });
+
+
+  </script>
+</body>
+
+</html>

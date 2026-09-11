@@ -1,0 +1,44 @@
+.fixtures-section {
+    .fixtures-table-box {
+        border: 1px solid #EDE9EB;
+        border-radius: 16px;
+        padding-inline: 16px;
+    }
+
+    .fixtures-table {
+        --bs-table-striped-bg: #F4F1F3;
+
+    }
+
+    tr td {
+        padding-inline: 64px;
+        vertical-align: middle;
+        @media (min-width:1399px) and (max-width:1700px) {
+
+            padding-inline: 30px;
+        }
+        @include media-breakpoint-down(xxl) 
+        {
+            padding-inline: 10px;
+        }
+        padding-block: 29px;
+    }
+
+    tr td {
+        &:first-child {
+            border-start-start-radius: 8px;
+            border-end-start-radius: 8px;
+        }
+
+        &:last-child {
+            border-start-end-radius: 8px;
+            border-end-end-radius: 8px;
+        }
+    }
+   .clock{
+    div{
+        width:83px;
+    }
+    
+   }
+}

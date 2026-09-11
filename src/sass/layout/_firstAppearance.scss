@@ -1,0 +1,73 @@
+.year-slider-section {
+    margin-top: 32px;
+
+    @include media-breakpoint-down(md) {
+        margin-bottom: 32;
+        margin-top: 20px;
+    }
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 20px;
+    }
+}
+
+.description-slider {
+    margin-bottom:80px;
+    @include media-breakpoint-down(md) {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    h2{
+        margin-bottom: 10px;
+    font-weight: bold;
+    }
+    p {
+        color: $grey-dark;
+        line-height: 28px;
+    }
+}
+
+.progress-bar-slider {
+    cursor: pointer;
+    h2 {
+        -webkit-text-stroke: 0;
+    }
+    .slick-list {
+        margin-inline: -8px;
+    }
+    .item {
+        text-align: center;
+        padding-inline: 8px;
+        h2 {
+            color:#C0B8BE;
+            margin-top: 5px;
+        }
+        .slick-current {
+            h2 {
+                color: $maroon;
+            }
+        }
+    }
+    
+.progress {
+    height: 4px;
+}
+
+
+}
+
+.slick-current
+.progress  { 
+    // animation: growAndColorChange 5s linear infinite;
+    background-color:$maroon; 
+}
+// @keyframes growAndColorChange {
+//     0% {
+//       width: 0%;
+//       background-color:$maroon;
+//     }
+//     100% {
+//         width:100%;
+//       background-color:$maroon; 
+//     }
+//   }
+    

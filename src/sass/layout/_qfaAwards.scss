@@ -1,0 +1,354 @@
+.qfa-description {
+    border: 1px solid #EDE9EB;
+    padding:64px;
+    border-radius: 32px;
+    box-shadow: 0px 28.47px 62.2px 0px #A7AEBA14;
+    @include media-breakpoint-down(lg) {
+        padding:20px;
+    }
+
+p{
+    color: $grey-dark;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 10px;
+   &:last-child {
+    margin-bottom: 0px;
+   }
+   @media (max-width: 767.98px) {
+  [dir="rtl"] & {
+        font-size: 14px;
+    }}
+}
+.qfa-logo {
+    display: flex;
+    border-radius: 16px;
+    background-color: #F5F5F5;
+    align-items: center;
+    justify-content: center;
+    padding-block: 92px;
+    padding-inline: 87px;
+    margin-inline-end: 14px;
+    @include media-breakpoint-down (xl) {
+        margin-inline-end: auto;  
+    }
+}
+.content-wrapper {
+    margin-inline-start: 14px;
+    @include media-breakpoint-down (xl) {
+        margin-inline-start: auto;  
+    }
+}
+img {
+
+    transition: all .6s ease-in-out;
+    border-radius: 20px;
+
+    // &:hover {
+    //     transform: scale(1.2);
+    // }
+}
+}
+
+.year-select {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 40px 12px 20px;
+    font-weight: 600;
+    color: #333;
+    background: white;
+    cursor: pointer;
+    appearance: none;
+    background-image: 
+        linear-gradient(to bottom, #ddd 0%, #ddd 100%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 40px center, right 12px center;
+    background-size: 2px 100%, 20px 20px;
+}
+
+.award-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background: #F3E6E9;
+    height: 100%;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        z-index: 1;
+    }
+
+    &::before {
+        bottom: 0;
+        left: 0;
+        border-width: 0 0 600px 50vw;
+        border-color: transparent transparent #8C0321 transparent;
+    }
+
+    &::after {
+        bottom: 0;
+        right: 0;
+        border-width: 0 50vw 600px 0;
+        border-color: transparent transparent #8C0321 transparent;
+    }
+}
+
+@media(max-width:1200px){
+.award-card {
+
+    &::before {
+        bottom: 0;
+        left: 0;
+        border-width: 0 0 420px 50vw;
+        border-color: transparent transparent #8C0321 transparent;
+    }
+
+    &::after {
+        bottom: 0;
+        right: 0;
+        border-width: 0 50vw 420px 0;
+        border-color: transparent transparent #8C0321 transparent;
+    }
+}
+}
+
+@media(max-width:991px){
+.award-card {
+
+    &::before {
+        bottom: 0;
+        left: 0;
+        border-width: 0 0 360px 50vw;
+        border-color: transparent transparent #8C0321 transparent;
+    }
+
+    &::after {
+        bottom: 0;
+        right: 0;
+        border-width: 0 50vw 360px 0;
+        border-color: transparent transparent #8C0321 transparent;
+    }
+}
+}
+
+@media(max-width:768px){
+.award-card {
+
+    &::before {
+        bottom: 0;
+        left: 0;
+        border-width: 0 0 400px 100vw;
+        border-color: transparent transparent #8C0321 transparent;
+    }
+
+    &::after {
+        bottom: 0;
+        right: 0;
+        border-width: 0 100vw 400px 0;
+        border-color: transparent transparent #8C0321 transparent;
+    }
+}
+}
+
+@media(max-width:500px){
+.award-card {
+
+    &::before {
+        bottom: 0;
+        left: 0;
+        border-width: 0 0 350px 100vw;
+        border-color: transparent transparent #8C0321 transparent;
+    }
+
+    &::after {
+        bottom: 0;
+        right: 0;
+        border-width: 0 100vw 350px 0;
+        border-color: transparent transparent #8C0321 transparent;
+    }
+}
+}
+
+.award-card-header {
+    padding: 2rem 1rem 1.5rem;
+    text-align: center;
+}
+
+.award-title {
+    color: #8C0321;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.award-image-container {
+    position: relative;
+    margin: 0 auto 2rem;
+    width: 100%;
+    max-width: 295px;
+    z-index: 10;
+}
+
+.award-frame {
+    position: relative;
+    border: 8px solid #FFB92E;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.player-image {
+    width: 280px;
+    height: 380px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.logo-badge {
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    padding: 8px;
+}
+
+.logo-badge img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.award-footer {
+    padding: 2.5rem 1rem 2rem;
+    text-align: center;
+    margin-top: -15px;
+    position: relative;
+    z-index: 10;
+}
+
+.player-name {
+    color: #EAE8EC;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1500px) {
+    .award-title {
+        font-size: 28px;
+    }
+
+    .player-name {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .award-title {
+        font-size: 26px;
+    }
+
+    .player-name {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 410px) {
+    .award-image-container {
+        width: 85%;
+        max-width: 295px;
+    }
+}
+
+.refereeSwiper, .orderSwiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+}
+
+.referee-pagination, .order-pagination {
+    position: absolute;
+    bottom: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.referee-pagination .swiper-pagination-bullet, .order-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.4) !important;
+    opacity: 1;
+}
+
+.referee-pagination .swiper-pagination-bullet-active, .order-pagination .swiper-pagination-bullet-active {
+    background: #FFD700 !important;
+    width: 14px;
+    height: 14px;
+}
+
+.select-wrapper input[type="date"] {
+    display: block;
+    padding: 14px 2rem 14px 24px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a1a1a;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    min-width: 200px;
+}
+
+.select-wrapper.date-picker::before {
+    display: none;
+}
+
+
+.select-wrapper input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+@media(max-width:1200px) {
+    .award-section .col-lg-4{
+        width: 50%;
+    }
+
+}
+
+@media(max-width:768px) {
+    .award-section .col-lg-4{
+        width: 100%;
+    }
+}

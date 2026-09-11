@@ -1,0 +1,68 @@
+$font-primary-en:'ClanOT',sans-serif;
+$font-primary-ar:'HelveticaNeueLT Arabic 55 Roman';
+$width: 100%;
+// $primary:#8C0321;
+$primary:#8C0321;
+$primary1:#16012C;
+$primary-shade1:#443158;
+$purple:#8E2BAF;
+// $secondary: #F26522;
+$secondary: #A8915D;
+
+$yellow:#FFB92E;
+$black: #000;
+// $black1:#001D29;
+$black1:#8C0321;
+
+// $black2: #143642;
+$black2: #971C37;
+$black3:#153743;
+$black4:#191C1D;
+$white: #fff;
+$maroon:#8C0321;
+$pink: #F4EAF7;
+$pink-dark: #F1E5F1;
+$pink-dark1: #DDB3BC;
+$pink-dark2: #DDBFE7;
+$grey:#899AA0;
+$grey1:#B8C3C6;
+$grey-dark: #625f5f;
+$lightgrey:#C0B8BE;
+$lightgrey1:#F4F1F3;
+$lightgrey2:#C8C9CA;
+$lightgrey3:#7C7E7F;
+$lightgrey4:#FBFBFB;
+$lightgrey5:#D2D2D2;
+$green: #15AA9C;
+$red:#C6002F;
+$red1:#AC0016;
+
+
+
+
+$color-map: (
+	primary: $primary,
+	primary1: $primary1,
+	primary-shade1:$primary-shade1,
+	purple:$purple,
+	secondary: $secondary,
+	yellow:$yellow,
+	black:$black,
+	black1:$black1,
+	black2:$black2,
+	black3:$black3,
+	white: $white,
+	maroon:$maroon,
+	pink:$pink,
+	pink-dark:$pink-dark,
+	grey:$grey,
+	grey1:$grey1,
+	grey-dark:$grey-dark,
+	lightgrey:$lightgrey,
+	lightgrey1:$lightgrey1,
+	lightgrey2:$lightgrey2,
+	lightgrey3:$lightgrey3,
+	green:$green,
+	red:$red,
+	red1:$red1
+);

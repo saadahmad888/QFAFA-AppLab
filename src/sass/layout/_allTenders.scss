@@ -1,0 +1,45 @@
+.all-tenders-section{
+    .tender-box {
+        padding:30px;
+        border: #E5DFE4 1px solid;
+        box-shadow: 0px 8px 32px 0px #0000000A;
+
+        @include media-breakpoint-down(lg) {
+            padding:10px;
+        }
+    }
+    .tag{
+        padding: 3px 16px;
+        background-color: $lightgrey1;
+        border-radius: 4px;
+        align-items: center;
+    }
+    .bdr-btm {
+        border-bottom: 1px solid #DED7DC;
+        margin-bottom: 24px;
+    }
+
+
+    p{
+        line-height: 24px;
+    }
+    .custom-row {
+        padding-inline-end:15px;
+        padding-inline-start: 15px;
+        row-gap: 30px;
+    }
+    .custom-margin {
+        margin-inline-start: -15px;
+        margin-inline-end: -15px;
+    }
+
+}
+ .tender-form-input{
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 0px;
+    width: 0px;
+ }
+ 

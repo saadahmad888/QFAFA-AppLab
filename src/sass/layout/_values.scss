@@ -1,0 +1,108 @@
+.values-section {
+
+
+  p {
+    color: $grey-dark;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 56px;
+    line-height: 28px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
+
+  }
+
+  h2 {
+    margin-bottom: 24px;
+  }
+
+  .title {
+    color: $primary;
+    font-weight: 700;
+    letter-spacing: 2%;
+    margin-bottom: 12px;
+    font-size: 32px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 25px;
+    }
+  }
+
+  .list {
+    border: 1px solid #EDE9EB;
+    border-radius: 12px;
+    padding: 30px;
+    padding-block: 20px;
+    margin-inline-start: 60px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .StepProgress {
+
+    &-item {
+      position: relative;
+      counter-increment: list;
+      margin-bottom: 24px;
+
+      &:last-child {
+        &:before {
+          display: none;
+        }
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 30%;
+        inset-inline-start: 22px;
+        width: 1px;
+        height: calc(100% + 30px);
+        background-color: #E7EBEC;
+        transform: translateX(-50%);
+        z-index: -1;
+        @include media-breakpoint-down(sm) {
+          top: 18%;
+        }
+
+      }
+
+
+      &::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 34px;
+        inset-inline-start: 6px;
+        width: 32px;
+        height: 32px;
+        border: 2px solid #E7EBEC;
+        border-radius: 50%;
+        background-color: #E7EBEC;
+
+      }
+
+      &.current {
+        &::after {
+          content: url(../images/icon/vision-page-smallfootball-icon.svg);
+          border-radius: 50%;
+          width: 36px;
+          height: 36px;
+          margin-inline-end: 24px;
+          background-color: #143642;   
+        }
+      }
+
+    }
+  }
+
+}

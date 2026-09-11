@@ -1,0 +1,357 @@
+.team-table-section {
+    // padding: 40px 50px 40px 50px;
+    padding: 40px 58px;
+
+    // @include media-breakpoint-down(md) {
+    //     padding: 10px 10px 10px 10px;
+    // }
+    @include media-breakpoint-down(xl) {
+        padding: 40px 100px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        padding: 20px 10px 20px 10px;
+    }
+
+    .nav-link {
+        color: $primary;
+        background-color: $white;
+        border: 1px solid #b8c3c6;
+        padding: 5px 40px 27px;
+        border-radius: 12px 12px 0 0;
+        white-space: nowrap;
+        @include media-breakpoint-down(xl) {
+            padding: 9px 18px 30px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            padding: 10px 12px 10px;
+            border-radius: 8px 10px 0 0;
+            font-size: 14px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            min-width: 140px;
+        }
+
+        [dir="rtl"] & {
+            padding: 5px 27px 25px;
+            white-space: nowrap;
+            @include media-breakpoint-down(lg) {
+                padding: 5px 27px 10px;
+            }
+            @include media-breakpoint-down(sm) {
+                padding: 5px 27px 11px;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .tab-content {
+        width: 100%;
+        border-radius: 24px;
+        // background: url('../images/team-table-bg.svg') no-repeat $white;
+        background-color: #a44861;
+        background-size: cover;
+        align-content: start;
+        overflow: hidden;
+        position: relative;
+        // padding: 30px;
+        top: -22px;
+        flex-grow: 1;
+
+        @include media-breakpoint-down(lg) {
+            border-radius: 10px;
+            padding: 10px;
+            top: -4px;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 0;
+        }
+    }
+
+    .nav-pills {
+        overflow: hidden;
+        width: 100%;
+        flex-wrap: nowrap;
+        &.with-scroll {
+            overflow-x: auto;
+            border-radius: 0;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+
+    .nav-scroll {
+        overflow-x: auto;
+    }
+}
+
+.nav-pills {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+td {
+    border-style: none;
+}
+
+.table-rank thead tr {
+    // border-bottom: 10px solid $green;
+
+    td {
+        &:first-child {
+            border-start-start-radius: 12px;
+        }
+
+        &:last-child {
+            border-start-end-radius: 12px;
+        }
+    }
+}
+
+.table-rank tbody tr {
+    // border-bottom: 10px solid $green;
+
+    td {
+        &:first-child {
+            border-start-start-radius: 12px;
+            border-end-start-radius: 12px;
+            overflow: hidden;
+            text-indent: 23px;
+            @include media-breakpoint-down(md) {
+                text-indent: 8px;
+            }
+        }
+
+        &:last-child {
+            border-start-end-radius: 12px;
+            border-end-end-radius: 12px;
+            text-indent: -18px;
+            @include media-breakpoint-down(md) {
+                text-indent: 8px;
+            }
+        }
+    }
+}
+
+.table-light {
+    --bs-table-bg: #f2f2f2;
+}
+
+.ctm-table {
+    text-align: center;
+
+    thead {
+        th {
+            padding: 10px;
+
+            @include media-breakpoint-down(lg) {
+                padding: 8px;
+            }
+        }
+    }
+
+    .trasparent-row {
+        background-color: transparent;
+        padding: 8px;
+    }
+
+    .sl-no {
+        color: #899aa0;
+        font-size: 20px;
+        // width: 25%;
+        // text-align: left;
+
+        [dir="rtl"] & {
+            font-size: 20px;
+            // text-align: right;
+        }
+
+        @include media-breakpoint-down(lg) {
+            font-size: 14px;
+
+            [dir="rtl"] & {
+                font-size: 14px;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: 14px;
+
+            [dir="rtl"] & {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .country-name {
+        font-weight: 700;
+        font-size: 24px;
+        white-space: nowrap;
+        // width: 50%;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 14px;
+        }
+
+        color: $black2;
+
+        span {
+            font-size: 18px;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .points,
+    .prev-points {
+        font-weight: 700;
+        font-size: 16px;
+        color: $black;
+        align-content: center;
+        // width: 25%;
+
+        @include media-breakpoint-down(md) {
+            font-size: 13px;
+            // [dir="rtl"] & {
+            //     padding-inline-start: 23px;
+
+            // }
+        }
+    }
+
+    .match-results {
+        align-content: center;
+    }
+
+    .win,
+    .loss {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        color: $white;
+        font-weight: 700;
+        font-size: 18px;
+
+        [dir="rtl"] & {
+            font-size: 14px;
+        }
+
+        align-content: center;
+        // padding: 9px;
+
+        @include media-breakpoint-down(sm) {
+            width: 20px;
+            height: 20px;
+            font-size: 13px;
+            padding: 2px;
+        }
+    }
+
+    .win {
+        background-color: #15aa9c;
+    }
+
+    .loss {
+        background-color: #cc1a44;
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 0 10px;
+        // margin: 30px;
+    }
+
+    .ctm-table-header {
+        border-spacing: 0;
+
+        thead {
+            th:last-child {
+                width: 20%;
+            }
+        }
+    }
+
+    .table-rank {
+        padding: 6px 25px;
+        min-height: 100px;
+
+        @include media-breakpoint-down(lg) {
+            padding: 6px 15px;
+        }
+
+        .club {
+            white-space: nowrap;
+        }
+    }
+}
+
+.ctm-table {
+    > tbody > tr > td {
+        background-color: transparent;
+        padding: 0;
+
+        table td {
+            background-color: #fff;
+            padding: 12px 15px;
+
+            @include media-breakpoint-down(xl) {
+                padding: 10px 5px;
+            }
+        }
+
+        table thead td {
+            background-color: #f2f2f2;
+            padding: 32px 20px;
+
+            @include media-breakpoint-down(xl) {
+                padding: 10px 5px;
+            }
+        }
+    }
+}
+
+.team-table-bg {
+    background-image: url("../images/img/football-ranking-bg1.png");
+    background-size: cover;
+    background-color: #f1e5f1;
+    border-radius: 12px;
+}
+
+.table-cls {
+    width: 110px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    column-gap: 5px;
+
+    @include media-breakpoint-down(sm) {
+        width: 80px;
+    }
+}
+
+.team-table-box {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-cls img.img-fluid {
+    /* border: 1px solid red; */
+    max-height: 30px;
+    width: auto;
+}

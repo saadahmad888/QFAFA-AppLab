@@ -1,0 +1,134 @@
+.football-in-qatar-section {
+    .football-in-qatar-box {
+        margin-inline-end: 56px;
+        margin-inline-start: 142px;
+        @include media-breakpoint-down(lg) {
+            margin-inline-end: 20px;
+        margin-inline-start: 80px; 
+        }
+        // @include media-breakpoint-down(sm) {
+        //     margin-inline-end: 10px;
+        // margin-inline-start: 60px; 
+        // }
+
+    }
+
+    .quote-img {
+        position: relative;
+        top: -20px;
+        margin-bottom: -40px;
+      
+        @include media-breakpoint-down(xxl) {
+            margin-bottom: auto;
+        }
+        @include media-breakpoint-down(lg) {
+            top: auto;
+            height: 100px;
+            width: 100px;
+        }
+        @include media-breakpoint-down(sm) {
+            top: auto;
+            height: 60px;
+            width: 60px;
+        }
+        [dir=rtl] & {
+            transform: scaleX(-1);
+        }
+    }
+
+    .football-content {
+        position: relative;
+        .history-desc {
+            p{
+            color:$black;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 28px;
+            margin-bottom: 25px;
+            @include media-breakpoint-down(lg) {
+                font-size: 16px;
+            }
+            }
+            
+        }
+    }
+
+    .line {
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        inset-inline-start: -56px;
+        top: 30px;
+        background-color: #EEB2C1;
+        @include media-breakpoint-down(xl) {
+            height: 104%;
+        }
+        @include media-breakpoint-down(lg) {
+            height: 100%;
+            inset-inline-start: -30px;
+        }
+
+        &:before {
+            content: "";
+            display: inline-flex;
+            width: 30px;
+            height: 30px;
+            border: 8px solid #8C0321;
+            border-radius: 50%;
+            position: absolute;
+            top: -22px;
+            inset-inline-start: -15px;
+        }
+
+        &:after {
+            content: url('../images/icon/equal-icon.png');
+            position: absolute;
+            bottom: -12px;
+            inset-inline-start: -10px;
+        }
+    }
+
+    li {
+        position: relative;
+        @include rfs(100px, margin-bottom);
+        // margin-bottom: 100px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            background-image: linear-gradient(to right, #EEB2C1 30%, transparent 30%, transparent 80%, #EEB2C1 40%);
+            background-size: 12px;
+            bottom: -15px;
+            width: 110%;
+            inset-inline-start: -9%;
+            height: 1px;
+            @include media-breakpoint-down(xxl) {
+                inset-inline-start: -15%;
+            }
+            @include media-breakpoint-down(lg) {
+                inset-inline-start: -10%;
+                width: 110%;
+            }
+            @include media-breakpoint-down(sm) {
+                inset-inline-start: -8%;
+               
+            }
+        }
+       
+    }
+
+}
+
+.record-box-text {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+  overflow: hidden !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  text-align: center;
+  height: 43px;
+}

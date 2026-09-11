@@ -1,0 +1,106 @@
+
+
+@font-face {
+    font-family: 'ClanOT';
+    src: url('clanot-bold-webfont.eot');
+    src: url('clanot-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('clanot-bold-webfont.woff2') format('woff2'),
+         url('clanot-bold-webfont.woff') format('woff'),
+         url('clanot-bold-webfont.ttf') format('truetype'),
+         url('clanot-bold-webfont.svg#clan_otbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ClanOT-Book';
+    src: url('clanot-book-webfont.eot');
+    src: url('clanot-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('clanot-book-webfont.woff2') format('woff2'),
+         url('clanot-book-webfont.woff') format('woff'),
+         url('clanot-book-webfont.ttf') format('truetype'),
+         url('clanot-book-webfont.svg#clan_otbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ClanOT-CondBlackItalic';
+    src: url('clanot-condblackitalic-webfont.eot');
+    src: url('clanot-condblackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('clanot-condblackitalic-webfont.woff2') format('woff2'),
+         url('clanot-condblackitalic-webfont.woff') format('woff'),
+         url('clanot-condblackitalic-webfont.ttf') format('truetype'),
+         url('clanot-condblackitalic-webfont.svg#clan_otcond_black_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ClanOT-CondBold';
+    src: url('clanot-condbold-webfont.eot');
+    src: url('clanot-condbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('clanot-condbold-webfont.woff2') format('woff2'),
+         url('clanot-condbold-webfont.woff') format('woff'),
+         url('clanot-condbold-webfont.ttf') format('truetype'),
+         url('clanot-condbold-webfont.svg#clan_otcond_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ClanOT-CondBook';
+    src: url('clanot-condbook-webfont.eot');
+    src: url('clanot-condbook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('clanot-condbook-webfont.woff2') format('woff2'),
+         url('clanot-condbook-webfont.woff') format('woff'),
+         url('clanot-condbook-webfont.ttf') format('truetype'),
+         url('clanot-condbook-webfont.svg#clan_otcond_book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLT Arabic 55 Roman';
+    src: url('HelveticaNeueLTArabic-Roman.eot');
+    src: url('HelveticaNeueLTArabic-Roman.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueLTArabic-Roman.woff2') format('woff2'),
+        url('HelveticaNeueLTArabic-Roman.woff') format('woff'),
+        url('HelveticaNeueLTArabic-Roman.ttf') format('truetype'),
+        url('HelveticaNeueLTArabic-Roman.svg#HelveticaNeueLTArabic-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLT Arabic 75';
+    src: url('HelveticaNeueLTArabic-Bold.eot');
+    src: url('HelveticaNeueLTArabic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('HelveticaNeueLTArabic-Bold.woff2') format('woff2'),
+        url('HelveticaNeueLTArabic-Bold.woff') format('woff'),
+        url('HelveticaNeueLTArabic-Bold.ttf') format('truetype'),
+        url('HelveticaNeueLTArabic-Bold.svg#HelveticaNeueLTArabic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+

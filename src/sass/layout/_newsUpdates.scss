@@ -1,0 +1,399 @@
+
+
+
+
+
+
+
+.news-updates-section {
+    .item {
+        margin-inline-start: 15px;
+        margin-inline-end: 15px;
+    }
+
+    .card {
+        border: 1px solid $lightgrey;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .card-body {
+        padding: 30px;
+
+        @include media-breakpoint-down(lg) {
+            padding: 20px;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3px;
+        }
+        // img{
+        //       [dir=rtl] & {
+        //     margin-top: 7px;
+        // }
+          
+        // }
+    }
+
+
+    a {
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        transition: all 0.6s ease;
+
+    }
+
+    a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        border-radius: 5px;
+        height: 0.05em;
+        bottom: 0;
+        inset-inline-start: 0;
+        background: currentcolor;
+        transform-origin: bottom end;
+        transition: transform 0.25s ease-out;
+
+    }
+
+
+    .card-img-top {
+        transition: transform 0.5s ease;
+        transform-origin: bottom center;
+        object-fit: cover;
+        height: 230px;
+    }
+
+    .card-title {
+        transition: all 0.6s ease;
+        min-height: 53px;
+        font-size: 20px !important;
+
+    }
+
+    .card {
+        &:hover {
+            // .card-img-top {
+
+            // }
+
+            .card-title {
+                text-decoration: underline;
+
+            }
+        }
+    }
+.search-holder {
+    .form-select {
+        [dir=rtl] & {
+            padding-inline-start: 40px !important;
+        }
+
+    }
+}
+}
+
+
+
+
+.date {
+    p {
+        @include media-breakpoint-down(lg) {
+            font-size: 14px !important;
+        }
+    }
+   
+
+}
+
+
+
+.daterangepicker {
+    direction: ltr;
+}
+.qal-section{
+    overflow: hidden;
+}
+
+
+.single-news-section .search-holder {
+    .form-select {
+        [dir=rtl] & {
+            padding-inline-start: 40px !important;
+        }
+
+    }
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #8C0321;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: white;
+    color: #8C0321;
+}
+
+.share-news {
+    font-weight: 500;
+    font-size: 23px;
+}
+
+@media (max-width:1450px){
+    .social-icons {
+        gap: 10px;
+    }
+}
+
+@media (max-width:1350px){
+    .social-icons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #8C0321;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 22px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+    .share-news {
+        font-size: 21px;
+    }
+}
+
+@media (max-width:1120px){
+    .share-news {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:1075px){
+    .share-news {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:1050px){
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #8C0321;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+}
+
+@media (max-width:1030px){
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #8C0321;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+}
+
+@media (max-width:991px){
+    .share-news {
+        font-size: 20px;
+    }
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width:320px){
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+}
+
+.match-section{
+    padding-top: 50px;
+}
+
+.match-details{
+    background-color: #F4F1F3;
+    padding: 32px;
+    border-radius: 16px;
+}
+
+.match-section .match-heading {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.match-section .location {
+    font-weight: 700;
+    font-size: 18px;
+    color: #6D5F7D;
+}
+
+.loc-icon, .cal-icon {
+    padding-inline-end: 10px;
+}
+
+.match-teams {
+    margin-top: 25px;
+    background-color: white;
+    padding-block: 32px;
+    padding-inline: 56px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+
+.match-teams > div {
+    align-items: center; 
+}
+
+.match-section .team-name {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0; 
+}
+
+.match-teams .d-flex {
+    gap: 10px;
+}
+
+.match-section .vs {
+    color: #899AA0;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    align-self: center;
+}
+
+.match-section .date {
+    font-size: 20px;
+    color: #6D5F7D;
+    font-weight: 700;
+}
+
+.match-logo {
+    width: 50px;
+    height: 50px;
+}
+
+@media(max-width:1150px){
+    .match-section .match-heading, .match-section .vs, .match-section .team-name {
+        font-size: 20px;
+    }
+
+    .match-section .location, .match-section .date {
+        font-size: 16px;
+    }
+}
+
+
+@media(max-width: 600px) {
+
+    .match-teams > div {
+        justify-content: center; 
+    }
+
+    .match-section .match-heading {
+        font-size: 16px !important;
+    }
+
+    .match-section .location {
+        font-size: 15px;
+    }
+
+    .match-section .date {
+        font-size: 16px;
+    }
+    .match-details > .d-flex {
+        flex-direction: column;
+    }
+
+    .location {
+        margin-top: 12px;
+    }
+
+    .match-section .vs {
+        font-size: 18px;
+        margin: 16px 0;
+    }
+}
+
+
+@media(max-width: 350px) {
+
+    .match-section .match-heading {
+        font-size: 16px !important;
+    }
+
+    .match-section .location {
+        font-size: 15px;
+    }
+
+    .match-section .date, .match-section .team-name {
+        font-size: 16px;
+    }
+
+    .location {
+        margin-top: 12px;
+    }
+
+    .match-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+.refereeing-cases-section .card {
+    min-height: 640px;
+}
+
+@media (max-width:992px){
+    .refereeing-cases-section .card {
+        min-height: 590px;
+    }
+}

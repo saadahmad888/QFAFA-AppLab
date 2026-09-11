@@ -1,0 +1,74 @@
+.goals-section {
+ .table-box {
+    border: 1px solid #EDE9EB;
+    border-radius: 16px;
+    padding-inline: 16px;
+ }
+.custom-table {
+    thead, tbody, tfoot, tr, td, th  {
+        border: none;
+    }
+    --bs-table-striped-bg:#F4F1F3;
+td,th{
+    padding-block:24px;
+    @include media-breakpoint-down(lg) {
+        padding-block:15px; 
+    }
+}
+
+th, td {
+    &:first-child {
+        padding-inline-start: 48px;
+        @include media-breakpoint-down(lg) {
+            padding-inline-start: 10px;
+        }
+    }
+}
+tr {
+    td {
+        &:first-child{
+            border-start-start-radius: 8px;
+            border-end-start-radius: 8px;
+        }
+        &:last-child {
+            border-start-end-radius:8px;
+            border-end-end-radius:8px;
+        }
+    }
+}
+th {
+    &:last-child {
+        width:250px;
+    }
+    &:first-child {
+       width:250px;
+    }
+
+}
+.goal-no {
+    padding:16px 24px;
+    border-radius:16px;
+    background-color: $maroon;
+    color:$white;
+    height:47px;
+    width:76px;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.player-name {
+    font-weight: 300;
+
+    color: $black;
+    text-transform: capitalize;
+    vertical-align: middle;
+    max-width:200px;
+@include media-breakpoint-down(lg) {
+    font-size: 13px;
+}
+}
+}
+}

@@ -1,0 +1,9 @@
+.sportsclub-details-section {
+    .qal-details-section {
+        @include media-breakpoint-down(md) {
+            padding: 20px;
+            padding-bottom: auto;
+        } 
+    }
+}
+

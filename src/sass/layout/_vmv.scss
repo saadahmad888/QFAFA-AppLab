@@ -1,0 +1,193 @@
+.approach {
+  background-color: #f4f1f3;
+  padding: 48px;
+  border-radius: 16px;
+  @include media-breakpoint-down(lg) {
+    padding-inline: 15px;
+    padding-block: 30px;
+  }
+
+  .values {
+    padding: 32px;
+    background-color: $white;
+    border-radius: 16px;
+    @include media-breakpoint-down(xxl) {
+      padding: 15px;
+    }
+    ul {
+      padding: 23px;
+      padding-inline-start: 30px;
+      padding-bottom: 0px;
+      li {
+        list-style-type: disc;
+        margin-bottom: 32px;
+
+        &::marker {
+          color: $grey-dark;
+          font-size: 14px;
+          [dir="rtl"] & {
+            font-size: 12px;
+          }
+        }
+
+        p {
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 29px;
+          color: $grey-dark;
+          @include media-breakpoint-down(xl) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    figure {
+      border: 1px solid #dad2d8;
+      border-radius: 16px;
+      padding-inline: 110px;
+      padding-block: 60px;
+      background-color: #f4f1f3;
+      @include media-breakpoint-down(xxl) {
+        padding-inline: 65px;
+        padding-block: 10px;
+      }
+      @include media-breakpoint-down(sm) {
+        padding-inline: 0px;
+        padding-block: 10px;
+      }
+    }
+  }
+  .pillers {
+    row-gap: 22px;
+    padding: 32px;
+    background-color: $white;
+    border-radius: 16px;
+    @include media-breakpoint-down(xxl) {
+      padding: 15px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 29px;
+      color: $grey-dark;
+      @include media-breakpoint-down(xl) {
+        font-size: 16px;
+      }
+    }
+    figure {
+      border: 1px solid #e5dfe4;
+      border-radius: 16px;
+    }
+  }
+
+  .foundation-startegy {
+    position: relative;
+    margin-bottom: 48px;
+    margin-inline-start: 100px;
+    @include media-breakpoint-down(lg) {
+      margin-inline-start: 48px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/img/strategy-dot.svg);
+      background-repeat: no-repeat;
+      width: 17px;
+      height: 17px;
+      top: 100%;
+      inset-inline-start: -48px;
+      z-index: 10;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      inset-inline-start: -42px;
+      width: 4px;
+      height: 100%;
+      background-color: #e5dfe4;
+    }
+  }
+  .excellence-startegy {
+    position: relative;
+    margin-inline-start: 160px;
+    @include media-breakpoint-down(lg) {
+      margin-inline-start: 0px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      inset-inline-start: -42px;
+      width: 4px;
+      height: 100%;
+      background-color: #e5dfe4;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/img/strategy-dot.svg);
+      background-repeat: no-repeat;
+      width: 17px;
+      height: 17px;
+      top: 100%;
+      inset-inline-start: -48px;
+      z-index: 10;
+    }
+  }
+}
+
+.strategy {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid #e5dfe4;
+    width: 100%;
+    inset-inline-start: 0px;
+    bottom: -10px;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+
+  h3 {
+    margin-bottom: 34px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      inset-inline-start: -60px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-image: url("../images/img/startegy.svg");
+      background-color: $maroon;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &-list {
+    li {
+      list-style-type: disc;
+      margin-bottom: 32px;
+
+      &::marker {
+        color: $maroon;
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 28px;
+        @include media-breakpoint-down(xl) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.terms-of-use-section {
+    p{
+        color:$primary1;
+        font-size:18px;
+        font-weight:300;
+        line-height: 28px;  
+        margin-bottom: 10px;
+    }
+    ul {
+        li{
+            
+            color:$primary;
+            font-size:18px;
+            font-weight:300;
+            line-height: 28px;
+        }
+     
+    }
+    ol {
+        li{
+            
+            color:$primary;
+            font-size:18px;
+            font-weight:300;
+            line-height: 28px;
+        }
+     
+    }
+}
+
+/* purgecss start ignore */
+.terms-of-use-section ul li {
+  color: #16012c;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+
+/* purgecss end ignore */

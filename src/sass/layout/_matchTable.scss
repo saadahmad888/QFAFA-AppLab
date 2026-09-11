@@ -1,0 +1,544 @@
+.match-table-section {
+    padding: 40px 100px 40px 100px;
+
+    // @include media-breakpoint-down(md) {
+    //     padding: 10px 10px 10px 10px;
+    // }
+
+    @include media-breakpoint-down(lg) {
+        padding: 40px 10px 32px 10px;
+    }
+.matches .ctm-table-header1 thead tr  {
+   th:nth-child(1)
+   {
+        width: 10%;
+   }
+    th:nth-child(2)
+   {
+        width: 6%;
+   }
+      th:nth-child(3)
+   {
+        width: 17%;
+   }
+      th:nth-child(4)
+   {
+        width: 3%;
+        @include media-breakpoint-down(xxl){
+            width: 4%;
+        }
+   }
+      th:nth-child(5)
+   {
+        width: 11%;
+   }
+      th:nth-child(6)
+   {
+        width: 4%;
+           @include media-breakpoint-down(xxl){
+            width: 3%;
+        }
+   }
+      th:nth-child(7)
+   {
+        width: 11%;
+   }
+      th:nth-child(8)
+   {
+        width: 4%;
+            @include media-breakpoint-down(xxl){
+            width: 2%;
+        }
+   }
+        th:nth-child(9)
+   {
+        width: 11%;
+           @include media-breakpoint-down(xxl){
+            width: 10%;
+        }
+   }
+        th:nth-child(10)
+   {
+        width: 4%;
+   }
+        th:nth-child(11)
+   {
+        width: 5%;
+   }
+   
+}
+
+    .nav-link {
+        color: $primary;
+        background-color: $white;
+        border: 1px solid #B8C3C6;
+        padding:10px 27px 27px;
+        border-radius: 12px 12px 0 0;
+        border-radius: 12px;
+        
+
+        @include media-breakpoint-down(xl) {
+            padding: 9px 18px 19px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            padding: 6px 12px 7px;
+            border-radius: 8px 10px 0 0;
+            
+            font-size: 14px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            min-width: 80px;
+        }
+    }
+
+    .tab-content {
+        width: 100%;
+        border-radius: 10px;
+        // background: url('../images/team-table-bg.svg') no-repeat $white;
+        background-color: #a44861;
+        background-size: cover;
+        align-content: center;
+        overflow: hidden;
+        position: relative;
+        // padding: 30px;
+        top: -22px;
+
+        @include media-breakpoint-down(lg) {
+            border-radius: 10px;
+            padding: 10px;
+            top: -4px;
+        }
+    }
+.matches-inner-content , .matches-inner-content {
+  width: 100%;
+        border-radius: 24px;
+        // background: url('../images/team-table-bg.svg') no-repeat $white;
+        background-color: #a44861;
+        background-size: cover;
+        align-content: center;
+        overflow: hidden;
+        position: relative;
+        // padding: 30px;
+        top: -6px;
+
+        @include media-breakpoint-down(lg) {
+            border-radius: 10px;
+            padding: 10px;
+            top: -4px;
+        }
+}
+    .nav-pills {
+        overflow: auto;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    // .form-start{
+        
+    //     min-width: 132px;
+    // }
+    // .form-end {
+    //     min-width: 117px;
+    // }
+    .custom-form {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: $primary;
+        width:auto;
+        padding: 8px 24px;
+        border-radius: 12px;
+        border-color: #E5DFE4;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url('../images/icon/qal-table-downarrow.svg');
+        background-color: #F2F2F2;
+        padding-inline-end:35px;
+        background-repeat: no-repeat;
+        background-size: 16px;
+        @include media-breakpoint-down(lg) {
+        
+                font-size: 14px;
+        }
+        option {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 16px;
+            color: $primary;
+         
+        }
+      [dir=rtl] & {
+        // background-position: left 24px center;
+        padding-inline-end:24px;
+        padding-inline-start:35px;
+      }
+    }
+  .ctm-table-header .nav-link {
+        padding:  10px 20px;
+        border-radius: 12px;
+          @include media-breakpoint-down(lg) {
+          padding:  14px 10px;
+        border-radius: 8px;
+        }
+
+  }
+   .ctm-table-header .nav-pills {
+    gap:10px;
+   }
+   .ctm-table-header .tab-content{
+top:auto;
+   }
+}
+
+.nav-pills {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+}
+
+
+
+.table {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+td {
+    border-style: none;
+}
+
+.table-rank thead tr {
+    // border-bottom: 10px solid $green;
+
+    td {
+        &:first-child {
+            border-start-start-radius: 12px;
+        }
+
+        &:last-child {
+            border-start-end-radius: 12px;
+        }
+    }
+}
+
+.table-rank tbody tr {
+    // border-bottom: 10px solid $green;
+
+    td {
+        &:first-child {
+            border-start-start-radius: 12px;
+            border-end-start-radius: 12px;
+            overflow: hidden;
+        }
+
+        &:last-child {
+            border-start-end-radius: 12px;
+            border-end-end-radius: 12px;
+        }
+    }
+}
+
+
+
+.table-light {
+    --bs-table-bg: #F2F2F2;
+}
+
+.ctm-table {
+    text-align: center;
+
+    thead {
+        th {
+            padding: 16px;
+
+            @include media-breakpoint-down(lg) {
+                padding: 10px;
+            }
+        }
+    }
+
+    .trasparent-row {
+        background-color: transparent;
+        padding: 8px;
+    }
+
+
+    .sl-no {
+        color: #899AA0;
+        font-size: 20px;
+       [dir="rtl"] & {
+    font-size: 20px;
+    text-align: right;
+  }
+// width: 25%;
+text-align: left;
+
+    
+
+        @include media-breakpoint-down(lg) {
+            font-size: 14px;
+            [dir="rtl"] & {
+    font-size: 14px;
+  }
+        }
+        
+        @include media-breakpoint-down(sm) {
+            font-size: 14px;
+         [dir="rtl"] & {
+    font-size: 10px;
+  }
+        }
+    }
+
+    .country-name {
+        font-weight: 700;
+        font-size: 24px;
+        white-space: nowrap;
+// width: 50%;
+        @include media-breakpoint-down(lg) {
+            font-size: 14px;
+        }
+
+        color: $black2;
+
+        span {
+            font-size: 18px;
+            @include media-breakpoint-down(lg) {
+            font-size: 14px;
+        }
+        }
+    }
+
+    .points,
+    .prev-points {
+        font-weight: 700;
+        font-size: 16px;
+        color: $black;
+        align-content: center;
+
+        @include media-breakpoint-down(md) {
+            font-size: 13px;
+        }
+// width: 25%;
+    }
+
+    .match-results {
+        align-content: center;
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 0 10px;
+        // margin: 30px;
+    }
+
+    .ctm-table-header {
+        border-spacing: 0;
+
+        // thead {
+        //     th:last-child {
+        //         width: 20%;
+        //     }
+        // }
+    }
+
+    .table-rank {
+        padding: 6px 25px;
+min-height: 100px;
+        @include media-breakpoint-down(lg) {
+            padding: 6px 15px;
+        }
+        .club {
+            white-space: nowrap;
+        }
+    }
+    .head-rank{
+        background-color: #f2f2f2;
+        box-shadow: 
+        55px 0px 0px #f2f2f2,    /* right */
+        -55px 0px 0px #f2f2f2,   /* left */
+        40px -17px 3px #f2f2f2,  /* top-right */
+        -40px -17px 3px #f2f2f2;
+        position: sticky;
+        width: 100%;
+        top: 0;
+    }
+}
+
+.ctm-table {
+    >tbody>tr>td {
+        background-color: transparent;
+        padding: 0;
+
+        table td {
+            background-color: #fff;
+            padding: 15px 15px;
+
+            @media (max-width: 1405px) and (min-width: 1200px) {
+                padding: 15px 9px;
+            }
+
+            @include media-breakpoint-down(xl) {
+                padding: 10px 5px;
+            }
+        }
+
+        table thead td {
+            background-color: #F2F2F2;
+            padding: 32px 20px;
+
+            @include media-breakpoint-down(xl) {
+                padding: 10px 5px;
+            }
+        }
+    }
+}
+
+.team-table-bg {
+    background-image: url('../images/img/football-ranking-bg1.png');
+    background-size: cover;
+    background-color: #F1E5F1;
+    border-radius: 12px;
+}
+.tr-body {
+    @include media-breakpoint-down(lg) {
+        .font-size-5 {
+            font-size: 16px;
+        }
+        .custom-form {
+            font-size: 18px;
+        }
+        .date-time,.team-name,.clock,.content {
+            
+            white-space: nowrap;
+        }
+    }
+    .team-name {
+    a {
+        text-decoration: none;
+    }
+    }
+}
+.nav-pills .nav-link.active {
+    background-color: $primary;
+    color: $white !important;
+    border: 1px solid #551523;;
+}
+.table-cls {
+	width: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    column-gap: 5px;
+    @include media-breakpoint-down(sm) {
+        width: 80px;
+    }
+
+}
+.ctm-table  .tab-content{
+top:0px;
+   }
+  .table-rank  thead th {
+   
+    &:first-child {
+         border-start-start-radius: 12px !important;
+          border-end-start-radius: 12px !important;
+    }
+  
+    &:last-child {
+         border-start-end-radius: 12px !important;
+          border-end-end-radius: 12px !important;
+    }
+   }
+   .match-table-section .nav-pills {
+  overflow-x: auto; // horizontal scroll
+  overflow-y: hidden; // hide vertical scroll
+  width: 100%;
+  flex-wrap: nowrap;
+  display: flex;
+
+  /* WebKit scrollbar styling */
+  &::-webkit-scrollbar {
+    height: 5px; /* scrollbar height */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent; /* track color */
+    border-radius: 20px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: transparent; /* thumb color */
+    border-radius: 20px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #de0764; /* thumb hover */
+  }
+
+  /* Firefox scrollbar (thin style) */
+  scrollbar-width: thin;
+  scrollbar-color:  #780436  $white;
+}
+.group-scroll-ranking {
+   max-width:calc(100vw - 415px);
+  overflow-x: auto; 
+  overflow-y: hidden;
+  white-space: nowrap;   
+//   max-width:1444px;
+  @media(min-width:1700px) {
+  max-width:1444px;
+  }
+  @media (max-width:1699px) and (min-width:1694.98px) {
+    max-width:1268px;
+  }
+    @media (max-width:1695px) and (min-width:1691.98px) {
+    max-width:1260px;
+  }
+     @media (max-width:1692px) and (min-width:1683.98px) {
+    max-width:1260px;
+  }
+//       @media (max-width:1684px) and (min-width:1670.98px) {
+//     max-width:1242px;
+//   }
+       @media (max-width:1524px) and (min-width:1399.98px) {
+       max-width:calc(100vw - 400px);
+  }
+         @media (max-width:1400px) and (min-width:1199.98px) {
+       max-width:calc(100vw - 392px);
+  }
+           @media (max-width:1200px) and (min-width:991.98px) {
+       max-width:calc(100vw - 382px);
+  }
+@include media-breakpoint-down(lg) {
+     max-width:calc(100vw - 160px);
+
+}
+@include media-breakpoint-down(sm) {
+           max-width: calc(100vw + 122px);
+
+}
+}
+
+
+.group-scroll-matches {
+    overflow-x:auto;
+    overflow-y: hidden;
+    max-width:calc(100vw - 990px);
+               @media (min-width:1700px)  {
+        max-width:890px
+  }
+
+    @include media-breakpoint-down(xl) {
+        max-width:calc(100vw - 990px);
+    }
+     @include media-breakpoint-down(lg) {
+        max-width:calc(100vw - 156px);
+    }
+      @include media-breakpoint-down(sm) {
+        max-width:calc(100vw + 122px);
+    }
+}

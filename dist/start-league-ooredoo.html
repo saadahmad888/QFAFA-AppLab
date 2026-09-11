@@ -1,0 +1,1873 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <title>QFA | Star League Ooredoo</title>
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <style>@charset 'UTF-8';:root{--f-spinner-width:36px;--f-spinner-height:36px;--f-spinner-color-1:rgba(0, 0, 0, 0.1);--f-spinner-color-2:rgba(17, 24, 28, 0.8);--f-spinner-stroke:2.75}:root{--f-button-width:40px;--f-button-height:40px;--f-button-border:0;--f-button-border-radius:0;--f-button-color:#374151;--f-button-bg:#f8f8f8;--f-button-hover-bg:#e0e0e0;--f-button-active-bg:#d0d0d0;--f-button-shadow:none;--f-button-transform:none;--f-button-svg-width:20px;--f-button-svg-height:20px;--f-button-svg-stroke-width:1.5;--f-button-svg-fill:none;--f-button-svg-filter:none;--f-button-svg-disabled-opacity:0.65}:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13,110,253;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-primary-text-emphasis:#052c65;--bs-secondary-text-emphasis:#2b2f32;--bs-success-text-emphasis:#0a3622;--bs-info-text-emphasis:#055160;--bs-warning-text-emphasis:#664d03;--bs-danger-text-emphasis:#58151c;--bs-light-text-emphasis:#495057;--bs-dark-text-emphasis:#495057;--bs-primary-bg-subtle:#cfe2ff;--bs-secondary-bg-subtle:#e2e3e5;--bs-success-bg-subtle:#d1e7dd;--bs-info-bg-subtle:#cff4fc;--bs-warning-bg-subtle:#fff3cd;--bs-danger-bg-subtle:#f8d7da;--bs-light-bg-subtle:#fcfcfd;--bs-dark-bg-subtle:#ced4da;--bs-primary-border-subtle:#9ec5fe;--bs-secondary-border-subtle:#c4c8cb;--bs-success-border-subtle:#a3cfbb;--bs-info-border-subtle:#9eeaf9;--bs-warning-border-subtle:#ffe69c;--bs-danger-border-subtle:#f1aeb5;--bs-light-border-subtle:#e9ecef;--bs-dark-border-subtle:#adb5bd;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-color-rgb:33,37,41;--bs-body-bg:#fff;--bs-body-bg-rgb:255,255,255;--bs-emphasis-color:#000;--bs-emphasis-color-rgb:0,0,0;--bs-secondary-color:rgba(33, 37, 41, 0.75);--bs-secondary-color-rgb:33,37,41;--bs-secondary-bg:#e9ecef;--bs-secondary-bg-rgb:233,236,239;--bs-tertiary-color:rgba(33, 37, 41, 0.5);--bs-tertiary-color-rgb:33,37,41;--bs-tertiary-bg:#f8f9fa;--bs-tertiary-bg-rgb:248,249,250;--bs-heading-color:inherit;--bs-link-color:#0d6efd;--bs-link-color-rgb:13,110,253;--bs-link-decoration:underline;--bs-link-hover-color:#0a58ca;--bs-link-hover-color-rgb:10,88,202;--bs-code-color:#d63384;--bs-highlight-color:#212529;--bs-highlight-bg:#fff3cd;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, 0.175);--bs-border-radius:0.375rem;--bs-border-radius-sm:0.25rem;--bs-border-radius-lg:0.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-xxl:2rem;--bs-border-radius-2xl:var(--bs-border-radius-xxl);--bs-border-radius-pill:50rem;--bs-box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.15);--bs-box-shadow-sm:0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);--bs-box-shadow-lg:0 1rem 3rem rgba(0, 0, 0, 0.175);--bs-box-shadow-inset:inset 0 1px 2px rgba(0, 0, 0, 0.075);--bs-focus-ring-width:0.25rem;--bs-focus-ring-opacity:0.25;--bs-focus-ring-color:rgba(13, 110, 253, 0.25);--bs-form-valid-color:#198754;--bs-form-valid-border-color:#198754;--bs-form-invalid-color:#dc3545;--bs-form-invalid-border-color:#dc3545}*,::after,::before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%}h2,h3,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2;color:var(--bs-heading-color)}h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2{font-size:2rem}}h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3{font-size:1.75rem}}h5{font-size:1.25rem}h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}ol,ul{padding-left:2rem}ol,ul{margin-top:0;margin-bottom:1rem}ul ul{margin-bottom:0}a{color:rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));text-decoration:underline}img,svg{vertical-align:middle}table{caption-side:bottom;border-collapse:collapse}th{text-align:inherit;text-align:-webkit-match-parent}tbody,td,th,thead,tr{border-color:inherit;border-style:solid;border-width:0}button{border-radius:0}button,input,select{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,select{text-transform:none}select{word-wrap:normal}[type=button],button{-webkit-appearance:button}::-moz-focus-inner{padding:0;border-style:none}::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field{padding:0}::-webkit-inner-spin-button{height:auto}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-color-swatch-wrapper{padding:0}::file-selector-button{font:inherit;-webkit-appearance:button}.img-fluid{max-width:100%;height:auto}.container-lg{--bs-gutter-x:1.5rem;--bs-gutter-y:0;width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-right:auto;margin-left:auto}@media (min-width:992px){.container-lg{max-width:960px}}@media (min-width:1200px){.container-lg{max-width:1140px}}:root{--bs-breakpoint-xs:0;--bs-breakpoint-sm:576px;--bs-breakpoint-md:768px;--bs-breakpoint-lg:992px;--bs-breakpoint-xl:1200px;--bs-breakpoint-xxl:1400px}.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(-1 * var(--bs-gutter-y));margin-right:calc(-.5 * var(--bs-gutter-x));margin-left:calc(-.5 * var(--bs-gutter-x))}.row>*{flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x) * .5);padding-left:calc(var(--bs-gutter-x) * .5);margin-top:var(--bs-gutter-y)}.col{flex:1 0 0%}.col-auto{flex:0 0 auto;width:auto}.col-12{flex:0 0 auto;width:100%}.gy-4{--bs-gutter-y:1.5rem}@media (min-width:992px){.col-lg{flex:1 0 0%}.col-lg-auto{flex:0 0 auto;width:auto}}.table{--bs-table-color-type:initial;--bs-table-bg-type:initial;--bs-table-color-state:initial;--bs-table-bg-state:initial;--bs-table-color:var(--bs-emphasis-color);--bs-table-bg:var(--bs-body-bg);--bs-table-border-color:var(--bs-border-color);--bs-table-accent-bg:transparent;--bs-table-striped-color:var(--bs-emphasis-color);--bs-table-striped-bg:rgba(var(--bs-emphasis-color-rgb), 0.05);--bs-table-active-color:var(--bs-emphasis-color);--bs-table-active-bg:rgba(var(--bs-emphasis-color-rgb), 0.1);--bs-table-hover-color:var(--bs-emphasis-color);--bs-table-hover-bg:rgba(var(--bs-emphasis-color-rgb), 0.075);width:100%;margin-bottom:1rem;vertical-align:top;border-color:var(--bs-table-border-color)}.table>:not(caption)>*>*{padding:.5rem;color:var(--bs-table-color-state,var(--bs-table-color-type,var(--bs-table-color)));background-color:var(--bs-table-bg);border-bottom-width:var(--bs-border-width);box-shadow:inset 0 0 0 9999px var(--bs-table-bg-state,var(--bs-table-bg-type,var(--bs-table-accent-bg)))}.table>tbody{vertical-align:inherit}.table>thead{vertical-align:bottom}.table-light{--bs-table-color:#000;--bs-table-bg:#f8f9fa;--bs-table-border-color:#c6c7c8;--bs-table-striped-bg:#ecedee;--bs-table-striped-color:#000;--bs-table-active-bg:#dfe0e1;--bs-table-active-color:#000;--bs-table-hover-bg:#e5e6e7;--bs-table-hover-color:#000;color:var(--bs-table-color);border-color:var(--bs-table-border-color)}.table-responsive{overflow-x:auto;-webkit-overflow-scrolling:touch}.form-select{--bs-form-select-bg-img:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");display:block;width:100%;padding:.375rem 2.25rem .375rem .75rem;font-size:1rem;font-weight:400;line-height:1.5;color:var(--bs-body-color);-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:var(--bs-body-bg);background-image:var(--bs-form-select-bg-img),var(--bs-form-select-bg-icon,none);background-repeat:no-repeat;background-position:right .75rem center;background-size:16px 12px;border:var(--bs-border-width) solid var(--bs-border-color);border-radius:var(--bs-border-radius)}.form-select:-moz-focusring{color:transparent;text-shadow:0 0 0 var(--bs-body-color)}.btn{--bs-btn-padding-x:0.75rem;--bs-btn-padding-y:0.375rem;--bs-btn-font-family: ;--bs-btn-font-size:1rem;--bs-btn-font-weight:400;--bs-btn-line-height:1.5;--bs-btn-color:var(--bs-body-color);--bs-btn-bg:transparent;--bs-btn-border-width:var(--bs-border-width);--bs-btn-border-color:transparent;--bs-btn-border-radius:var(--bs-border-radius);--bs-btn-hover-border-color:transparent;--bs-btn-box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.15),0 1px 1px rgba(0, 0, 0, 0.075);--bs-btn-disabled-opacity:0.65;--bs-btn-focus-box-shadow:0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);display:inline-block;padding:var(--bs-btn-padding-y) var(--bs-btn-padding-x);font-family:var(--bs-btn-font-family);font-size:var(--bs-btn-font-size);font-weight:var(--bs-btn-font-weight);line-height:var(--bs-btn-line-height);color:var(--bs-btn-color);text-align:center;text-decoration:none;vertical-align:middle;border:var(--bs-btn-border-width) solid var(--bs-btn-border-color);border-radius:var(--bs-btn-border-radius);background-color:var(--bs-btn-bg)}.fade:not(.show){opacity:0}.dropdown{position:relative}.dropdown-toggle{white-space:nowrap}.dropdown-toggle::after{display:inline-block;margin-left:.255em;vertical-align:.255em;content:"";border-top:.3em solid;border-right:.3em solid transparent;border-bottom:0;border-left:.3em solid transparent}.dropdown-menu{--bs-dropdown-zindex:1000;--bs-dropdown-min-width:10rem;--bs-dropdown-padding-x:0;--bs-dropdown-padding-y:0.5rem;--bs-dropdown-spacer:0.125rem;--bs-dropdown-font-size:1rem;--bs-dropdown-color:var(--bs-body-color);--bs-dropdown-bg:var(--bs-body-bg);--bs-dropdown-border-color:var(--bs-border-color-translucent);--bs-dropdown-border-radius:var(--bs-border-radius);--bs-dropdown-border-width:var(--bs-border-width);--bs-dropdown-inner-border-radius:calc(var(--bs-border-radius) - var(--bs-border-width));--bs-dropdown-divider-bg:var(--bs-border-color-translucent);--bs-dropdown-divider-margin-y:0.5rem;--bs-dropdown-box-shadow:var(--bs-box-shadow);--bs-dropdown-link-color:var(--bs-body-color);--bs-dropdown-link-hover-color:var(--bs-body-color);--bs-dropdown-link-hover-bg:var(--bs-tertiary-bg);--bs-dropdown-link-active-color:#fff;--bs-dropdown-link-active-bg:#0d6efd;--bs-dropdown-link-disabled-color:var(--bs-tertiary-color);--bs-dropdown-item-padding-x:1rem;--bs-dropdown-item-padding-y:0.25rem;--bs-dropdown-header-color:#6c757d;--bs-dropdown-header-padding-x:1rem;--bs-dropdown-header-padding-y:0.5rem;position:absolute;z-index:var(--bs-dropdown-zindex);display:none;min-width:var(--bs-dropdown-min-width);padding:var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);margin:0;font-size:var(--bs-dropdown-font-size);color:var(--bs-dropdown-color);text-align:left;list-style:none;background-color:var(--bs-dropdown-bg);background-clip:padding-box;border:var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);border-radius:var(--bs-dropdown-border-radius)}.dropdown-item{display:block;width:100%;padding:var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);clear:both;font-weight:400;color:var(--bs-dropdown-link-color);text-align:inherit;text-decoration:none;white-space:nowrap;background-color:transparent;border:0;border-radius:var(--bs-dropdown-item-border-radius,0)}.nav-link{display:block;padding:var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);font-size:var(--bs-nav-link-font-size);font-weight:var(--bs-nav-link-font-weight);color:var(--bs-nav-link-color);text-decoration:none;background:0 0;border:0}.tab-content>.tab-pane{display:none}.navbar{--bs-navbar-padding-x:0;--bs-navbar-padding-y:0.5rem;--bs-navbar-color:rgba(var(--bs-emphasis-color-rgb), 0.65);--bs-navbar-hover-color:rgba(var(--bs-emphasis-color-rgb), 0.8);--bs-navbar-disabled-color:rgba(var(--bs-emphasis-color-rgb), 0.3);--bs-navbar-active-color:rgba(var(--bs-emphasis-color-rgb), 1);--bs-navbar-brand-padding-y:0.3125rem;--bs-navbar-brand-margin-end:1rem;--bs-navbar-brand-font-size:1.25rem;--bs-navbar-brand-color:rgba(var(--bs-emphasis-color-rgb), 1);--bs-navbar-brand-hover-color:rgba(var(--bs-emphasis-color-rgb), 1);--bs-navbar-nav-link-padding-x:0.5rem;--bs-navbar-toggler-padding-y:0.25rem;--bs-navbar-toggler-padding-x:0.75rem;--bs-navbar-toggler-font-size:1.25rem;--bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");--bs-navbar-toggler-border-color:rgba(var(--bs-emphasis-color-rgb), 0.15);--bs-navbar-toggler-border-radius:var(--bs-border-radius);--bs-navbar-toggler-focus-width:0.25rem;position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:var(--bs-navbar-padding-y) var(--bs-navbar-padding-x)}.navbar>.container-lg{display:flex;flex-wrap:inherit;align-items:center;justify-content:space-between}.navbar-brand{padding-top:var(--bs-navbar-brand-padding-y);padding-bottom:var(--bs-navbar-brand-padding-y);margin-right:var(--bs-navbar-brand-margin-end);font-size:var(--bs-navbar-brand-font-size);color:var(--bs-navbar-brand-color);text-decoration:none;white-space:nowrap}.navbar-nav{--bs-nav-link-padding-x:0;--bs-nav-link-padding-y:0.5rem;--bs-nav-link-font-weight: ;--bs-nav-link-color:var(--bs-navbar-color);--bs-nav-link-hover-color:var(--bs-navbar-hover-color);--bs-nav-link-disabled-color:var(--bs-navbar-disabled-color);display:flex;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .dropdown-menu{position:static}.navbar-toggler{padding:var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);font-size:var(--bs-navbar-toggler-font-size);line-height:1;color:var(--bs-navbar-color);background-color:transparent;border:var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);border-radius:var(--bs-navbar-toggler-border-radius)}@media (min-width:992px){.navbar-expand-lg{flex-wrap:nowrap;justify-content:flex-start}.navbar-expand-lg .navbar-nav{flex-direction:row}.navbar-expand-lg .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-lg .navbar-nav .nav-link{padding-right:var(--bs-navbar-nav-link-padding-x);padding-left:var(--bs-navbar-nav-link-padding-x)}.navbar-expand-lg .offcanvas{position:static;z-index:auto;flex-grow:1;width:auto!important;height:auto!important;visibility:visible!important;background-color:transparent!important;border:0!important;transform:none!important}.navbar-expand-lg .offcanvas .offcanvas-header{display:none}.navbar-expand-lg .offcanvas .offcanvas-body{display:flex;flex-grow:0;padding:0;overflow-y:visible}}.breadcrumb{--bs-breadcrumb-padding-x:0;--bs-breadcrumb-padding-y:0;--bs-breadcrumb-margin-bottom:1rem;--bs-breadcrumb-bg: ;--bs-breadcrumb-border-radius: ;--bs-breadcrumb-divider-color:var(--bs-secondary-color);--bs-breadcrumb-item-padding-x:0.5rem;--bs-breadcrumb-item-active-color:var(--bs-secondary-color);display:flex;flex-wrap:wrap;padding:var(--bs-breadcrumb-padding-y) var(--bs-breadcrumb-padding-x);margin-bottom:var(--bs-breadcrumb-margin-bottom);font-size:var(--bs-breadcrumb-font-size);list-style:none;background-color:var(--bs-breadcrumb-bg);border-radius:var(--bs-breadcrumb-border-radius)}.breadcrumb-item+.breadcrumb-item{padding-left:var(--bs-breadcrumb-item-padding-x)}.breadcrumb-item+.breadcrumb-item::before{float:left;padding-right:var(--bs-breadcrumb-item-padding-x);color:var(--bs-breadcrumb-divider-color);content:var(--bs-breadcrumb-divider, "/")}.breadcrumb-item.active{color:var(--bs-breadcrumb-item-active-color)}.btn-close{--bs-btn-close-color:#000;--bs-btn-close-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");--bs-btn-close-opacity:0.5;--bs-btn-close-hover-opacity:0.75;--bs-btn-close-focus-shadow:0 0 0 0.25rem rgba(13, 110, 253, 0.25);--bs-btn-close-focus-opacity:1;--bs-btn-close-disabled-opacity:0.25;--bs-btn-close-white-filter:invert(1) grayscale(100%) brightness(200%);box-sizing:content-box;width:1em;height:1em;padding:.25em;color:var(--bs-btn-close-color);background:transparent var(--bs-btn-close-bg) center/1em auto no-repeat;border:0;border-radius:.375rem;opacity:var(--bs-btn-close-opacity)}.offcanvas{--bs-offcanvas-zindex:1045;--bs-offcanvas-width:400px;--bs-offcanvas-height:30vh;--bs-offcanvas-padding-x:1rem;--bs-offcanvas-padding-y:1rem;--bs-offcanvas-color:var(--bs-body-color);--bs-offcanvas-bg:var(--bs-body-bg);--bs-offcanvas-border-width:var(--bs-border-width);--bs-offcanvas-border-color:var(--bs-border-color-translucent);--bs-offcanvas-box-shadow:var(--bs-box-shadow-sm);--bs-offcanvas-title-line-height:1.5}.offcanvas{position:fixed;bottom:0;z-index:var(--bs-offcanvas-zindex);display:flex;flex-direction:column;max-width:100%;color:var(--bs-offcanvas-color);visibility:hidden;background-color:var(--bs-offcanvas-bg);background-clip:padding-box;outline:0}.offcanvas.offcanvas-start{top:0;left:0;width:var(--bs-offcanvas-width);border-right:var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);transform:translateX(-100%)}.offcanvas-header{display:flex;align-items:center;padding:var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x)}.offcanvas-header .btn-close{padding:calc(var(--bs-offcanvas-padding-y) * .5) calc(var(--bs-offcanvas-padding-x) * .5);margin:calc(-.5 * var(--bs-offcanvas-padding-y)) calc(-.5 * var(--bs-offcanvas-padding-x)) calc(-.5 * var(--bs-offcanvas-padding-y)) auto}.offcanvas-body{flex-grow:1;padding:var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);overflow-y:auto}.d-block{display:block!important}.d-flex{display:flex!important}.d-none{display:none!important}.position-absolute{position:absolute!important}.flex-row{flex-direction:row!important}.flex-column{flex-direction:column!important}.justify-content-end{justify-content:flex-end!important}.justify-content-center{justify-content:center!important}.align-items-center{align-items:center!important}.mb-0{margin-bottom:0!important}.mb-2{margin-bottom:.5rem!important}.px-0{padding-right:0!important;padding-left:0!important}.gap-1{gap:.25rem!important}.gap-3{gap:1rem!important}.text-uppercase{text-transform:uppercase!important}.text-capitalize{text-transform:capitalize!important}.text-primary{--bs-text-opacity:1;color:rgba(var(--bs-primary-rgb),var(--bs-text-opacity))!important}.text-black{--bs-text-opacity:1;color:rgba(var(--bs-black-rgb),var(--bs-text-opacity))!important}.bg-primary{--bs-bg-opacity:1;background-color:rgba(var(--bs-primary-rgb),var(--bs-bg-opacity))!important}.rounded-pill{border-radius:var(--bs-border-radius-pill)!important}@media (min-width:576px){.d-sm-block{display:block!important}.d-sm-flex{display:flex!important}}@media (min-width:768px){.d-md-flex{display:flex!important}.gap-md-5{gap:3rem!important}}@media (min-width:992px){.d-lg-block{display:block!important}.d-lg-flex{display:flex!important}.d-lg-none{display:none!important}}@font-face{font-family:ClanOT;src:url("assets/fonts/clanot-bold-webfont.eot");src:url("assets/fonts/clanot-bold-webfont.eot?#iefix") format("embedded-opentype"),url("assets/fonts/clanot-bold-webfont.woff2") format("woff2"),url("assets/fonts/clanot-bold-webfont.woff") format("woff"),url("assets/fonts/clanot-bold-webfont.ttf") format("truetype"),url("assets/fonts/clanot-bold-webfont.svg#clan_otbold") format("svg");font-weight:800;font-style:normal;font-display:swap}@font-face{font-family:ClanOT;src:url("assets/fonts/clanot-book-webfont.eot");src:url("assets/fonts/clanot-book-webfont.eot?#iefix") format("embedded-opentype"),url("assets/fonts/clanot-book-webfont.woff2") format("woff2"),url("assets/fonts/clanot-book-webfont.woff") format("woff"),url("assets/fonts/clanot-book-webfont.ttf") format("truetype"),url("assets/fonts/clanot-book-webfont.svg#clan_otbook") format("svg");font-weight:100;font-style:normal;font-display:swap}@font-face{font-family:ClanOT;src:url("assets/fonts/ClanOT-CondBold.eot");src:url("assets/fonts/ClanOT-CondBold.eot?#iefix") format("embedded-opentype"),url("assets/fonts/ClanOT-CondBold.woff2") format("woff2"),url("assets/fonts/ClanOT-CondBold.woff") format("woff"),url("assets/fonts/ClanOT-CondBold.ttf") format("truetype"),url("assets/fonts/ClanOT-CondBold.svg#ClanOT-CondBold") format("svg");font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:ClanOT;src:url("assets/fonts/clanot-condbook-webfont.eot");src:url("assets/fonts/clanot-condbook-webfont.eot?#iefix") format("embedded-opentype"),url("assets/fonts/clanot-condbook-webfont.woff2") format("woff2"),url("assets/fonts/clanot-condbook-webfont.woff") format("woff"),url("assets/fonts/clanot-condbook-webfont.ttf") format("truetype"),url("assets/fonts/clanot-condbook-webfont.svg#clan_otcond_book") format("svg");font-weight:400;font-style:normal;font-display:swap}body{font-size:18px;font-family:ClanOT,sans-serif;margin:0;font-style:normal;line-height:normal}h2,h3,h5,h6{font-weight:700}h2{font-size:40px;-webkit-text-stroke-width:1px}@media (max-width:767.98px){h2{font-size:calc(1.3125rem + .75vw)}}@media (max-width:767.98px) and (min-width:1200px){h2{font-size:1.875rem}}@media (min-width:768px){h2{font-size:calc(1.3125rem + .75vw)}}@media (min-width:768px) and (min-width:1200px){h2{font-size:1.875rem}}@media (min-width:992px){h2{font-size:calc(1.375rem + 1.5vw)}}@media (min-width:992px) and (min-width:1200px){h2{font-size:2.5rem}}@media (min-width:1200px){.d-xl-flex{display:flex!important}.d-xl-none{display:none!important}h2{font-size:calc(1.375rem + 1.5vw)}}@media (min-width:1200px) and (min-width:1200px){h2{font-size:2.5rem}}h3{font-size:30px}@media (max-width:767.98px){h3{font-size:20px}}@media (min-width:768px){h3{font-size:20px}}@media (min-width:992px){h3{font-size:calc(1.3125rem + .75vw)}}@media (min-width:992px) and (min-width:1200px){h3{font-size:1.875rem}}@media (min-width:1200px){h3{font-size:calc(1.3125rem + .75vw)}}@media (min-width:1200px) and (min-width:1200px){h3{font-size:1.875rem}}h5{font-size:18px}@media (max-width:767.98px){h5{font-size:.8125rem}}@media (min-width:768px){h5{font-size:.875rem}}@media (min-width:992px){h5{font-size:1rem}}@media (min-width:1200px){h5{font-size:1rem}}h6{font-size:16px;line-height:23px}@media (max-width:767.98px){h6{font-size:.75rem}}@media (min-width:768px){h6{font-size:.75rem}}@media (min-width:992px){h6{font-size:.875rem}}@media (min-width:1200px){h6{font-size:1rem}}.fw-700{font-weight:700}.fw-450{font-weight:450}p{font-weight:450;margin-bottom:0}@media (max-width:1199.98px){p{font-size:.9375rem}}ul{padding:0;margin:0}li{list-style:none}.gx-32{-moz-column-gap:32px;column-gap:32px}@media (max-width:991.98px){.gx-32{-moz-column-gap:15px;column-gap:15px}}.gx-10{-moz-column-gap:10px;column-gap:10px}.gx-32{row-gap:52px}.section-padding{padding-block:30px}@media (max-width:991.98px){.section-padding{padding-block:20px}}@media (max-width:767.98px){p{font-size:.8125rem}.section-padding{padding-block:20px}}@media (max-width:1399px) and (min-width:991px){.container-lg{max-width:90%}}@media (max-width:992px) and (min-width:320px){.container-lg{max-width:90%;padding-inline:0}}.p-12{padding:12px 16px}.mb-120{margin-bottom:120px}.breadcrumb-section{padding:20px 0 18px;text-transform:uppercase;font-weight:700;border-bottom:1px solid rgba(102,102,102,.3);font-size:17px}.breadcrumb-section .current-page{color:#8c0321}.breadcrumb-section .breadcrumb-item{position:relative;padding-inline-start:30px}.breadcrumb-section .breadcrumb-item:first-child{padding-inline-start:0}.breadcrumb-section .breadcrumb-item a{color:grey;text-decoration:none;opacity:.5}.breadcrumb-section .breadcrumb-item+.breadcrumb-item::before{content:"";-webkit-mask-image:url(assets/images/icon/right-arrow.svg);-webkit-mask-repeat:no-repeat;-webkit-mask-size:10px;-webkit-mask-position:center;background-color:#8c0321;width:15px;height:15px;top:4px;position:absolute;inset-inline-start:10px}@media (max-width:991.98px){.mb-120{margin-bottom:20px}.breadcrumb-section{font-size:13px}.breadcrumb-section .breadcrumb-item+.breadcrumb-item::before{background-size:5px}}.horizontal-scroll{max-height:688px;overflow-y:auto;scrollbar-width:50px;scrollbar-color:#8C0321 transparent}.horizontal-scroll::-webkit-scrollbar{width:50px;border-radius:12px}.horizontal-scroll::-webkit-scrollbar-track{background:#f1f1f1;border-radius:12px;margin:2px;width:50px}.horizontal-scroll::-webkit-scrollbar-thumb{background:#8c0321;border-radius:10px;width:50px}.main-header{background-color:#8c0321;padding-block:30px;border-bottom:1px solid #143642;font-size:18px}@media (max-width:1199.98px){.main-header{padding-block:15px}}.main-header .ctm-btn{background-color:#8c0321;color:#fff;border:none;padding:0}.main-header .dropdown-toggle::after{display:none}.main-header .navbar-toggler{font-size:0;width:auto;height:auto}.main-header .navbar-toggler::before{content:"";display:block;background-image:url("assets/images/icon/header/main-menu.png");background-repeat:no-repeat;background-size:cover;width:30px;height:30px}.ctm-burger-menu{border-radius:5px;width:25px;height:25px}.header-content{font-weight:450;color:#fff;align-items:center}.navbar .nav-item .nav-link{color:#fff}.navbar .nav-item .nav-link.dropdown-toggle::after{width:14px;height:9px;background:url("assets/images/icon/down-arrow-white.svg") no-repeat;background-size:cover;position:relative;top:3px;margin:0;border:0}.navbar .nav-item .dropdown-menu-wrap{padding:35px;background:linear-gradient(338deg,#8c0321 0,#c6002f 100% 100%);border-radius:12px 12px 0 0;border-bottom:4px solid rgba(221,179,188,.5);min-width:300px;position:absolute;top:100%;z-index:1}@media (max-width:1430px) and (min-width:991px){.navbar .nav-item .dropdown-menu-wrap{padding:20px}}.navbar .nav-item .dropdown-menu-wrap .submenu-columns{display:flex;gap:30px}@media (min-width:991.98px) and (max-width:1200px){.navbar .nav-item .dropdown-menu-wrap .submenu-columns{gap:13px}}@media (max-width:991.98px){.main-header{padding-block:10px}.navbar .nav-item .dropdown-menu-wrap{background:linear-gradient(338deg,#8c0321 0,#c6002f 100% 100%)}.navbar .nav-item .dropdown-menu-wrap{border:0;padding:15px;min-width:100%;width:100%}.navbar .nav-item .dropdown-menu-wrap .submenu-columns{flex-direction:column}}.navbar .nav-item .dropdown-menu-wrap .submenu-columns .submenu-column{flex:1;max-width:25%;padding-inline-end:40px;border-inline-end:1px dashed rgba(255,255,255,0.2);min-width:250px}.navbar .nav-item .dropdown-menu-wrap .submenu-columns .submenu-column:last-child{border-inline-end:none}.navbar .nav-item .dropdown-menu-wrap .submenu-columns .submenu-column h3.submenu-heading{font-size:16px;color:#fff;margin-bottom:25px;text-transform:uppercase;font-weight:lighter;position:relative;padding-bottom:5px}@media (max-width:1430px) and (min-width:1200px){.navbar .nav-item .dropdown-menu-wrap .submenu-columns .submenu-column{min-width:200px;padding-inline-end:20px;font-size:14px}.navbar .nav-item .dropdown-menu-wrap .submenu-columns .submenu-column span{font-size:16px;margin-bottom:0}.navbar .nav-item .dropdown-menu-wrap .submenu-columns .submenu-column h3.submenu-heading{font-size:16px}}@media (max-width:1199px) and (min-width:992px){.navbar .nav-item .dropdown-menu-wrap .submenu-columns .submenu-column{min-width:175px;padding-inline-end:20px;font-size:14px}.navbar .nav-item .dropdown-menu-wrap .submenu-columns .submenu-column span{font-size:13px;margin-bottom:0}.navbar .nav-item .dropdown-menu-wrap .submenu-columns .submenu-column h3.submenu-heading{font-size:13px}}.navbar .nav-item .dropdown-menu-wrap .submenu-columns .submenu-column h3.submenu-heading::after{content:"";position:absolute;bottom:0;inset-inline-end:50%;width:50%;height:2px;background-color:#fff}.navbar .nav-item .dropdown-menu-wrap::before{content:"";background:url("assets/images/icon/up-triangle.svg") no-repeat;width:15px;height:13px;position:absolute;top:-15px;inset-inline-start:7px}.navbar .nav-item .dropdown-menu-wrap ul li{margin-bottom:16px}.navbar .nav-item .dropdown-menu-wrap ul li:last-child{margin-bottom:0}.navbar .nav-item .dropdown-menu-wrap ul li a{color:#f4f1f3;font-weight:700;font-size:16px;text-transform:capitalize;display:flex;align-items:center;justify-content:space-between;-moz-column-gap:20px;column-gap:20px;position:relative;padding:0;background-color:inherit}.navbar .nav-item .dropdown-menu-wrap ul li a:after{content:"";position:absolute;inset-inline-start:0;bottom:-2px;width:0%;height:2px;background:#fff}.header{top:0;inset-inline:0}.header-wrapper{position:sticky;top:0;z-index:1000}.header .navbar{padding:0}.header .navbar .contact-link img{padding-inline-end:8px}.header .navbar .nav-link{font-weight:700;padding:20px 12px;font-size:20px}@media (max-width:1405px) and (min-width:1200px){.header .navbar .nav-link{font-size:16px}}@media (max-width:1199.98px){.navbar .nav-item .dropdown-menu-wrap ul li a{font-size:13px}.header .navbar .nav-link{padding:8px;font-size:14px}}.header .navbar .nav-link span{padding-inline-end:8px}@media (min-width:768px){.header .navbar{font-size:15px}.ctm-btn{font-size:15px}}@media (min-width:992px){.navbar .nav-item .dropdown-menu-wrap{display:block;visibility:hidden;opacity:0;transform:translateY(3rem)}.header .navbar{font-size:12px}}@media (max-width:991.98px){.navbar .nav-item .dropdown-menu-wrap .submenu-columns .submenu-column{border-inline-end:none;max-width:100%}.navbar .nav-item .dropdown-menu-wrap .submenu-columns .submenu-column h3.submenu-heading{font-size:13px}.navbar .nav-item .dropdown-menu-wrap::before{display:none}.navbar .nav-item .dropdown-menu-wrap ul li{margin-bottom:10px}.header .navbar .nav-link{font-size:18px;padding:6px;display:flex;justify-content:space-between;margin-bottom:15px}.header .navbar{padding:0}}@media (min-width:992px){.ctm-btn{font-size:12px}.navbar-expand-lg .offcanvas .offcanvas-body{display:block}}.lang-btn{display:flex;align-items:center;gap:8px;font-size:20px}.lang-btn span{display:flex;align-items:center;line-height:1}#search-wrapper{display:flex;border:1px solid rgba(255,255,255,.2);align-items:center;border-radius:50px;background-color:#8c0321;overflow:hidden;max-width:275px;height:45px}@media (max-width:991.98px){#search-wrapper{max-width:250px;height:42px;margin-inline-start:0;margin-bottom:20px}}.header-search{display:inline-block;align-items:center;-webkit-mask-image:url("assets/images/icon/search-icon-header.svg");-webkit-mask-repeat:no-repeat;background:#dad2d8;width:28px;height:20px;margin:16px}@media (max-width:575.98px){#search-wrapper{max-width:150px;height:33px;padding-inline-start:12px;margin-bottom:7px}.header-search{display:none}}@media (max-width:991.98px){.header-search{width:30px;margin:10px}}input{background-color:#8c0321;border:none}#search{border:none;width:350px;background-color:#8c0321;height:30px}::-webkit-input-placeholder{color:#fff}::-webkit-input-placeholder{font-size:1.25rem;font-weight:450;color:#fff}::-moz-placeholder{font-size:1.25rem;font-weight:450;color:#fff}::-ms-input-placeholder{font-size:1.25rem;font-weight:450;color:#fff}.competitions-menu-bg{position:relative}.competitions-menu-bg::after{content:"";width:300px;height:300px;background-image:url("assets/images/img/bg-football-image.svg");position:absolute;top:0;inset-inline-end:0;background-repeat:no-repeat;z-index:0;overflow:hidden}.offcanvas-header .btn-close{margin-inline:auto -2px;margin-top:4px}.offcanvas-body{padding-top:0}[dir=ltr] .footer-img-ar{display:none}.bg-primary{background:#8c0321!important}.text-primary{color:#8c0321!important}.text-black{color:#000!important}.text-black1{color:#8c0321!important}.text-black2{color:#971c37!important}.text-grey{color:#899aa0!important}.text-grey1{color:#b8c3c6!important}.bg-lightgrey1{background:#f4f1f3!important}.inner-banner{background-color:#a8915d;color:#fff;position:relative;overflow:hidden;min-height:161px;width:100%}.inner-banner h2{bottom:40px;margin-bottom:0;z-index:2}.ball-img{position:absolute;inset-inline-end:5%;top:-100px;opacity:0;visibility:hidden;transform:rotate(0) scale(.5)}.match-table-section .custom-form{font-weight:700;text-transform:uppercase;font-size:20px;color:#8c0321;width:auto;padding:8px 24px;border-radius:12px;border-color:#e5dfe4;-webkit-appearance:none;-moz-appearance:none;background-image:url("assets/images/icon/qal-table-downarrow.svg");background-color:#f2f2f2;padding-inline-end:35px;background-repeat:no-repeat;background-size:16px}.match-table-section .custom-form option{font-weight:700;text-transform:uppercase;font-size:16px;color:#8c0321}.table{width:100%;margin-bottom:0}td{border-style:none}.table-rank tbody tr td:first-child{border-start-start-radius:12px;border-end-start-radius:12px;overflow:hidden}.table-rank tbody tr td:last-child{border-start-end-radius:12px;border-end-end-radius:12px}.table-light{--bs-table-bg:#F2F2F2}.ctm-table{text-align:center}.ctm-table thead th{padding:16px}.ctm-table table{border-collapse:separate;border-spacing:0 10px}.ctm-table .ctm-table-header{border-spacing:0}.ctm-table .ctm-table-header thead th:last-child{width:20%}.ctm-table .table-rank{padding:30px}.ctm-table>tbody>tr>td{background-color:transparent;padding:0}.ctm-table>tbody>tr>td table td{background-color:#fff;padding:15px}@media (max-width:1199.98px){.ctm-table>tbody>tr>td table td{padding:10px 5px}}@media (max-width:991.98px){.match-table-section .custom-form{font-size:14px}.ctm-table thead th{padding:10px}.ctm-table .table-rank{padding:15px}.tr-body .clock,.tr-body .content,.tr-body .date-time,.tr-body .team-name{white-space:nowrap}}.champions-record h3{margin-bottom:56px}.qal-details-section{padding:64px;border:1px solid #ede9eb;border-radius:12px}.qal-details-section .custom-gap{-moz-column-gap:32px;column-gap:32px}.qal-details-section .qal-logo{border:1px solid #e5dfe4;border-radius:12px;padding-block:17px;padding-inline:9px;display:flex;align-items:center;justify-content:center}.qal-details-section .qal-logo img{max-width:100%;max-height:100%;-o-object-fit:contain;object-fit:contain}.qal-details-section p{font-size:18px;color:#625f5f;line-height:29px;font-weight:300;margin-bottom:20px}.qal-details-section p:last-child{margin-bottom:0}@media (max-width:767.98px){.inner-banner{min-height:140px}.qal-details-section{padding:20px;padding-bottom:40px}.qal-details-section p{font-size:16px;margin-bottom:20px}}</style>
+  <style>:root{--bs-primary-text-emphasis:rgb(5.2, 44, 101.2);--bs-secondary-text-emphasis:rgb(43.2, 46.8, 50);--bs-success-text-emphasis:rgb(10, 54, 33.6);--bs-info-text-emphasis:rgb(5.2, 80.8, 96);--bs-warning-text-emphasis:rgb(102, 77.2, 2.8);--bs-danger-text-emphasis:rgb(88, 21.2, 27.6);--bs-primary-bg-subtle:rgb(206.6, 226, 254.6);--bs-secondary-bg-subtle:rgb(225.6, 227.4, 229);--bs-success-bg-subtle:rgb(209, 231, 220.8);--bs-info-bg-subtle:rgb(206.6, 244.4, 252);--bs-warning-bg-subtle:rgb(255, 242.6, 205.4);--bs-danger-bg-subtle:rgb(248, 214.6, 217.8);--bs-light-bg-subtle:rgb(251.5, 252, 252.5);--bs-primary-border-subtle:rgb(158.2, 197, 254.2);--bs-secondary-border-subtle:rgb(196.2, 199.8, 203);--bs-success-border-subtle:rgb(163, 207, 186.6);--bs-info-border-subtle:rgb(158.2, 233.8, 249);--bs-warning-border-subtle:rgb(255, 230.2, 155.8);--bs-danger-border-subtle:rgb(241, 174.2, 180.6);--bs-link-hover-color:rgb(10.4, 88, 202.4);--bs-highlight-bg:rgb(255, 242.6, 205.4)}.col{flex:1 0 0}@media (min-width:992px){.col-lg{flex:1 0 0}}.table-light{--bs-table-border-color:rgb(198.4, 199.2, 200);--bs-table-striped-bg:rgb(235.6, 236.55, 237.5);--bs-table-active-bg:rgb(223.2, 224.1, 225);--bs-table-hover-bg:rgb(229.4, 230.325, 231.25)}.btn-close{--bs-btn-close-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414'/%3e%3c/svg%3e");filter:var(--bs-btn-close-filter)}:root{--bs-btn-close-filter: }:root{--bs-carousel-indicator-active-bg:#fff;--bs-carousel-caption-color:#fff;--bs-carousel-control-icon-filter: }.offcanvas-header .btn-close{margin-top:calc(-.5 * var(--bs-offcanvas-padding-y));margin-right:calc(-.5 * var(--bs-offcanvas-padding-x));margin-bottom:calc(-.5 * var(--bs-offcanvas-padding-y));margin-left:auto}@media (max-width:991.98px){.breadcrumb-section .breadcrumb-item+.breadcrumb-item::before{width:10px;height:10px}}p:last-child{margin-bottom:0}@media (max-width:991.98px){.navbar .nav-item .nav-link.dropdown-toggle::after{top:12px}}.header-search{margin-inline-end:0}.qal-section{overflow:hidden}@media (max-width:767.98px){.qal-details-section p{word-break:break-word}}</style>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="print" onload="this.media='all'">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="assets/css/fancybox.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="assets/css/app.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="assets/css/qatar-ameture-league.css" media="print" onload="this.media='all'">
+
+</head>
+
+<body>
+  <div class="header-wrapper">
+    <header class="header">
+      <div class="main-header">
+        <div class="container-lg">
+          <div class="fw-450">
+            <div class="row align-items-center">
+              <div class="col">
+                <a class="navbar-brand" href="#">
+                  <img src="assets/images/logo/header-logo.svg" alt="Logo" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-auto">
+                <div class="d-flex justify-content-end align-items-center">
+                  <ul class="d-flex align-items-center gx-32">
+                    <li class="d-none d-lg-block">
+                      <div id="search-wrapper">
+                        <i class="header-search"></i>
+                        <input type="text" id="search" placeholder="Search">
+                      </div>
+                    </li>
+                    <li>
+                      <button class="btn dropdown-toggle ctm-btn header-content fs-18 lang-btn" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/images/icon/header/lang-header-icon.svg" class="img-fluid" alt="lang-icon"
+                          width="36" height="36"><span>AR</span>
+                      </button>
+                    </li>
+                    <li>
+                      <div class="ticket d-none d-lg-flex">
+                        <a href="#">
+                          <svg width="133" height="45" viewBox="0 0 133 45" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6 0.5C2.68629 0.5 0 3.18629 0 6.5V14.0123C3.57602 15.2479 6.13804 18.5815 6.13804 22.5C6.13804 26.4185 3.57602 29.7521 0 30.9877V38.5C0 41.8137 2.68629 44.5 6 44.5H127C130.314 44.5 133 41.8137 133 38.5V30.988C129.424 29.7525 126.861 26.4187 126.861 22.5C126.861 18.5813 129.424 15.2475 133 14.012V6.5C133 3.18629 130.314 0.5 127 0.5H6Z"
+                              fill="#FFB92E" />
+                            <path
+                              d="M38.5 23C38.5 21.62 39.62 20.5 41 20.5V19.5C41 15.5 40 14.5 36 14.5H26C22 14.5 21 15.5 21 19.5V20C22.38 20 23.5 21.12 23.5 22.5C23.5 23.88 22.38 25 21 25V25.5C21 29.5 22 30.5 26 30.5H36C40 30.5 41 29.5 41 25.5C39.62 25.5 38.5 24.38 38.5 23Z"
+                              stroke="#2F1A45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M29 14.5L29 30.5" stroke="#2F1A45" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-dasharray="5 5" />
+                            <line x1="54" y1="1.5" x2="54" y2="43.5" stroke="#2F1A45" stroke-width="2"
+                              stroke-linecap="round" stroke-dasharray="4 4" />
+                            <path
+                              d="M70.128 17.858H67.806V29H65.466V17.858H63.144L63.198 15.5H70.092L70.128 17.858ZM71.2493 29V15.5H73.5893V29H71.2493ZM81.2984 15.77L81.0824 18.002C80.7044 17.786 80.0924 17.642 79.5524 17.642C78.0584 17.642 77.5004 18.524 77.5004 22.142C77.5004 25.994 78.0764 26.93 79.6244 26.93C80.2004 26.93 80.7044 26.786 81.1364 26.534L81.3344 28.73C80.8484 29.018 79.9664 29.216 79.2464 29.216C76.3844 29.216 75.1064 27.308 75.1064 22.124C75.1064 17.246 76.4204 15.284 79.2824 15.284C79.9304 15.284 80.8484 15.5 81.2984 15.77ZM90.1104 29H87.5364L85.4664 23.078H84.7644V29H82.4784V15.5H84.7464V21.044H85.5204L87.5364 15.5H90.0204L87.6264 21.98L90.1104 29ZM93.4128 26.696H97.1748L97.1208 29H91.1268V15.5H96.9408L96.9768 17.84H93.4128V20.9H96.4008V23.114H93.4128V26.696ZM104.651 17.858H102.329V29H99.9894V17.858H97.6674L97.7214 15.5H104.615L104.651 17.858ZM111.426 25.166C111.426 27.758 110.202 29.216 107.916 29.216C106.908 29.216 105.9 28.91 105.18 28.388L105.522 26.192C106.206 26.642 106.926 26.912 107.754 26.912C108.762 26.912 109.212 26.372 109.212 25.274C109.212 22.862 105.198 23.222 105.198 19.154C105.198 16.868 106.386 15.302 108.654 15.302C109.59 15.302 110.418 15.5 111.084 15.878L110.814 18.074C110.202 17.804 109.536 17.66 108.906 17.66C107.79 17.66 107.412 18.218 107.412 19.082C107.412 21.404 111.426 21.098 111.426 25.166Z"
+                              fill="#2F1A45" />
+                          </svg>
+                        </a>
+                      </div>
+                    </li>
+
+                  </ul>
+                  <button class="navbar-toggler d-block d-sm-flex d-md-flex d-lg-none d-xl-none ctm-burger-menu"
+                    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    Toggler icon
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="ctm-nav navbar navbar-expand-lg bg-primary">
+        <div class="container-lg">
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <a class="navbar-brand" href="#">
+                <img src="assets/images/logo/logo-icon2.svg" alt="Logo" class=" img-fluid">
+              </a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="row">
+                <div class="col px-0">
+                  <ul class="navbar-nav ">
+                    <li class="d-block d-lg-none mb-2 ">
+                      <div id="search-wrapper">
+
+                        <i class="header-search"></i>
+
+                        <input type="text" id="search" placeholder="Search">
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="">National Teams</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-wrap">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item text-primary" href="#">
+                              <span>FIRST NATIONAL TEAM</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>U-23 NATIONAL TEAM</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item text-primary" href="#">
+                              <span>U-20 NATIONAL TEAM</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item text-primary" href="#">
+                              <span>U-17 NATIONAL TEAM</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown ">
+                      <a class="nav-link dropdown-toggle " href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="">Competitions</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-wrap competitions-menu-bg">
+                        <div class="submenu-columns">
+                          <div class="submenu-column">
+                            <h3 class="submenu-heading">Leagues</h3>
+                            <ul>
+                              <li><a class="dropdown-item text-primary" href="#">
+                                  <span>star league ooredoo</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-primary" href="#">
+                                  <span>second division league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-primary" href="#">
+                                  <span>olympic league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                            </ul>
+                          </div>
+                          <div class="submenu-column">
+                            <h3 class="submenu-heading">Cups</h3>
+                            <ul>
+                              <li><a class="dropdown-item text-primary" href="#">
+                                  <span>qfa cup</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-primary" href="#">
+                                  <span>ooredoo cup</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-primary" href="#">
+                                  <span>second division cup</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-primary" href="#">
+                                  <span>qatar cup</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-primary" href="#">
+                                  <span>amir cup</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                            </ul>
+                          </div>
+                          <div class="submenu-column">
+                            <h3 class="submenu-heading">Age Group</h3>
+                            <ul>
+                              <li><a class="dropdown-item text-primary" href="#">
+                                  <span>u-19 league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-primary" href="#">
+                                  <span>u-17 league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-primary" href="#">
+                                  <span>u-15 league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-primary" href="#">
+                                  <span>u-14 league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                              <li><a class="dropdown-item text-primary" href="#">
+                                  <span>u-13 league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+                            </ul>
+                          </div>
+                          <div class="submenu-column">
+                            <h3 class="submenu-heading">Subsidiaries</h3>
+                            <ul>
+                              <li><a class="dropdown-item text-primary" href="#">
+                                  <span>qatar amateur league</span>
+                                  <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                                </a></li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Football in Qatar</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="">Regulations</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-wrap">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item text-primary" href="#">
+                              <span>Rules and Regulations</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>Law of the Games</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="">About Us</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-wrap">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item text-primary" href="#">
+                              <span>Board of Directors</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>SOCAIL RESPONSIBILITY</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>VISION MISSION & VALUES</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>QFA AWARDS</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Football Development</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span class="">Media Center</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-wrap">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item text-primary" href="#">
+                              <span>Media gallery</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item text-primary" href="#">
+                              <span>News</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>Media Accreditation</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <span>Download Center</span>
+                              <img src="assets/images/icon/end-arrow-circle.svg" alt="" width="20" height="20" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Tenders</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Referees</a>
+                    </li>
+                    <li class="nav-item d-flex d-sm-flex d-md-flex d-lg-none d-xl-none">
+                      <a href="#" class="header-content nav-link contact-link"><img
+                          src="assets/images/icon/header/contact-us-icon.svg" class="img-fluid"
+                          alt="contact-icon">Contact Us</a>
+                    </li>
+                    <li class="nav-item d-block d-sm-flex d-md-flex d-lg-none d-xl-none">
+                      <div class="nav-link d-flex flex-cloumn">
+                        <div class="ticket">
+                          <a href="#">
+                            <svg width="100" height="45" viewBox="0 0 133 45" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6 0.5C2.68629 0.5 0 3.18629 0 6.5V14.0123C3.57602 15.2479 6.13804 18.5815 6.13804 22.5C6.13804 26.4185 3.57602 29.7521 0 30.9877V38.5C0 41.8137 2.68629 44.5 6 44.5H127C130.314 44.5 133 41.8137 133 38.5V30.988C129.424 29.7525 126.861 26.4187 126.861 22.5C126.861 18.5813 129.424 15.2475 133 14.012V6.5C133 3.18629 130.314 0.5 127 0.5H6Z"
+                                fill="#FFB92E" />
+                              <path
+                                d="M38.5 23C38.5 21.62 39.62 20.5 41 20.5V19.5C41 15.5 40 14.5 36 14.5H26C22 14.5 21 15.5 21 19.5V20C22.38 20 23.5 21.12 23.5 22.5C23.5 23.88 22.38 25 21 25V25.5C21 29.5 22 30.5 26 30.5H36C40 30.5 41 29.5 41 25.5C39.62 25.5 38.5 24.38 38.5 23Z"
+                                stroke="#2F1A45" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M29 14.5L29 30.5" stroke="#2F1A45" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-dasharray="5 5" />
+                              <line x1="54" y1="1.5" x2="54" y2="43.5" stroke="#2F1A45" stroke-width="2"
+                                stroke-linecap="round" stroke-dasharray="4 4" />
+                              <path
+                                d="M70.128 17.858H67.806V29H65.466V17.858H63.144L63.198 15.5H70.092L70.128 17.858ZM71.2493 29V15.5H73.5893V29H71.2493ZM81.2984 15.77L81.0824 18.002C80.7044 17.786 80.0924 17.642 79.5524 17.642C78.0584 17.642 77.5004 18.524 77.5004 22.142C77.5004 25.994 78.0764 26.93 79.6244 26.93C80.2004 26.93 80.7044 26.786 81.1364 26.534L81.3344 28.73C80.8484 29.018 79.9664 29.216 79.2464 29.216C76.3844 29.216 75.1064 27.308 75.1064 22.124C75.1064 17.246 76.4204 15.284 79.2824 15.284C79.9304 15.284 80.8484 15.5 81.2984 15.77ZM90.1104 29H87.5364L85.4664 23.078H84.7644V29H82.4784V15.5H84.7464V21.044H85.5204L87.5364 15.5H90.0204L87.6264 21.98L90.1104 29ZM93.4128 26.696H97.1748L97.1208 29H91.1268V15.5H96.9408L96.9768 17.84H93.4128V20.9H96.4008V23.114H93.4128V26.696ZM104.651 17.858H102.329V29H99.9894V17.858H97.6674L97.7214 15.5H104.615L104.651 17.858ZM111.426 25.166C111.426 27.758 110.202 29.216 107.916 29.216C106.908 29.216 105.9 28.91 105.18 28.388L105.522 26.192C106.206 26.642 106.926 26.912 107.754 26.912C108.762 26.912 109.212 26.372 109.212 25.274C109.212 22.862 105.198 23.222 105.198 19.154C105.198 16.868 106.386 15.302 108.654 15.302C109.59 15.302 110.418 15.5 111.084 15.878L110.814 18.074C110.202 17.804 109.536 17.66 108.906 17.66C107.79 17.66 107.412 18.218 107.412 19.082C107.412 21.404 111.426 21.098 111.426 25.166Z"
+                                fill="#2F1A45" />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-auto">
+                  <ul class="navbar-nav ">
+                    <li class="nav-item d-none  d-lg-flex d-xl-flex">
+                      <a href="#" class="header-content nav-link contact-link px-0"><img
+                          src="assets/images/icon/header/contact-us-icon.svg" class="img-fluid"
+                          alt="contact-icon">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <section class="inner-banner">
+    <div class="container-lg">
+      <h2 class="position-absolute text-uppercase">Qatar Ameture League</h2>
+      <img src="assets/images/icon/inner-banner-football.svg" class="img-fluid ball-img" alt="background image"
+        width="100" height="100">
+    </div>
+  </section>
+  <section class="breadcrumb-section">
+    <div class="container-lg">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="#">homepage</a></li>
+          <li class="breadcrumb-item active current-page" aria-current="page">Qatar Ameture League</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <section class="section-padding qal-section">
+    <div class="container-lg">
+      <section class="qal-details-section mb-120">
+        <div class="row align-items-center gy-4 mb-120 custom-gap">
+          <div class="col-12 col-lg-auto">
+            <div class="qal-logo">
+              <img src="assets/images/logo/qal-logo.jpg" class="img-fluid" alt="" height="270"
+                width="270">
+            </div>
+          </div>
+          <div class="col-12 col-lg">
+            <p>Organized by the Subsidiary Leagues Committee; the Qatar Amateur League was
+              contested between
+              13 teams in its sixth installment.
+            </p>
+            <p>The widely popular league is sponsored by The Supreme Committee for Delivery &
+              Legacy as the
+              Official Strategic Partner, Qatar National Bank (QNB) as the Exclusive Financial Partner,
+              Nike as the Official Supplier, Al Kass Channel as the Official Broadcaster and Aspetar as
+              the medical services provider throughout the competition.</p>
+            <p>The Subsidiary Leagues Committee at QFA oversees and organizes all community leagues and
+              tournaments including the QAL, School League, University League, and the Asian Communities
+              Football Tournament.
+
+            </p>
+
+          </div>
+
+        </div>
+        <div class="champions-record">
+          <h3 class="text-uppercase text-black1">Champions Record</h3>
+          <div class="champions-slider-wrapper mb-145 ">
+            <div class="slider champions-slider">
+              <div class="item triangle triangle-top-right-2">
+                <div class="record-box">
+                  <div class="inner-box">
+                    <div style="background-image: url('assets/images/icon/champions-record-icon.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap">Shabab Lusail</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box">
+                    <div style="background-image: url('assets/images/icon/champions-record-icon.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap">Shabab Lusail</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box">
+                    <div style="background-image: url('assets/images/icon/champions-record-icon.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap">Shabab Lusail</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box">
+                    <div style="background-image: url('assets/images/icon/champions-record-icon.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap">Shabab Lusail</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box">
+                    <div style="background-image: url('assets/images/icon/champions-record-icon.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap">Shabab Lusail</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box">
+                    <div style="background-image: url('assets/images/icon/champions-record-icon.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap">Shabab Lusail</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box">
+                    <div style="background-image: url('assets/images/icon/champions-record-icon.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap">Shabab Lusail</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box">
+                    <div style="background-image: url('assets/images/icon/champions-record-icon.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap">Shabab Lusail</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box">
+                    <div style="background-image: url('assets/images/icon/champions-record-icon.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap">Shabab Lusail</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="champions-record mb-35">
+          <h3 class="text-uppercase text-black1 ">Golden Record</h3>
+          <div class="champions-slider-wrapper">
+            <div class="slider champions-slider">
+              <div class="item triangle triangle-top-right-2">
+                <div class="record-box">
+                  <div class="inner-box1">
+                    <div style="background-image: url('assets/images/icon/golden-record-img1.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap mb-1">Al Waab</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box1">
+                    <div style="background-image: url('assets/images/icon/golden-record-img1.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap mb-1">Al Waab</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box1">
+                    <div style="background-image: url('assets/images/icon/golden-record-img1.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap mb-1">Al Waab</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box1">
+                    <div style="background-image: url('assets/images/icon/golden-record-img1.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap mb-1">Al Waab</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box1">
+                    <div style="background-image: url('assets/images/icon/golden-record-img1.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap mb-1">Al Waab</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box1">
+                    <div style="background-image: url('assets/images/icon/golden-record-img1.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap mb-1">Al Waab</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box1">
+                    <div style="background-image: url('assets/images/icon/golden-record-img1.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap mb-1">Al Waab</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box1">
+                    <div style="background-image: url('assets/images/icon/golden-record-img1.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap mb-1">Al Waab</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+              <div class="item">
+                <div class="record-box">
+                  <div class="inner-box1">
+                    <div style="background-image: url('assets/images/icon/golden-record-img1.svg');">
+                    </div>
+                  </div>
+                  <h4 class="text-white fs-24 text-nowrap mb-1">Al Waab</h4>
+                  <h5 class="fs-20 text-white mb-0">2022</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team-table mb-120">
+        <div class="match-table-section team-table-bg">
+          <div class="team-table-box">
+            <ul class="nav nav-pills " id="pills-tab" role="tablist">
+              <li class="nav-item fw-700 fs-20" role="presentation">
+                <button class="nav-link active text-uppercase" id="fifa-world-rankingtab" data-bs-toggle="pill"
+                  data-bs-target="#pills-matches" type="button" role="tab" aria-controls="pills-matches"
+                  aria-selected="true">Matches</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link fw-700 fs-20 text-uppercase" id="ranking-tab" data-bs-toggle="pill"
+                  data-bs-target="#pills-ranking" type="button" role="tab" aria-controls="pills-ranking"
+                  aria-selected="false">ranking</button>
+              </li>
+
+
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-matches" role="tabpanel"
+                aria-labelledby="pills-matches-tab" tabindex="0">
+                <div class="matches">
+
+                  <div class="table-responsive">
+                    <table class="table ctm-table">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table class="table ctm-table-header">
+
+                              <thead>
+                                <tr class="table-light fw-700 fs-20">
+                                  <!-- qal-table-downarrow -->
+                                  <th class="text-uppercase">
+                                    <div class="d-flex  justify-content-end">
+                                      <div class="d-flex gx-10">
+                                        <select class="form-select custom-form form-start"
+                                          aria-label="Default select example">
+                                          <option selected>Groups</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                        <select class="form-select custom-form form-start"
+                                        aria-label="Default select example">
+                                        <option selected>Round</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                        <select class="form-select custom-form form-end"
+                                          aria-label="Default select example">
+                                          <option selected>club</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                        </select>
+                                       
+                                      </div>
+                                    </div>
+
+                                  </th>
+
+                                </tr>
+                              </thead>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><div class="horizontal-scroll">
+                            <table width="100%" class="table-rank">
+                              <tbody>
+
+                                <tr class="tr-body">
+                                  <td class="date-time fw-450">
+                                    <div class="d-flex flex-column">
+                                      <h5 class="fs-24 text-grey">11-08-2024</h5>
+                                      <h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+                                    </div>
+                                  </td>
+                                  <td class="team-name">
+                                    <div
+                                      class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+                                      <h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+                                      <img src="assets/images/icon/qal-table-flag.svg"
+                                        class="img-fluid d-none d-sm-block" alt="">
+                                    </div>
+                                  </td>
+                                  <td class="clock"><span
+                                      class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+                                  </td>
+                                  <td class="team-name">
+                                    <div class="d-flex flex-row align-items-center justify-content-center gap-3">
+                                      <img src="assets/images/icon/qal-table-flag.svg"
+                                        class="img-fluid d-none d-sm-block" alt="">
+                                      <h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+                                  <td class="content">
+                                    <div class="fs-16 fw-700">
+                                      احمد بن علي (احمد بن علي)
+
+                                    </div>
+                                  </td>
+
+                  </div>
+                  </td>
+                  </tr>
+                  <tr class="tr-body">
+                    <td class="date-time fw-450">
+                      <div class="d-flex flex-column">
+                        <h5 class="fs-24 text-grey">11-08-2024</h5>
+                        <h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+                      </div>
+                    </td>
+                    <td class="team-name">
+                      <div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+                        <h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+                        <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+                      </div>
+                    </td>
+                    <td class="clock"><span
+                        class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+                    </td>
+                    <td class="team-name">
+                      <div class="d-flex flex-row align-items-center justify-content-center gap-3">
+                        <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+                        <h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+                    <td class="content">
+                      <div class="fs-16 fw-700">
+                        احمد بن علي (احمد بن علي)
+
+                      </div>
+                    </td>
+
+                </div>
+                </td>
+                </tr>
+                <tr class="tr-body">
+                  <td class="date-time fw-450">
+                    <div class="d-flex flex-column">
+                      <h5 class="fs-24 text-grey">11-08-2024</h5>
+                      <h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+                    </div>
+                  </td>
+                  <td class="team-name">
+                    <div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+                      <h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+                      <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+                    </div>
+                  </td>
+                  <td class="clock"><span
+                      class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+                  </td>
+                  <td class="team-name">
+                    <div class="d-flex flex-row align-items-center justify-content-center gap-3">
+                      <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+                      <h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+                  <td class="content">
+                    <div class="fs-16 fw-700">
+                      احمد بن علي (احمد بن علي)
+
+                    </div>
+                  </td>
+
+              </div>
+              </td>
+              </tr>
+              <tr class="tr-body">
+                <td class="date-time fw-450">
+                  <div class="d-flex flex-column">
+                    <h5 class="fs-24 text-grey">11-08-2024</h5>
+                    <h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+                  </div>
+                </td>
+                <td class="team-name">
+                  <div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+                    <h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+                    <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+                  </div>
+                </td>
+                <td class="clock"><span
+                    class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+                </td>
+                <td class="team-name">
+                  <div class="d-flex flex-row align-items-center justify-content-center gap-3">
+                    <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+                    <h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+                <td class="content">
+                  <div class="fs-16 fw-700">
+                    احمد بن علي (احمد بن علي)
+
+                  </div>
+                </td>
+
+            </div>
+            </td>
+            </tr>
+            <tr class="tr-body">
+              <td class="date-time fw-450">
+                <div class="d-flex flex-column">
+                  <h5 class="fs-24 text-grey">11-08-2024</h5>
+                  <h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+                </div>
+              </td>
+              <td class="team-name">
+                <div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+                  <h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+                  <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+                </div>
+              </td>
+              <td class="clock"><span
+                  class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+              </td>
+              <td class="team-name">
+                <div class="d-flex flex-row align-items-center justify-content-center gap-3">
+                  <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+                  <h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+              <td class="content">
+                <div class="fs-16 fw-700">
+                  احمد بن علي (احمد بن علي)
+
+                </div>
+              </td>
+
+          </div>
+          </td>
+          </tr>
+          <tr class="tr-body">
+            <td class="date-time fw-450">
+              <div class="d-flex flex-column">
+                <h5 class="fs-24 text-grey">11-08-2024</h5>
+                <h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+              </div>
+            </td>
+            <td class="team-name">
+              <div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+                <h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+                <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+              </div>
+            </td>
+            <td class="clock"><span
+                class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+            </td>
+            <td class="team-name">
+              <div class="d-flex flex-row align-items-center justify-content-center gap-3">
+                <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+                <h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+            <td class="content">
+              <div class="fs-16 fw-700">
+                احمد بن علي (احمد بن علي)
+
+              </div>
+            </td>
+
+        </div>
+        </td>
+        </tr>
+        <tr class="tr-body">
+          <td class="date-time fw-450">
+            <div class="d-flex flex-column">
+              <h5 class="fs-24 text-grey">11-08-2024</h5>
+              <h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+            </div>
+          </td>
+          <td class="team-name">
+            <div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+              <h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+              <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+            </div>
+          </td>
+          <td class="clock"><span
+              class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+          </td>
+          <td class="team-name">
+            <div class="d-flex flex-row align-items-center justify-content-center gap-3">
+              <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+              <h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+          <td class="content">
+            <div class="fs-16 fw-700">
+              احمد بن علي (احمد بن علي)
+
+            </div>
+          </td>
+
+      </div>
+      </td>
+      </tr>
+      <tr class="tr-body">
+        <td class="date-time fw-450">
+          <div class="d-flex flex-column">
+            <h5 class="fs-24 text-grey">11-08-2024</h5>
+            <h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+          </div>
+        </td>
+        <td class="team-name">
+          <div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+            <h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+            <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+          </div>
+        </td>
+        <td class="clock"><span
+            class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+        </td>
+        <td class="team-name">
+          <div class="d-flex flex-row align-items-center justify-content-center gap-3">
+            <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+            <h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+        <td class="content">
+          <div class="fs-16 fw-700">
+            احمد بن علي (احمد بن علي)
+
+          </div>
+        </td>
+
+    </div>
+    </td>
+    </tr>
+    <tr class="tr-body">
+      <td class="date-time fw-450">
+        <div class="d-flex flex-column">
+          <h5 class="fs-24 text-grey">11-08-2024</h5>
+          <h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+        </div>
+      </td>
+      <td class="team-name">
+        <div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+          <h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+          <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+        </div>
+      </td>
+      <td class="clock"><span
+          class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+      </td>
+      <td class="team-name">
+        <div class="d-flex flex-row align-items-center justify-content-center gap-3">
+          <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+          <h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+      <td class="content">
+        <div class="fs-16 fw-700">
+          احمد بن علي (احمد بن علي)
+
+        </div>
+      </td>
+
+  </div>
+  </td>
+  </tr>
+
+          </tbody>
+          </table></div>
+          </td>
+          </tr>
+          </tbody>
+          </table>
+        </div>
+    </div>
+    </div>
+    <div class="tab-pane fade" id="pills-ranking" role="tabpanel" aria-labelledby="pills-ranking-tab" tabindex="0">
+      <div class="matches">
+
+        <div class="table-responsive" >
+          <table class="table ctm-table">
+            <tbody>
+              <tr>
+                <td>
+                  <table class="table ctm-table-header">
+
+                    <thead>
+                      <tr class="table-light fw-700 fs-20">
+                        <!-- qal-table-downarrow -->
+                        <th class="text-uppercase">
+                          <div class="d-flex  justify-content-end">
+                            <div class="d-flex gx-10">
+                              <select class="form-select custom-form form-start" aria-label="Default select example">
+                                <option selected>Round</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                              <select class="form-select custom-form form-end" aria-label="Default select example">
+                                <option selected>club</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+
+                        </th>
+
+                      </tr>
+                    </thead>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td><div class="horizontal-scroll">
+                  <table width="100%" class="table-rank">
+                    <tbody>
+
+                      <tr class="tr-body">
+                        <td class="date-time fw-450">
+                          <div class="d-flex flex-column">
+                            <h5 class="fs-24 text-grey">11-08-2024</h5>
+                            <h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+                          </div>
+                        </td>
+                        <td class="team-name">
+                          <div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+                            <h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+                            <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+                          </div>
+                        </td>
+                        <td class="clock"><span
+                            class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+                        </td>
+                        <td class="team-name">
+                          <div class="d-flex flex-row align-items-center justify-content-center gap-3">
+                            <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+                            <h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+                        <td class="content">
+                          <div class="fs-16 fw-700">
+                            احمد بن علي (احمد بن علي)
+
+                          </div>
+                        </td>
+
+        </div>
+        </td>
+        </tr>
+        <tr class="tr-body">
+          <td class="date-time fw-450">
+            <div class="d-flex flex-column">
+              <h5 class="fs-24 text-grey">11-08-2024</h5>
+              <h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+            </div>
+          </td>
+          <td class="team-name">
+            <div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+              <h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+              <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+            </div>
+          </td>
+          <td class="clock"><span
+              class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+          </td>
+          <td class="team-name">
+            <div class="d-flex flex-row align-items-center justify-content-center gap-3">
+              <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+              <h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+          <td class="content">
+            <div class="fs-16 fw-700">
+              احمد بن علي (احمد بن علي)
+
+            </div>
+          </td>
+
+      </div>
+      </td>
+      </tr>
+      <tr class="tr-body">
+        <td class="date-time fw-450">
+          <div class="d-flex flex-column">
+            <h5 class="fs-24 text-grey">11-08-2024</h5>
+            <h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+          </div>
+        </td>
+        <td class="team-name">
+          <div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+            <h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+            <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+          </div>
+        </td>
+        <td class="clock"><span class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+        </td>
+        <td class="team-name">
+          <div class="d-flex flex-row align-items-center justify-content-center gap-3">
+            <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+            <h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+        <td class="content">
+          <div class="fs-16 fw-700">
+            احمد بن علي (احمد بن علي)
+
+          </div>
+        </td>
+
+    </div>
+    </td>
+    </tr>
+    <tr class="tr-body">
+      <td class="date-time fw-450">
+        <div class="d-flex flex-column">
+          <h5 class="fs-24 text-grey">11-08-2024</h5>
+          <h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+        </div>
+      </td>
+      <td class="team-name">
+        <div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+          <h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+          <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+        </div>
+      </td>
+      <td class="clock"><span class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+      </td>
+      <td class="team-name">
+        <div class="d-flex flex-row align-items-center justify-content-center gap-3">
+          <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+          <h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+      <td class="content">
+        <div class="fs-16 fw-700">
+          احمد بن علي (احمد بن علي)
+
+        </div>
+      </td>
+
+      </div>
+      </td>
+    </tr>
+    <tr class="tr-body">
+      <td class="date-time fw-450">
+        <div class="d-flex flex-column">
+          <h5 class="fs-24 text-grey">11-08-2024</h5>
+          <h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+        </div>
+      </td>
+      <td class="team-name">
+        <div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+          <h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+          <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+        </div>
+      </td>
+      <td class="clock"><span class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+      </td>
+      <td class="team-name">
+        <div class="d-flex flex-row align-items-center justify-content-center gap-3">
+          <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+          <h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+      <td class="content">
+        <div class="fs-16 fw-700">
+          احمد بن علي (احمد بن علي)
+
+        </div>
+      </td>
+
+      </div>
+      </td>
+    </tr>
+    <tr class="tr-body">
+      <td class="date-time fw-450">
+        <div class="d-flex flex-column">
+          <h5 class="fs-24 text-grey">11-08-2024</h5>
+          <h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+        </div>
+      </td>
+      <td class="team-name">
+        <div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+          <h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+          <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+        </div>
+      </td>
+      <td class="clock"><span
+          class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+      </td>
+      <td class="team-name">
+        <div class="d-flex flex-row align-items-center justify-content-center gap-3">
+          <img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+          <h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+      <td class="content">
+        <div class="fs-16 fw-700">
+          احمد بن علي (احمد بن علي)
+
+        </div>
+      </td>
+
+</div>
+</td>
+</tr>
+<tr class="tr-body">
+<td class="date-time fw-450">
+<div class="d-flex flex-column">
+<h5 class="fs-24 text-grey">11-08-2024</h5>
+<h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+</div>
+</td>
+<td class="team-name">
+<div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+<h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+<img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+</div>
+</td>
+<td class="clock"><span
+class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+</td>
+<td class="team-name">
+<div class="d-flex flex-row align-items-center justify-content-center gap-3">
+<img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+<h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+<td class="content">
+<div class="fs-16 fw-700">
+احمد بن علي (احمد بن علي)
+
+</div>
+</td>
+
+</div>
+</td>
+</tr>
+<tr class="tr-body">
+<td class="date-time fw-450">
+<div class="d-flex flex-column">
+<h5 class="fs-24 text-grey">11-08-2024</h5>
+<h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+</div>
+</td>
+<td class="team-name">
+<div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+<h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+<img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+</div>
+</td>
+<td class="clock"><span class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+</td>
+<td class="team-name">
+<div class="d-flex flex-row align-items-center justify-content-center gap-3">
+<img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+<h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+<td class="content">
+<div class="fs-16 fw-700">
+احمد بن علي (احمد بن علي)
+
+</div>
+</td>
+
+</div>
+</td>
+</tr>
+<tr class="tr-body">
+<td class="date-time fw-450">
+<div class="d-flex flex-column">
+<h5 class="fs-24 text-grey">11-08-2024</h5>
+<h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+</div>
+</td>
+<td class="team-name">
+<div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+<h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+<img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+</div>
+</td>
+<td class="clock"><span class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+</td>
+<td class="team-name">
+<div class="d-flex flex-row align-items-center justify-content-center gap-3">
+<img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+<h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+<td class="content">
+<div class="fs-16 fw-700">
+احمد بن علي (احمد بن علي)
+
+</div>
+</td>
+
+</div>
+</td>
+</tr>
+<tr class="tr-body">
+<td class="date-time fw-450">
+<div class="d-flex flex-column">
+<h5 class="fs-24 text-grey">11-08-2024</h5>
+<h6 class="fs-16 text-grey1">Fri 09:30 PM</h6>
+</div>
+</td>
+<td class="team-name">
+<div class="d-flex flex-row align-items-center justify-content-center gap-1 gap-md-5">
+<h5 class="fs-24 text-black2 mb-0 text-capitalize">Al-Rayyan sC</h5>
+<img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+</div>
+</td>
+<td class="clock"><span class="rounded-pill bg-lightgrey1 p-12 fw-700 fs-16 text-black">03&nbsp;:&nbsp;01</span>
+</td>
+<td class="team-name">
+<div class="d-flex flex-row align-items-center justify-content-center gap-3">
+<img src="assets/images/icon/qal-table-flag.svg" class="img-fluid d-none d-sm-block" alt="">
+<h5 class="fs-24 text-capitalize">Umm Salal SC</h5>
+<td class="content">
+<div class="fs-16 fw-700">
+احمد بن علي (احمد بن علي)
+
+</div>
+</td>
+
+</div>
+</td>
+</tr>
+
+    </tbody>
+    </table></div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+  </section>
+  <section class="news-updates-section overflow-hidden">
+   
+      <div class="d-flex flex-column mb-3 mb-lg-5">
+        <div class="row ">
+          <div class="col-12">
+
+            <h1 class="fw-450 fs-18 text-secondary mb-3 mb-lg-2 lh-base">/ NEWS & UPDATES</h1>
+          </div>
+
+        </div>
+        <div class="row align-items-end g-0">
+          <div class="col-12  col-xxl-4 col-xl-4 col-lg-8 col-md-8">
+            <div class="sec-title">
+              <h2 class="text-primary fw-700"><span class="outlined-text1">LATEST<br></span> NEWS &amp; UPDATES</h2>
+            </div>
+          </div>
+          <div
+            class="col-12 col-xxl-6 col-xl-6 col-lg-12 col-md-8  order-2 order-xl-1 order-xxl-1 order-lg-2 order-md-2 mb-3 mt-3 mb-xl-0 mt-xl-0">
+            <p class="fs-20 fw-light text-grey-dark lh-base">Lorem ipsum dolor sit amet consectetur. Vestibulum
+              metus
+              non
+              nunc. A
+              diam quam et at viverra et.</p>
+          </div>
+          <div
+            class="col-12 order-2 col-xxl-2 col-xl-2 col-lg-4 col-md-4  order-xl-2 order-xxl-2 order-lg-1 order-md-1 justify-content-end d-flex">
+            <div class="d-flex flex-row gap-4 align-items-center">
+              <a href="#" class="text-primary fw-bold fs-22 view-link">View all</a>
+              <div class="slider-btn-wrapper gap-1">
+                <button class="custom-prev btn-news-pre btn" type="button">
+                  <img src="assets/images/icon/arrow-start.svg" alt="" width="9" height="14" class="img-fluid">
+                </button>
+                <button class="btn custom-next btn-news-next" type="button">
+                  <img src="assets/images/icon/arrow-end.svg" alt="" width="9" height="14" class="img-fluid">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-wrapper">
+        <div class="slider news-updates-slider">
+          <div class="item">
+            <a href="">
+              <div class="card text-black1">
+                <figure class="mb-0">
+                  <img src="assets/images/img/news-updates-1.jpg" class="card-img-top" alt="news img 1">
+                </figure>
+                <div class="card-body">
+                  <div class="d-flex flex-row align-items-center gap-2 mb-4">
+
+                    <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="" width="14"
+                      height="14">
+
+                    <div class="fs-16 fw-450 date fw-light">Saturday ,May 12th</div>
+                  </div>
+
+               <h4 class="card-title mb-24 text-black1 text-clamp-3">Japan Books Ticket to AFC U17 Asian Cup™ 2025 Finals,
+                  Seals
+                  Group F Top
+                  Spot </h4>
+
+                  <div class="d-flex  gap-1">
+                    <div class="btn-capsule rounded-pill">
+                      <h5 class="mb-0 text-center">REFEREES</h5>
+                    </div>
+                    <div class="rounded-pill btn-capsule">
+                      <h5 class="mb-0">FOOTBALL DEVELOPMENT</h5>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <div class="card text-black1">
+                <figure class="mb-0">
+                  <img src="assets/images/img/news-updates-1.jpg" class="card-img-top" alt="news img 1">
+                </figure>
+                <div class="card-body">
+                  <div class="d-flex flex-row align-items-center gap-2 mb-4">
+
+                    <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="" width="14"
+                      height="14">
+
+                    <div class="fs-16 fw-450 date fw-light">Saturday ,May 12th</div>
+                  </div>
+
+               <h4 class="card-title mb-24 text-black1 text-clamp-3">Japan Books Ticket to AFC U17 Asian Cup™ 2025 Finals,
+                  Seals
+                  Group F Top
+                  Spot </h4>
+
+                  <div class="d-flex  gap-1">
+                    <div class="btn-capsule rounded-pill">
+                      <h5 class="mb-0 text-center">REFEREES</h5>
+                    </div>
+                    <div class="rounded-pill btn-capsule">
+                      <h5 class="mb-0">FOOTBALL DEVELOPMENT</h5>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <div class="card text-black1">
+                <figure class="mb-0">
+                  <img src="assets/images/img/news-updates-1.jpg" class="card-img-top" alt="news img 1">
+                </figure>
+                <div class="card-body">
+                  <div class="d-flex flex-row align-items-center gap-2 mb-4">
+
+                    <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="" width="14"
+                      height="14">
+
+                    <div class="fs-16 fw-450 date fw-light">Saturday ,May 12th</div>
+                  </div>
+
+               <h4 class="card-title mb-24 text-black1 text-clamp-3">Japan Books Ticket to AFC U17 Asian Cup™ 2025 Finals,
+                  Seals
+                  Group F Top
+                  Spot </h4>
+
+                  <div class="d-flex  gap-1">
+                    <div class="btn-capsule rounded-pill">
+                      <h5 class="mb-0 text-center">REFEREES</h5>
+                    </div>
+                    <div class="rounded-pill btn-capsule">
+                      <h5 class="mb-0">FOOTBALL DEVELOPMENT</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <div class="card text-black1">
+                <figure class="mb-0">
+                  <img src="assets/images/img/news-updates-1.jpg" class="card-img-top" alt="news img 1">
+                </figure>
+                <div class="card-body">
+                  <div class="d-flex flex-row align-items-center gap-2 mb-4">
+
+                    <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="" width="14"
+                      height="14">
+
+                    <div class="fs-16 fw-450 date fw-light">Saturday ,May 12th</div>
+                  </div>
+
+               <h4 class="card-title mb-24 text-black1 text-clamp-3">Japan Books Ticket to AFC U17 Asian Cup™ 2025 Finals,
+                  Seals
+                  Group F Top
+                  Spot </h4>
+
+                  <div class="d-flex  gap-1">
+                    <div class="btn-capsule rounded-pill">
+                      <h5 class="mb-0 text-center">REFEREES</h5>
+                    </div>
+                    <div class="rounded-pill btn-capsule">
+                      <h5 class="mb-0">FOOTBALL DEVELOPMENT</h5>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <div class="card text-black1">
+                <figure class="mb-0">
+                  <img src="assets/images/img/news-updates-1.jpg" class="card-img-top" alt="news img 1">
+                </figure>
+                <div class="card-body">
+                  <div class="d-flex flex-row align-items-center gap-2 mb-4">
+
+                    <img src="assets/images/icon/calender-icon.svg" class="img-fluid mb-1" alt="" width="14"
+                      height="14">
+
+                    <div class="fs-16 fw-450 date fw-light">Saturday ,May 12th</div>
+                  </div>
+
+               <h4 class="card-title mb-24 text-black1 text-clamp-3">Japan Books Ticket to AFC U17 Asian Cup™ 2025 Finals,
+                  Seals
+                  Group F Top
+                  Spot </h4>
+                  <div class="d-flex  gap-1">
+                    <div class="btn-capsule rounded-pill">
+                      <h5 class="mb-0 text-center">REFEREES</h5>
+                    </div>
+                    <div class="rounded-pill btn-capsule">
+                      <h5 class="mb-0">FOOTBALL DEVELOPMENT</h5>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+   
+  </section>
+
+  </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="container-lg">
+      <div class="row g-0">
+        <div class="col-xl-6 col-md-12 position-relative footer-bg">
+          <div class="footer-main">
+            <div class="mb-34">
+              <img src="assets/images/logo/footer-logo.svg" class="img-fluid footer-img-en" alt="">
+              <img src="assets/images/logo/footer-logo-ar.svg" class="img-fluid footer-img-ar" alt="">
+            </div>
+            <p class="text-white fs-20 mb-86 fw-light">Lorem ipsum dolor sit amet consectetur.<br> Vestibulum
+              metus non </p>
+            <div class="footer-social-icons">
+              <ul class="d-flex gap-3">
+                <li>
+                  <a href="" class="banner-icon3 d-flex align-items-center justify-content-center">
+                    <i class="instagram-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="banner-icon3 d-flex align-items-center justify-content-center">
+                    <i class="youtube-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="banner-icon3 d-flex align-items-center justify-content-center">
+                    <i class="facebook-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="banner-icon3 d-flex align-items-center justify-content-center">
+                    <i class="twitter-icon"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-md-12 bdr-start">
+          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 ms-0 g-0">
+            <div class="col order-1 order-sm-2 order-md-1 bdr-end bdr-bottom">
+              <div class="footer-link-box1">
+                <h5 class="mb-32">QUICK LINKS</h5>
+                <div class="footer-links">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Competitions</a></li>
+                    <li><a href="#">Football in Qatar</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col order-2 order-sm-4 order-md-2 position-relative location-bdr">
+              <div class="footer-link-box2">
+                <h5 class="mb-32">LOCATION</h5>
+                <div class="footer-links-location">
+                  <p>Al-Bidda Tower, Corniche<br>
+                    Fax: 44754300<br>
+                    P.O.Box: 5333<br>
+                    Doha - Qatar
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col order-3 order-sm-2 order-md-3 bdr-end">
+              <div class="footer-link-box3">
+                <h5 class="mb-32">PRIVACY & POLICY</h5>
+                <div class="footer-links">
+                  <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <!-- <li><a href="#">Sitemap</a></li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col order-4 order-sm-3 order-md-4">
+              <div class="footer-link-box3">
+                <h5 class="mb-32">Contact Us</h5>
+                <div class="footer-links">
+                  <ul>
+                    <li><a href="#">Phone:44754444</a></li>
+                    <li><a href="#">Email:Info@Qfa.qa</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-brands-box bdr-top">
+      <div class="container-lg">
+        <div class="brand-box d-flex flex-wrap">
+          <div class="d-flex flex-column align-items-center ">
+            <img src="assets/images/brands/qiib.svg" class="img-fluid" alt="" width="232">
+            <p class="text-white fw-light">Official Bank</p>
+          </div>
+          <div class=" d-flex flex-column align-items-center ">
+            <img src="assets/images/brands/shell.svg" class="img-fluid" alt="" width="52">
+            <p class="text-white fw-light">Official Energy Partner</p>
+          </div>
+          <div class="d-flex flex-column align-items-center ">
+            <img src="assets/images/brands/qatar-airways4.svg" class="img-fluid" alt="" width="177">
+            <p class="text-white fw-light">Official Carrier</p>
+          </div>
+          <div class=" d-flex flex-column align-items-center ">
+            <img src="assets/images/brands/alkass.svg" class="img-fluid" alt="" width="191">
+            <p class="text-white fw-light">Official Broadcaster Partner</p>
+          </div>
+          <div class="d-flex flex-column align-items-center ">
+            <img src="assets/images/brands/ooreedo.svg" class="img-fluid" alt="" width="216">
+            <p class="text-white fw-light">Official Telecommunication Partner</p>
+          </div>
+          <div class=" d-flex flex-column align-items-center ">
+            <img src="assets/images/brands/aaa.svg" class="img-fluid" alt="" width="175">
+            <p class="text-white fw-light">Official Mobility Partner</p>
+          </div>
+          <div class=" d-flex flex-column align-items-center ">
+            <img src="assets/images/brands/talabat.svg" class="img-fluid" alt="" width="216">
+            <p class="text-white fw-light">Official Delivery Partner</p>
+          </div>
+          <div class=" d-flex flex-column align-items-center">
+            <img src="assets/images/brands/look-company.svg" class="img-fluid" alt="" width="290">
+            <p class="text-white fw-light">Official Branding Partner</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container-lg">
+        <p class=""> Powered by Qatar Football Association</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
+  <!-- <script src="assets/js/vendor/fancybox.umd.js"></script> -->
+  <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
+    crossorigin="anonymous"></script>
+  <!-- <script src="assets/js/header/header.js"></script> -->
+  <script type="importmap">
+          {
+              "imports": {
+                  "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
+                  "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.esm.min.js"
+              }
+          }
+        </script>
+
+  <script type="module">
+    import { Popover } from 'bootstrap';
+    //- new Popover(document.getElementById('popoverButton'))
+
+  </script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+
+    $(document).ready(function () {
+      $('.champions-slider').slick({
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        arrows: true,
+        margin: 16,
+
+        responsive: [
+          {
+            breakpoint: 1700,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              arrows: true,
+              dots: false
+
+            }
+          },
+          {
+            breakpoint: 1600,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+
+            }
+          },
+          {
+            breakpoint: 1500,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 1400,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 1260,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+
+            }
+          },
+          {
+            breakpoint: 1150,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+
+            }
+          },
+
+          {
+            breakpoint: 1030,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2000,
+            }
+          }
+        ]
+      });
+    });
+  </script>
+  <script>
+
+    $(document).ready(function () {
+      // Fancybox.bind('[data-fancybox]', {
+      //   Thumbs: false
+      // });
+      $('.news-updates-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+
+            }
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 650,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+      $('.btn-news-next').click(function (e) {
+        $('.news-updates-slider').slick('slickNext');
+      });
+
+      $('.btn-news-pre').click(function (e) {
+        $('.news-updates-slider').slick('slickPrev');
+      });
+    });
+  </script>
+  <script>
+
+    window.addEventListener('load', function () {
+      var ballImage = document.querySelector('.ball-img');
+      setTimeout(function () {
+        ballImage.classList.add('loaded');
+        setTimeout(function () {
+          ballImage.classList.add('reverse');
+        }, 2000);
+      }, 1000);
+    });
+
+
+  </script>
+
+
+
+<noscript><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"></noscript>
+
+
+
+
+<noscript><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"></noscript>
+
+
+
+
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></noscript>
+
+
+
+
+<noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"></noscript>
+
+
+
+
+<noscript><link rel="stylesheet" href="assets/css/fancybox.css"></noscript>
+
+
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+.tenders-description {
+    p {
+        font-weight: 100;
+        font-size: 20px;
+        color: $grey-dark;
+        line-height: 1.7;
+        margin-bottom: 25px;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.become-supplier {
+    background: linear-gradient(to right, $primary , $secondary);
+    position: relative;
+    overflow: hidden;
+
+    // [dir=rtl] & {
+    //     background: linear-gradient(to left, #001D29, #8C0321);
+    // }
+
+    &:before {
+        content: "";
+        position: absolute;
+        background-image: url('../images/img/Mask group.png');
+        background-repeat: no-repeat;
+        inset-inline-end: 0;
+        width: 818px;
+        height: 359px;
+        z-index: 1;
+        bottom: 0;
+        background-size: 100%;
+        [dir=rtl] & {
+            transform: scaleX(-1);
+        }
+    }
+
+    h2 {
+        margin-bottom: 0;
+
+        @include media-breakpoint-down(xxl) {
+            margin-bottom: 30px;
+        }
+
+    }
+
+    p {
+        margin-bottom: 0;
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.outlined-text {
+    color: $black;
+}
+
+.test {
+    padding-inline-end: 100px;
+
+    &:after {
+        content: "";
+        opacity: 0.4;
+        position: absolute;
+        inset-inline-start: 0;
+        top: 0;
+        height: 100%;
+
+        @include media-breakpoint-up(xxl) {
+            border-inline-start: 1px solid #fff;
+        }
+    }
+}
+
+.invite-content {
+
+    @include media-breakpoint-up(xxl) {
+        padding-inline-start: 68px;
+        padding-inline-end: 100px;
+        padding-block: 15px;
+    }
+
+    @include media-breakpoint-down(lg) {
+
+        padding-inline-end: 30px;
+    }
+}
+
+.register-section {
+    position: relative;
+    z-index: 10;
+}
+
+
+.btn-more {
+    i {
+        &:before {
+            background-color: $black;
+        }
+    }
+
+}
+
+
+.text-transparent {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+.custom-modal {
+    .modal-dialog {
+        max-width: 1418px;
+    }
+
+    font-size:15px;
+    font-weight:300;
+    @include media-breakpoint-down(lg){
+        font-size:14px;
+    }
+
+    .modal-footer {
+        border-top-color: transparent;
+        justify-content: flex-start;
+    }
+.form-label {
+    -webkit-text-stroke: .001rem $primary;
+
+}
+    /* For Chrome/Opera/Safari */
+    ::-webkit-input-placeholder {
+        @include rfs(20px, font-size);
+        font-weight: 300;
+        color: #C0B8BE;
+        @include media-breakpoint-down(lg){
+            font-size:14px;
+        }
+
+    }
+
+    /* For Firefox 19+ */
+    ::-moz-placeholder {
+        @include rfs(20px, font-size);
+        font-weight: 300;
+        color: #C0B8BE;
+        @include media-breakpoint-down(lg){
+            font-size:14px;
+        }
+    }
+
+    /* For Firefox 18- */
+    :-ms-input-placeholder {
+        @include rfs(20px, font-size);
+        font-weight: 300;
+        color: #C0B8BE;
+        @include media-breakpoint-down(lg){
+            font-size:14px;
+        }
+    }
+
+    /* For Internet Explorer 10+ */
+    ::-ms-input-placeholder {
+        @include rfs(20px, font-size);
+        font-weight: 300;
+        color: #C0B8BE;
+        @include media-breakpoint-down(lg){
+            font-size:14px;
+        }
+    }
+
+    .form-control {
+        background-color: $white;
+        padding: 20px;
+        border-color: #E5DFE4;
+        color: $grey-dark;
+        border-radius: 12px !important;
+        ;
+    }
+
+    .modal-header {
+        padding: 48px;
+        border-bottom: transparent;
+        color: $primary;
+        -webkit-text-stroke: 2px $primary;
+        letter-spacing: .08rem;
+
+    }
+
+    .modal-footer {
+        padding-inline: 48px;
+        padding-bottom:48px;
+        padding-top:0px;
+        .btn{
+            font-size: 18px;
+            font-weight: 700;
+            padding:13px 51px;
+            border-radius: 12px;
+            @include media-breakpoint-down(lg){
+                font-size:14px;
+            }
+        }
+    
+    }
+
+
+    .modal-body {
+        padding-inline: 48px;
+        padding-block:0px;
+        
+    }
+
+    .form-label {
+        margin-bottom: 16px;
+        span{
+            color:#C6002F;
+        }
+    }
+
+    .form-check-input {
+        margin-top: -4px;
+        margin-inline-end:10px;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #C0B8BE;
+        [dir=rtl] & {
+            margin-inline-start:10px; 
+        }
+
+        &:checked {
+            border-color: $primary;
+            background-color: $white;
+         --bs-form-check-bg-image: url('../images/icon/radio-btn-inner-circle.svg');   
+         background-position: 3px 3px !important;
+        }
+
+    }
+    .btn-close {
+        background: transparent var(--bs-btn-close-bg) center / 2em auto no-repeat;
+        --bs-btn-close-bg:url('../images/icon/tenders-form-close-btn.png');
+        --bs-btn-close-opacity: 1;
+        &:hover {
+            --bs-btn-close-opacity: 0.5;
+        }
+    }
+    #customFileBtn1,#customFileBtn2 {
+        background-color:$primary;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        border-color: $primary;
+    }
+    
+    #customFileBtn:hover {
+        background-color:#463756;
+        color: white;
+    }
+    .choose-file {
+      top:11px;
+      inset-inline-end: 12px;
+      align-items: center;
+    }
+    i{
+ -webkit-mask:url('../images/icon/tenders-attach-file-icon.svg') no-repeat center;
+ display: inline-flex;
+     width: 14px;
+     height: 19px;
+     background-color: white;
+     padding-inline-end: 5px;
+     mask-size: 16px;
+    }
+    .file-box {
+        gap:10px;
+        padding-block: 8px;
+        padding-inline: 16px;
+        align-items: center;
+    }
+    .btn{
+        padding:0;
+    }
+    .btn-close {
+        margin-inline-end: 0; 
+        margin-inline-start: auto;
+    }
+    
+    [dir=rtl] & .btn-close {
+        margin-right: auto;
+        margin-left: 0;
+    }
+}

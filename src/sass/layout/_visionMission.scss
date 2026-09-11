@@ -1,0 +1,143 @@
+.vision-mission-section {
+  
+    border: 1px solid #EDE9EB;
+    border-radius: 8px;
+    box-shadow: 0px 28.47px 62.2px 0px #A7AEBA14;
+    padding-block: 70px 40px;
+
+
+
+
+    .broad-border {
+        border: 15px solid $maroon;
+        z-index: 1;
+    }
+
+    .our-mission {
+        top: -47px;
+        background-color: $white;
+        padding-inline: 6px;
+        inset-inline-start: 30px;
+
+    }
+
+    .vision-box,
+    .values-box {
+        padding: 16px;
+        inset-inline-end: 49px;
+        background-color: $maroon;
+        color: $white;
+        border: 8px solid $white;
+        border-radius: 12px;
+
+        @include media-breakpoint-down(lg) {
+            inset-inline-end: auto;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 18px;
+	@media (max-width: 767.98px) {
+		
+		  font-size: 16px;
+		
+	  }
+            line-height: 28px;
+            @include media-breakpoint-down(sm) {
+                font-size: 16px;
+              }
+        }
+    }
+.vision-values-wrapper {
+     display: flex;
+         row-gap: 30px;
+         flex-direction: column;
+     }
+
+    .vision-box ,.values-box {
+        position: relative;
+        top: -90px;
+        z-index: 20;
+        margin-bottom: -90px;
+        overflow: hidden;
+
+        @include media-breakpoint-down(lg) {
+            position: static;
+            top: auto;
+            margin-bottom: 0;
+        }
+
+        h4 {
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: "";
+                height: 16px;
+                width: 1000px;
+                top: 10px;
+                border-radius: 4px;
+                inset-inline-start: 100%;
+                background-color: $white;
+                margin-inline-start: 16px;
+
+            }
+
+        }
+    }
+
+    .values-box {
+        position: relative;
+        inset-inline-end: 49px;
+        margin-top: 90px;
+        @include media-breakpoint-down(lg) {
+            inset-inline-end: auto;
+            margin-top: auto;
+        }
+    }
+
+
+
+    .mission-heading {
+        padding-inline: 50px;
+        word-spacing: 2%;
+        -webkit-text-stroke-width: 1px;
+
+        h3 {
+            font-size: 32px;
+
+        }
+
+        @include media-breakpoint-down(lg) {
+            padding-inline: 25px;
+
+            h3 {
+                font-size: 25px;
+            }
+
+        }
+    }
+
+    ul {
+        padding-inline: 80px;
+
+        @include media-breakpoint-down(lg) {
+            padding-inline: 40px;
+
+        }
+
+        li {
+            color: $grey-dark;
+            font-weight: 300;
+            list-style: disc;
+            margin-bottom: 10px;
+            line-height: 28px;
+            font-size: 18px;
+            @include media-breakpoint-down(sm) {
+                font-size: 16px;
+              }
+        }
+    }
+
+
+}

@@ -1,0 +1,115 @@
+.careers-page {
+
+
+    h2 {
+        color: $primary;
+        margin-bottom: 56px;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 20px;
+        }
+    }
+
+
+    .job-post {
+        border: 1px solid #E5DFE4;
+        border-radius: 12px;
+        padding: 32px;
+        position:relative;
+
+        @include media-breakpoint-down(sm) {
+            padding: 15px;
+        }
+
+        &:before {
+            content: '';
+            position:absolute;
+            width: 10px;
+            height:80%;
+            background-color:#C6002F;
+            inset-inline-start: 0;
+            border-start-end-radius: 25px;
+            border-end-end-radius: 25px;
+            display:none;
+            transition: all .2s;
+        }
+        &:hover {
+            &::before {
+                display:block;
+            }
+        }
+        a {
+            text-decoration: none;
+        }
+        h3 {
+            font-size: 32px;
+            word-spacing: 2px;
+            color: #8C0321;
+            //  color: #8c0321;
+            margin-bottom: 32px;
+
+            @include media-breakpoint-down(md) {
+                font-size: 25px;
+            }
+        }
+
+        p {
+            color: $grey-dark;
+            line-height: 28px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            font-size: 20px;
+
+            @include media-breakpoint-down(md) {
+                font-size: 16px;
+            }
+        }
+
+        h5 {
+            color: $grey-dark;
+            font-size: 20px;
+            font-weight: 700;
+
+            @include media-breakpoint-down(md) {
+                font-size: 16px;
+            }
+
+        }
+
+        .clock {
+            width: 20px;
+            background: url('../images/icon/clock-careers.svg') no-repeat center;
+            margin-inline-end: 5px;
+        }
+
+        .location {
+            width: 20px;
+            background: url('../images/icon/location-careers-icon.svg')no-repeat center;
+            margin-inline-end: 5px;
+
+        }
+
+
+        .job-type {
+            border: 1px solid #E5DFE4;
+            border-radius: 12px;
+            padding-inline: 24px;
+            display: flex;
+            align-items: center;
+            padding-block: 10px;
+            justify-content: center;
+        }
+
+
+
+    }
+
+    .job-post-wrapper {
+        margin-inline-start: -4px;
+    }
+
+    .padding-inline-16 {
+        padding-inline-start: 16px;
+        padding-inline-end: 16px;
+    }
+}

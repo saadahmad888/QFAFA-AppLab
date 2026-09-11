@@ -1,0 +1,126 @@
+.search-bar-section {
+
+
+    .form-control {
+        background-color: transparent;
+        border-color: transparent;
+        color: $primary;
+
+    }
+
+    .input-group-text {
+        border: transparent;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+
+        img {
+            display: block;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding-inline: 12px;
+        }
+    }
+
+    .input-group {
+        border: 1px solid #E5DFE4;
+        padding-block: 18px;
+        padding-inline-start: 24px;
+
+        @include media-breakpoint-down(md) {
+            padding-block: 10px;
+        }
+
+    }
+
+    /* For Chrome/Opera/Safari */
+    ::-webkit-input-placeholder {
+        @include rfs(20px, font-size);
+        font-weight: 300;
+        color: #1D1D1B;
+        opacity: 0.5;
+
+        @include media-breakpoint-down(md) {
+            font-size: 16px;
+        }
+
+    }
+
+    /* For Firefox 19+ */
+    ::-moz-placeholder {
+        @include rfs(20px, font-size);
+        font-weight: 300;
+        color: #1D1D1B;
+        opacity: 0.5;
+
+        @include media-breakpoint-down(md) {
+            font-size: 16px;
+        }
+    }
+
+    /* For Firefox 18- */
+    :-ms-input-placeholder {
+        @include rfs(20px, font-size);
+        font-weight: 300;
+        color: #1D1D1B;
+        opacity: 0.5;
+
+        @include media-breakpoint-down(md) {
+            font-size: 16px;
+        }
+    }
+
+    /* For Internet Explorer 10+ */
+    ::-ms-input-placeholder {
+        @include rfs(20px, font-size);
+        font-weight: 300;
+        color: #1D1D1B;
+        opacity: 0.5;
+
+        @include media-breakpoint-down(md) {
+            font-size: 16px;
+        }
+    }
+
+    .search-circle {
+        position: absolute;
+        inset-inline-end: 20px;
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        border: 1px solid #891631;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #891631;
+        color: white;
+        top: 20%;
+
+        @include media-breakpoint-down(md) {
+            top: 10%;
+            inset-inline-end: 10px;
+            padding: 2px;
+        }
+
+
+        i {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            &:before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                -webkit-mask: url('../images/icon/search-icon-gallery.svg') no-repeat center;
+                -webkit-mask-size: 20px;
+                background-color: white;
+            }
+
+        }
+
+    }
+}

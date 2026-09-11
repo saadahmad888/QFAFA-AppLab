@@ -1,0 +1,391 @@
+.mb-145 {
+  margin-bottom: 145px;
+}
+.vmv-establishment-wrapper {
+  position: relative;
+  &:before {
+    content: "";
+    background-color: #8C0321;
+    padding-bottom: 15px;
+    border-start-start-radius: 24px;
+    border-end-start-radius: 24px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 212px;
+    [dir="rtl"] & {
+      background: url("../images/icon/qal-football-icon-1.svg") no-repeat bottom
+          0% right 20%,
+        url("../images/icon/qal-football-icon-2.png") no-repeat top 10% left 0%;
+      background-color: #8C0321;
+    }
+    @include media-breakpoint-down(lg) {
+      height: 100%;
+      border-radius: 24px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    min-height: 100px;
+  }
+}
+.vmv-establishment {
+  background-color: #fff;
+  position: absolute;
+  z-index: 20;
+  top: 64px;
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+  padding: 20px 82px;
+  [dir="rtl"] & {
+    inset-inline-start: auto;
+    inset-inline-end: 50%;
+    padding: 19px 82px;
+  }
+  @include media-breakpoint-down(xl) {
+    top: 80px;
+  }
+  @include media-breakpoint-down(lg) {
+    top: 26px;
+    [dir="rtl"] & {
+      top: 24px;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    inset-inline-end: 80px;
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+    @include media-breakpoint-down(xxl) {
+      inset-inline-end: 69px;
+    }
+    @include media-breakpoint-down(xl) {
+      inset-inline-end: 50px;
+    }
+  }
+  @include media-breakpoint-down(xxl) {
+    padding-inline: 72px;
+    padding-block: 20px;
+    [dir="rtl"] & {
+      padding-inline: 72px;
+      padding-block: 13px;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    padding-inline: 50px;
+    padding-block: 13px;
+    [dir="rtl"] & {
+      padding-inline: 50px;
+      padding-block: 5px;
+    }
+  }
+  h4 {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    &:before {
+      position: absolute;
+      content: "";
+      background-image: url(../images/logo/logo-vmc.svg);
+      background-repeat: no-repeat;
+      width: 100px;
+      height: 100px;
+      background-size: 65px;
+      inset-inline-start: -79px;
+      [dir="rtl"] & {
+        inset-inline-start: -118px;
+        top: -20px;
+      }
+      top: -18px;
+      @include media-breakpoint-down(xxl) {
+        background-size: 45px;
+        inset-inline-start: -63px;
+        top: -12px;
+        [dir="rtl"] & {
+          // inset-inline-start: -106px;
+          top: -10px;
+        }
+      }
+      @include media-breakpoint-down(xl) {
+        background-size: 45px;
+        inset-inline-start: -51px;
+        top: -11px;
+          [dir="rtl"] & {
+          inset-inline-start: -106px;
+          top: -10px;
+        }
+      }
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      -webkit-mask: url(../images/icon/arrow-right-contained.svg) no-repeat;
+      background-color: $black;
+      width: 100px;
+      height: 100px;
+      mask-size: 40px;
+      inset-inline-end: -129px;
+      [dir="rtl"] & {
+        transform: scaleX(-1);
+        inset-inline-end: -122px;
+        top:-6px;
+      }
+      top: -3px;
+      @include media-breakpoint-down(xxl) {
+        mask-size: 30px;
+        [dir="rtl"] & {
+          inset-inline-end: -126px;
+              top: -1px;
+        }
+      }
+      @include media-breakpoint-down(xl) {
+        inset-inline-end: -116px;
+         [dir="rtl"] & {
+        inset-inline-end: -110px;
+      }
+      }
+    }
+    @include media-breakpoint-down(xxl) {
+      font-size: 20px;
+    }
+    @include media-breakpoint-down(xl) {
+      margin-inline-start: 5px;
+    }
+  }
+}
+.vmv-slider-wrapper {
+  position: relative;
+
+  &:before {
+    content: "";
+    background: url("../images/icon/qal-football-icon-1.svg") no-repeat bottom
+        0% left 20%,
+      url("../images/icon/qal-football-icon-2.png") no-repeat top 10% right 0%;
+    background-color: #8C0321;
+    padding-bottom: 15px;
+    // border-top-right-radius: 24px;
+    // border-bottom-right-radius: 24px;
+    border-end-end-radius: 24px;
+    border-start-end-radius: 24px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 212px;
+    [dir="rtl"] & {
+      background: url("../images/icon/qal-football-icon-1.svg") no-repeat bottom
+          0% right 20%,
+        url("../images/icon/qal-football-icon-2.png") no-repeat top 10% left 0%;
+      background-color: #8C0321;
+    }
+    @include media-breakpoint-down(lg) {
+      border-radius: 24px;
+    }
+  }
+}
+
+.vmv-slider {
+  padding-inline: 160px;
+
+  @include media-breakpoint-down(xxl) {
+    padding-inline: 100px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding-inline: 30px;
+  }
+
+  .record-box {
+    // background: linear-gradient(to bottom, #75ccca, #9674a8);
+    background: linear-gradient(to bottom,#C58190 ,   #a44861);
+    padding-inline: 32px;
+    padding-block: 24px 13px;
+    border-start-end-radius: 32px;
+    border-end-start-radius: 32px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+    position: relative;
+    width: 178px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      inset-inline-start: -12px;
+      border-style: solid;
+      border-width: 0 0 20px 12px;
+      border-color: transparent transparent $grey-dark transparent;
+      [dir="rtl"] & {
+        border-width: 0 12px 20px 0;
+      }
+    }
+
+    &:hover {
+      &:before {
+        border-style: solid;
+        border-width: 0 0 40px 12px;
+        transition: border-width 0.2s ease;
+        border-color: transparent transparent $grey-dark transparent;
+        [dir="rtl"] & {
+          border-width: 0 12px 40px 0;
+        }
+      }
+    }
+
+    &:hover {
+      animation: moveUp 0.3s ease forwards;
+    }
+
+    @keyframes moveUp {
+      0% {
+        margin-top: -20px;
+      }
+
+      100% {
+        margin-top: -40px;
+      }
+    }
+  }
+
+  .inner-box {
+    width: 98px;
+    height: 88px;
+    background-color: rgba($white, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 12px;
+
+    div {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .inner-box1 {
+    width: 76.24px;
+    height: 76.24px;
+    background-color: rgba($white, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 14px;
+
+    div {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .slick-list {
+    overflow: visible;
+    overflow-x: clip;
+    margin-bottom: 40px;
+  }
+
+  .slick-prev {
+    inset-inline-start: 20px;
+
+    @include media-breakpoint-down(xxl) {
+      inset-inline-start: 30px;
+    }
+    @include media-breakpoint-down(lg) {
+      inset-inline-start: 5px;
+    }
+  }
+
+  .slick-next {
+    inset-inline-end: 20px;
+
+    @include media-breakpoint-down(xxl) {
+      inset-inline-end: 30px;
+    }
+    @include media-breakpoint-down(lg) {
+      inset-inline-end: 5px;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    background-color: transparent;
+    display: flex;
+    width: 69px;
+    height: 69px;
+    background-color: #971C37;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6px;
+    z-index: 20;
+    top: 69%;
+    @include media-breakpoint-down(lg) {
+      width: 40px;
+      height: 40px;
+    }
+
+    &:hover {
+      background-color: #C58190;
+    }
+  }
+
+  .slick-next {
+    &:before {
+      content: url("../images/icon/champions-record-arrow.svg");
+      [dir="rtl"] & {
+        transform: scaleX(-1);
+      }
+    }
+  }
+
+  .slick-prev {
+    &:before {
+      content: url("../images/icon/champions-record-arrow2.svg");
+      [dir="rtl"] & {
+        transform: scaleX(-1);
+      }
+    }
+  }
+
+  .slick-dots {
+    bottom: -90px;
+    inset-inline-start: 0px;
+    list-style-type: none;
+
+    li {
+      button {
+        background-color: #a49aaa;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+
+        &:before {
+          content: "";
+        }
+      }
+    }
+    .slick-active {
+      button {
+        background-color: $primary;
+      }
+    }
+  }
+
+  .slick-slide {
+    margin-inline: 16px;
+  }
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+}

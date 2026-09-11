@@ -1,0 +1,85 @@
+.board-of-directors {
+    background-color: #FBFBFB;
+}
+
+.board-of-directors,.general-secretary  {
+   
+  
+    .details {
+        padding-block: 33px;
+        padding-inline: 31px;
+    }
+    .details-box {
+        position: relative;
+        overflow: visible;
+        overflow-x: clip;
+        clip-path: inset(-20px 0 0 0);
+        display: flex;
+        flex-direction: row;
+        background-color: #F4F1F3;
+        border-radius: 8px;
+        margin-inline: 16px;
+        justify-content: space-between;
+      img {
+        transition:transform 0.3s ease-in-out;
+      }
+
+        @include media-breakpoint-down(sm){
+            flex-direction: column;
+            margin-inline: auto;
+        }
+        
+    }
+    .read-more {
+        position: absolute;
+        inset-inline-start: 83px;
+        bottom: 0px;
+        // inset-inline-start: 50%;
+        transform: translateX(-50%);
+        background: White;
+        color: $primary1;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 8px;
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+        
+    [dir=rtl] & {
+        inset-inline-start:-43px;
+    }
+        .custom-btn {
+            color:$maroon;
+            white-space: nowrap;
+            font-size: 22px;
+            font-weight: 700;
+            text-decoration: underline;
+            display:flex;
+            align-items: center;
+            &::after {
+                content: '';
+                background: url('../images/icon/bod-read-more-arrow.svg') no-repeat center;
+                display: inline-flex;
+                    width: 20px;
+                    height: 20px;
+                    [dir="rtl"]  & {
+                        transform: scaleX(-1); 
+                    }
+                    
+                   
+            }
+
+           
+        }
+    }
+    .details-box:hover  {
+        .read-more {
+            transform: translateX(-50%) translateY(-50%);
+            opacity: 1;
+            visibility: visible;
+        }
+        // img {
+        //     transform: scale(1.2) translateY(-10px);
+        // }
+    }
+}

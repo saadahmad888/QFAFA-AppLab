@@ -1,0 +1,39 @@
+.twitter-feeds {
+    .card {
+        border: none;
+        margin-inline-start: 15px;
+        margin-inline-end: 15px;
+
+
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    .card-img {
+        position: relative;
+
+        .twitter-tag {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            top: 65%;
+            background-color: white;
+            inset-inline-start: 20px;
+            // img {
+            //     [dir=rtl] & {
+            //         transform: scaleX(-1);
+            //     }
+            // }
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+}
+

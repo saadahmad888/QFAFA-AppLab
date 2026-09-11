@@ -1,0 +1,116 @@
+.club-contact-details {
+    border: 1px solid #EDE9EB;
+    border-radius: 12px;
+    padding:64px;
+    @include media-breakpoint-down(md) {
+        padding:20px;
+    }
+}
+.sportsclub-social-icons {
+    // position: absolute;
+    // inset-inline-start: 0;
+    // top:50%;
+    position: relative;
+    z-index: 1;
+
+    @include media-breakpoint-down(md) {
+        // display: none;
+    }
+
+    .banner-icon3 {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: white;
+        border: $primary 1px solid;
+        padding: 8px;
+        align-items: center;
+        // margin: 20px;
+        @include hoverAnim;
+       
+        @include media-breakpoint-down(xl) {
+            margin-top: 10px;
+        }
+
+        &:hover {
+            background-color: $primary;
+
+            .instagram-icon,
+            .youtube-icon,
+            .facebook-icon,
+            .twitter-icon {
+              background-color: $white;
+            }
+        }
+    }
+
+    .instagram-icon,
+    .youtube-icon,
+    .facebook-icon,
+    .twitter-icon {
+        display: inline-block;
+        background: $white;
+        width: 16px;
+        height: 16px;
+
+    }
+
+    .instagram-icon {
+        -webkit-mask: url('../images/icon/home-banner/instagram-icon.png') no-repeat center;
+        background-color: $primary;
+        
+       
+    }
+
+    .youtube-icon {
+        -webkit-mask: url('../images/icon/home-banner/youtube-icon.png') no-repeat center;
+        background-color: $primary;
+    }
+
+    .facebook-icon {
+        -webkit-mask: url('../images/icon/home-banner/facebook-icon.png') no-repeat center;
+        background-color: $primary;
+    }
+
+    .twitter-icon {
+        -webkit-mask: url('../images/icon/home-banner/twitter-icon.png') no-repeat center;
+        background-color: $primary;
+    }
+    
+}
+.map-container {
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+
+.club-contact-details {
+    a {
+        text-decoration: none;
+        color:$primary;
+    }
+.phone-box,.fax-box,.pobox-box,.email-box
+{
+    padding-inline:32px;
+    padding-block: 43px 35px;
+    border:1px solid #E5DFE4;
+    border-radius: 12px;
+    column-gap: auto;
+    justify-content: space-between;
+    background-color:  #FBFBFB;
+    margin-inline:4px;
+    p {
+       letter-spacing: 2px;
+    }
+    @include media-breakpoint-down(xl) {
+        padding:25px 20px;
+    }
+}
+.email-box {
+    padding-block: 26px 24px;
+}
+.contact-details {
+ display: block;
+ margin-inline: -4px;
+}
+}
